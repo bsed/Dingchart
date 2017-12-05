@@ -1,0 +1,110 @@
+﻿<Page x:Class="cn.lds.chatcore.pcw.Views.Page.AccountDetailed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+       FontFamily="Microsoft YaHei" 
+        Height="auto" Width="auto"  mc:Ignorable="d" d:DesignWidth="707.955" d:DesignHeight="635.701" >
+    <Page.Resources>
+        <BitmapImage x:Key="GoToImage" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/ResourceDictionary;Component/Images/Arrow_right.png"/>
+        <system:Double x:Key="FontSize">14</system:Double>
+        <Thickness x:Key="Margin">35,12,35,12</Thickness>
+        <system:Double x:Key="Font">15</system:Double>
+        <Thickness x:Key="margin">0,0,20,0</Thickness>
+    </Page.Resources>
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="360"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!--标题头-->
+        <Label x:Name="LbTitel" Content="名片" Grid.Row="0"  Foreground="{DynamicResource foreground33}" BorderBrush="#CCCCCC"   VerticalAlignment="Stretch"  VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Margin="0" HorizontalAlignment="Stretch" FontSize="18" />
+        <!--返回按钮-->
+        <Button x:Name="BtnBack"  Tag="成员列表" Grid.Row="0" FontSize="18"  Foreground="{DynamicResource foreground33}"    HorizontalAlignment="Left" Height="26" Width="225"  VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonLeft}"  Margin="12,0,0,0"  Visibility="Visible"  >
+            <Image Margin="0" Source="pack://application:,,,/ResourceDictionary;Component/Images/Return.png" Stretch="None"/>
+        </Button>
+        <Separator Height="1" Grid.Row="0"  
+                Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" />
+        <!--人名称-->
+        <Border   BorderBrush="#CCCC" BorderThickness="1" CornerRadius="{DynamicResource BoxCornerRadius}" Grid.Row="1"    Margin="{DynamicResource Margin}">
+            <Grid Margin="5" >
+                <Ellipse x:Name="EllipseWithImageBrush" Stroke="#cccccc"  Margin="20,5,5,2"  HorizontalAlignment="Left" 
+                    Height="55" Width="55" d:LayoutOverrides="Height"  UseLayoutRounding="True" Grid.Row="1" >
+                    <Ellipse.Fill>
+                        <ImageBrush  x:Name="Ico" ImageSource="pack://application:,,,/ResourceDictionary;Component/Images/Default_avatar.jpg"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Label  Name="LbName" Content="张三"  Margin="85,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="25"/>
+            </Grid>
+        </Border>
+        <!--群成员-->
+        <!--群信息-->
+        <Border  BorderBrush="#CCCC" BorderThickness="1" CornerRadius="{DynamicResource BoxCornerRadius}" Grid.Row="2"    
+                 Margin="{DynamicResource Margin}"  Height="320">
+            <Grid Margin="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="手机号码" Grid.Row="0"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left" FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="0" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <Label x:Name="LbTelphone"   Content="" Margin="{DynamicResource margin}" Grid.Row="0"    HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}"  FontSize="{DynamicResource Font}"/>
+
+                <Label Content="办公电话" Grid.Row="1"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="1" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <Label x:Name="LbPhone" Content="" Margin="{DynamicResource margin}" Grid.Row="1" Foreground="{DynamicResource foreground33}"  HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" FontSize="{DynamicResource Font}" />
+
+                <Label Content="邮箱" Grid.Row="2"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="2" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <!--<Label  x:Name="LbMail"  Content="" Margin="0,0,30,0" Grid.Row="2"    HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}" />-->
+                <Button x:Name="BtnMail"   Tag=" "  Grid.Row="2"   Height="26" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonRight}"  Click="BtnMail_Click" Foreground="{DynamicResource foreground33}" Margin="0,7">
+                    <Image   Margin="0" Source="{DynamicResource GoToImage}" Stretch="None"/>
+                </Button>
+
+                <Label Content="性别" Grid.Row="3"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="3" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <!--<Label  x:Name="LbSex"  Content="" Margin="0,0,30,0" Grid.Row="3"    HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}" />-->
+                <Button x:Name="BtnSex"   Tag=" "  Grid.Row="3"   Height="26" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonRight}"  Click="BtnSex_Click" Foreground="{DynamicResource foreground33}" Margin="0,7">
+                    <Image   Margin="0" Source="{DynamicResource GoToImage}" Stretch="None"/>
+                </Button>
+                <Label Content="职务" Grid.Row="4"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="4" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <Label x:Name="LbZw" Content="" Margin="{DynamicResource margin}" Grid.Row="4"    HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}"  FontSize="{DynamicResource Font}"/>
+
+                <Label Content="所属部门" Grid.Row="5"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="5" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <Label x:Name="LbBm"   Content="" Margin="{DynamicResource margin}" Grid.Row="5" HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource Font}" />
+
+                <Label Content="所属单位" Grid.Row="6"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                <!--之间的线-->
+                <Separator Height="1" Grid.Row="6" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                <Label  x:Name="LbDw"   Content="" Margin="{DynamicResource margin}" Grid.Row="6" HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}"  FontSize="{DynamicResource Font}"/>
+
+                <Label Content="签名" Grid.Row="7"  Margin="20,0,0,0"  VerticalContentAlignment="Center"   HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}" />
+                <!--<Label x:Name="LbQm"  Content="" Margin="0,0,30,0" Grid.Row="7"   HorizontalAlignment="Right"  Width="auto" VerticalAlignment="Center" Foreground="{DynamicResource foreground33}"  />-->
+                <Button x:Name="BtnQm"   Tag=" "  Grid.Row="7"   Height="26" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonRight}"  Click="BtnQm_Click" Foreground="{DynamicResource foreground33}" Margin="62,7,0,7">
+                    <Image   Margin="0" Source="{DynamicResource GoToImage}" Stretch="None"/>
+                </Button>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Page>

@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="cn.lds.chatcore.pcw.Views.Control.AppControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              FontFamily="Microsoft YaHei"  Cursor="Hand"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  
+             Height="60" Width="260"  Loaded="UserControl_Loaded" Margin="0" Padding="0" BorderThickness="0"
+             Background="{DynamicResource leftBackground}" MouseLeftButtonDown="GridContact_MouseLeftButtonDown_1">
+    <Grid  Name="GridContact" Margin="8,0,0,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Name="Ico"   Grid.Column="0"     Height="35" Width="35" Source="pack://application:,,,/ResourceDictionary;Component/Images/Default_avatar.jpg" Margin="2" UseLayoutRounding="True"/>
+        <Label Name="LbTitle" IsEnabled="False"  BorderThickness="0" VerticalContentAlignment="Center"    Grid.Column="1"  Content="党组会议" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="14" Foreground="{DynamicResource foreground33}"  Margin="12,0,0,0" />
+    </Grid>
+</UserControl>

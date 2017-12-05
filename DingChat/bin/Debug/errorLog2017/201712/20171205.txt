@@ -1,0 +1,2409 @@
+
+ 
+记录时间：2017-12-05 08:53:51,097 
+线程ID:[30] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/ping
+ 
+System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 124.93.0.168:22031
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 RestSharp.Http.GetRawResponse(HttpWebRequest request)
+   在 RestSharp.Http.GetResponse(HttpWebRequest request)
+
+ 
+记录时间：2017-12-05 08:53:51,124 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-05 08:53:57,130 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:05,209 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:05,304 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:05,344 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:06,135 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:11,156 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:11,655 
+线程ID:[30] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：session过期，退出到登录画面！
+ 
+
+ 
+记录时间：2017-12-05 08:54:16,157 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:21,155 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:26,219 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:31,232 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:36,237 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:41,189 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:46,197 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:51,206 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:54:56,335 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:01,217 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:06,225 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:11,234 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:16,243 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:21,250 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:26,319 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:31,322 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:36,273 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:41,298 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:46,286 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:51,296 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:55:56,362 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:01,368 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:06,316 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:11,329 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:16,388 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:21,341 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:26,407 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:31,416 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:36,367 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:41,372 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:46,384 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:51,447 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:56:56,472 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:01,402 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:06,409 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:11,418 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:16,488 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:21,433 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:26,439 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:31,447 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:36,519 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:41,463 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:46,474 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:51,541 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:57:56,487 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:01,567 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:06,511 
+线程ID:[50] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:11,515 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:16,578 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:21,532 
+线程ID:[50] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:26,532 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:31,592 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:36,550 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:41,593 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:46,568 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:51,630 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:58:56,637 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:01,586 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:06,596 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:11,669 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:16,668 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:21,614 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:26,683 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:31,693 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:36,655 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:41,648 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:46,716 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:51,727 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 08:59:56,672 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:01,684 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:06,738 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:11,760 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:16,762 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:21,769 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:26,782 
+线程ID:[49] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:31,754 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:36,729 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:41,740 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:46,847 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:51,815 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:00:56,763 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:01,772 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:06,781 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:11,837 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:16,854 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:21,800 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:26,807 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:31,815 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:36,844 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:41,895 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:46,909 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:51,847 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:01:56,856 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:01,862 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:06,872 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:11,998 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:16,925 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:21,941 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:26,896 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:31,999 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:36,912 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:41,973 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:46,929 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:51,940 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:02:57,010 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:01,952 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:07,041 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:11,993 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:16,976 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:22,041 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:26,992 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:31,996 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:37,005 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:42,075 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:47,029 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:52,150 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:03:57,041 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:02,051 
+线程ID:[50] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:07,136 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:12,079 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:17,069 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:22,129 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:27,148 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:32,091 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:37,159 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:42,108 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:47,116 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:52,178 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:04:57,131 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:02,135 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:07,204 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:12,150 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:17,161 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:22,224 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:30,167 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:32,186 
+线程ID:[24] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:37,257 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:42,195 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:47,265 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:52,215 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:05:57,231 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:02,232 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:07,310 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:12,308 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:17,252 
+线程ID:[25] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:22,266 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:27,364 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:32,437 
+线程ID:[50] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:37,281 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:42,362 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:47,429 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:52,306 
+线程ID:[49] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:06:57,312 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:02,382 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:07,414 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:12,334 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:17,341 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:22,347 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:27,358 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:32,495 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:37,374 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:42,377 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:47,450 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:52,413 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:07:57,404 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:02,408 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:07,449 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:12,435 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:17,486 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:22,503 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:27,447 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:32,518 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:37,463 
+线程ID:[40] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:42,473 
+线程ID:[52] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:47,539 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:52,482 
+线程ID:[52] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:08:57,530 
+线程ID:[32] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:02,500 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:07,511 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:12,576 
+线程ID:[52] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:17,523 
+线程ID:[59] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:22,544 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:27,673 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:32,623 
+线程ID:[52] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:37,612 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:42,621 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:47,571 
+线程ID:[54] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:52,673 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:09:57,592 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:02,591 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:07,698 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:12,612 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:17,618 
+线程ID:[45] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:22,625 
+线程ID:[52] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:27,721 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:32,639 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:37,710 
+线程ID:[54] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:42,654 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:47,714 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:52,695 
+线程ID:[99] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:10:57,699 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:11:02,771 
+线程ID:[100] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络连接已经断开
+ 
+
+ 
+记录时间：2017-12-05 09:13:19,933 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:13:20,835 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:13:20,908 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:13:21,010 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-05 09:13:21,104 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-05 09:13:23,422 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:13:23,454 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:13:23,469 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:13:23,582 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-05 09:13:23,624 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-05 09:13:25,170 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:13:25,343 
+线程ID:[31] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/core/m/organizations?t=0
+ 
+System.Net.WebException: The request was aborted.
+
+ 
+记录时间：2017-12-05 09:13:29,140 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-05 09:13:30,243 
+线程ID:[50] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-05 09:13:30,959 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:13:33,314 
+线程ID:[49] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:15:46,883 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:15:47,884 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:15:48,138 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:15:48,181 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-05 09:15:48,287 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-05 09:15:49,592 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:15:49,620 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:15:49,636 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:15:49,688 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-05 09:15:49,814 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-05 09:15:50,636 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-05 09:15:51,985 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:15:53,886 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:15:56,860 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-05 09:15:59,677 
+线程ID:[40] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:15:59,720 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:18:42,018 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:18:42,891 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:18:43,021 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:18:43,140 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-05 09:18:43,316 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-05 09:18:47,235 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:18:47,407 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:18:47,418 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-05 09:18:47,419 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:18:47,878 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:18:48,186 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-05 09:18:49,017 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-05 09:18:49,052 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-05 09:18:50,186 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:18:51,440 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-05 09:18:54,667 
+线程ID:[52] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:18:56,824 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512436734680,\"checkCode\":null,\"status\":\"1\"}","messageId":"79003799-5d2b-4748-9164-2e0f1cd88c11","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512436668375,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-05 09:21:05,721 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:21:07,159 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:21:07,325 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:21:07,524 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-05 09:21:07,631 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-05 09:21:09,424 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:21:09,481 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:21:09,627 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-05 09:21:09,633 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-05 09:21:09,633 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-05 09:21:11,487 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-05 09:21:12,665 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-05 09:21:15,146 
+线程ID:[39] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-05 09:21:20,647 
+线程ID:[52] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.LoginWindow property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadStateException: 线程正在运行或被终止；它无法重新启动。
+   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 cn.lds.chatcore.pcw.Views.Windows.LoginWindow.DoLoadingOk(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\LoginWindow.xaml.cs:行号 395
+
+ 
+记录时间：2017-12-05 09:21:21,621 
+线程ID:[54] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79

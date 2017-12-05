@@ -1,0 +1,6 @@
+F:\鼎sass\FileDownloader\bin\Debug\FileDownloader.xml
+F:\鼎sass\FileDownloader\bin\Debug\FileDownloader.dll
+F:\鼎sass\FileDownloader\bin\Debug\FileDownloader.pdb
+F:\鼎sass\FileDownloader\obj\Debug\FileDownloader.dll
+F:\鼎sass\FileDownloader\obj\Debug\FileDownloader.pdb
+F:\鼎sass\FileDownloader\obj\Debug\FileDownloader.csprojResolveAssemblyReference.cache

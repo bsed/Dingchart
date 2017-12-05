@@ -1,0 +1,18 @@
+﻿<Window x:Class="cn.lds.chatcore.pcw.Views.Windows.WebPageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cn.lds.chatcore.pcw.Views.Windows"
+        xmlns:page="clr-namespace:cn.lds.chatcore.pcw.Views.Page"
+        xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+        mc:Ignorable="d"   WindowStartupLocation="CenterScreen" Style="{DynamicResource CustomPageChrome}" 
+        Title="" Height="600" Width="800" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+       
+        <Frame   x:Name="Frame" NavigationUIVisibility="Hidden"      Margin="0,3,1,0" Grid.Row="1" >
+
+        </Frame>
+        <!--<WebBrowser Name="myWeb"></WebBrowser>-->
+    </Grid>
+</Window>

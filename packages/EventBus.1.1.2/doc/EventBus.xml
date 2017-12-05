@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EventBus</name>
+    </assembly>
+    <members>
+        <member name="T:EventBus.OrderedEventBus">
+            <summary>
+            The OrderedEventBus class is a simple and fast IEventBus implemention which processes event in the delivery order.
+            </summary>
+            <remarks>If you do not need the event processed in the delivery order, use SimpleEventBus instead.</remarks>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.#ctor(System.Int32)">
+            <summary>
+            The constructor of OrderedEventBus.
+            </summary>
+            <param name="maxPendingEventNumber">The maximum pending event number which does not yet dispatched</param>
+        </member>
+        <member name="P:EventBus.OrderedEventBus.PendingEventNumber">
+            <summary>
+            The pending event number which does not yet dispatched.
+            </summary>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.Post(System.Object,System.TimeSpan)">
+            <summary>
+            Post an event to the event bus, dispatched after the specific time.
+            </summary>
+            <remarks>If you do not need the event processed in the delivery order, use SimpleEventBus instead.</remarks>
+            <param name="eventObject">The event object</param>
+            <param name="dispatchDelay">The delay time before dispatch this event</param>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.Register(System.Object)">
+            <summary>
+            Register event handlers in the handler instance.
+            One handler instance may have many event handler methods.
+            These methods have EventSubscriberAttribute contract and exactly one parameter.
+            </summary>
+            <remarks>If you do not need the event processed in the delivery order, use SimpleEventBus instead.</remarks>
+            <param name="handler">The instance of event handler class</param>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.Deregister(System.Object)">
+            <summary>
+            Deregister event handlers belong to the handler instance.
+            One handler instance may have many event handler methods.
+            These methods have EventSubscriberAttribute contract and exactly one parameter.
+            </summary>
+            <param name="handler">The instance of event handler class</param>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.GetDefaultEventBus">
+            <summary>
+            Get the global OrderedEventBus instance.
+            </summary>
+            <returns>The global OrderedEventBus instance</returns>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.Dispose">
+            <summary>
+            Releases resources used by the <see cref="T:EventBus.OrderedEventBus"/> instance.
+            </summary>
+        </member>
+        <member name="M:EventBus.OrderedEventBus.Dispose(System.Boolean)">
+            <summary>
+            Releases resources used by the <see cref="T:EventBus.OrderedEventBus"/> instance.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:EventBus.SimpleEventBus">
+            <summary>
+            The SimpleEventBus class is a simple and fast IEventBus implemention.
+            </summary>
+            <remarks>
+            <para>The event may be processed out of the delivery order under heavy load.</para>
+            <para>If you need the event processed in the delivery order, use OrderedEventBus instead.</para>
+            </remarks>
+        </member>
+        <member name="M:EventBus.SimpleEventBus.GetDefaultEventBus">
+            <summary>
+            Get the global SimpleEventBus instance.
+            </summary>
+            <returns>The global SimpleEventBus instance</returns>
+        </member>
+        <member name="P:EventBus.SimpleEventBus.PendingEventNumber">
+            <summary>
+            The pending event number which does not yet dispatched.
+            </summary>
+        </member>
+        <member name="M:EventBus.SimpleEventBus.#ctor(System.Int64)">
+            <summary>
+            The constructor of SimpleEventBus.
+            </summary>
+            <param name="maxPendingEventNumber">The maximum pending event number which does not yet dispatched</param>
+        </member>
+        <member name="M:EventBus.SimpleEventBus.Post(System.Object,System.TimeSpan)">
+            <summary>
+            Post an event to the event bus, dispatched after the specific time.
+            </summary>
+            <remarks>
+            <para>The event may be processed out of the delivery order under heavy load.</para>
+            <para>If you need the event processed in the delivery order, use OrderedEventBus instead.</para>
+            </remarks>
+            <param name="eventObject">The event object</param>
+            <param name="dispatchDelay">The delay time before dispatch this event</param>
+        </member>
+        <member name="M:EventBus.SimpleEventBus.Register(System.Object)">
+             <summary>
+             Register event handlers in the handler instance.
+            
+             One handler instance may have many event handler methods.
+             These methods have EventSubscriberAttribute contract and exactly one parameter.
+             </summary>
+             <remarks>
+             <para>The handler may be invoked out of the event delivery order under heavy load.</para>
+             <para>If you need the event processed in the delivery order, use OrderedEventBus instead.</para>
+             </remarks>
+             <param name="handler">The instance of event handler class</param>
+        </member>
+        <member name="M:EventBus.SimpleEventBus.Deregister(System.Object)">
+             <summary>
+             Deregister event handlers belong to the handler instance.
+            
+             One handler instance may have many event handler methods.
+             These methods have EventSubscriberAttribute contract and exactly one parameter.
+             </summary>
+             <param name="handler">The instance of event handler class</param>
+        </member>
+        <member name="T:EventBus.EventSubscriberAttribute">
+            <summary>
+            The attribute class of the event handler.
+            If a method have this attribue contract and exactly one parameter, then it's event handler.
+            </summary>
+        </member>
+        <member name="T:EventBus.IEventBus">
+            <summary>
+            The event bus interface.
+            </summary>
+        </member>
+        <member name="M:EventBus.IEventBus.Post(System.Object,System.TimeSpan)">
+            <summary>
+            Post an event to the event bus, dispatched after the specific time.
+            </summary>
+            <param name="eventObject">The event object</param>
+            <param name="dispatchDelay">The delay time before dispatch this event</param>
+        </member>
+        <member name="M:EventBus.IEventBus.Register(System.Object)">
+             <summary>
+             Register event handlers in the handler instance.
+            
+             One handler instance may have many event handler methods.
+             These methods have EventSubscriberAttribute contract and exactly one parameter.
+             </summary>
+             <param name="handler">The instance of event handler class</param>
+        </member>
+        <member name="M:EventBus.IEventBus.Deregister(System.Object)">
+             <summary>
+             Deregister event handlers belong to the handler instance.
+            
+             One handler instance may have many event handler methods.
+             These methods have EventSubscriberAttribute contract and exactly one parameter.
+             </summary>
+             <param name="handler">The instance of event handler class</param>
+        </member>
+    </members>
+</doc>

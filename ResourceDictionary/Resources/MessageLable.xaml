@@ -1,0 +1,647 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:System="clr-namespace:System;assembly=mscorlib"
+                        xmlns:local="clr-namespace:ResourceDictionary.Resources"
+                    xmlns:gif="http://wpfanimatedgif.codeplex.com"
+                    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                    xmlns:converters="clr-namespace:ResourceDictionary.Converters">
+    <Thickness x:Key="LeftMessageMargin">9,0,0,0</Thickness>
+    <Thickness x:Key="RightMessageMargin">0,0,9,0</Thickness>
+    <System:Double x:Key="MinWidth">28</System:Double>
+    <System:Double x:Key="MinHeight">22</System:Double>
+    <System:Double x:Key="MaxWidth">310</System:Double>
+    <CornerRadius x:Key="MessageCornerRadius">3</CornerRadius>
+    <CornerRadius x:Key="LeftMessageCorner">0,6,6,6</CornerRadius>
+    <CornerRadius x:Key="RightMessageCorner">6,0,6,6</CornerRadius>
+    <converters:CornerRadiusConvertor x:Key="CornerRadiusConvertor"/>
+    <converters:FileImageConvertor x:Key="FileImageConvertor"/>
+    <converters:FileSizeConvertor x:Key="FileSizeConvertor"/>
+    <Style TargetType="{x:Type Label}" x:Key="VoiceMessageLeft">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border   x:Name="border"  BorderBrush="{DynamicResource leftMessageBorderColor}"       CornerRadius="{DynamicResource LeftMessageCorner}"  VerticalAlignment="Top" Margin="{DynamicResource LeftMessageMargin}" Background="{DynamicResource leftMessageColor}" HorizontalAlignment="Left" 
+                                Height="35"  Padding="5" >
+                            <Image Name="gifImage"   gif:ImageBehavior.AnimateInDesignMode = "True"   gif:ImageBehavior.RepeatBehavior = " Forever "  
+                                   Width="{TemplateBinding Width}"    MinWidth="60" MaxWidth="250"
+                                       gif:ImageBehavior.AnimatedSource="pack://application:,,,/ResourceDictionary;Component/Images/Message/Voice.gif"   Stretch="None"
+                                       HorizontalAlignment="Left" VerticalAlignment="Center"  
+                                   gif:ImageBehavior.AutoStart="False" Margin="5,0,0,0"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Label}" x:Key="VoiceMessageRight">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" CornerRadius="{DynamicResource RightMessageCorner}" Background="{DynamicResource rightMessageColor}" 
+                                BorderThickness="1" VerticalAlignment="Top" Margin="{DynamicResource RightMessageMargin}"  HorizontalAlignment="Right"   Height="35" Padding="5" >
+                            <Image Name="gifImage"   gif:ImageBehavior.AnimateInDesignMode = "True"   gif:ImageBehavior.RepeatBehavior = " Forever "  
+                                   Width="{TemplateBinding Width}"    MinWidth="60" MaxWidth="250"
+                                       gif:ImageBehavior.AnimatedSource="pack://application:,,,/ResourceDictionary;Component/Images/Message/VoiceRight.gif"   Stretch="None"
+                                       HorizontalAlignment="Right" VerticalAlignment="Center"  
+                                   gif:ImageBehavior.AutoStart="False" Margin="0,0,5,0"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+ 
+    <!--左侧的对话文字框  老版-->
+    <Style TargetType="{x:Type Label}" x:Key="LeftMessageLable">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" CornerRadius="{DynamicResource MessageCornerRadius}" BorderBrush="{DynamicResource leftMessageColor}" BorderThickness="1" VerticalAlignment="Top" Margin="{DynamicResource LeftMessageMargin}" Background="#D4EDFF" HorizontalAlignment="Left" Padding="5" Width="{Binding Width, ElementName=textBox}" MinHeight="35" Height="{Binding Height, ElementName=textBox}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <TextBox  IsReadOnly="True" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" x:Name="textBox" BorderThickness="0" AcceptsReturn="True" TextWrapping="Wrap" MinWidth="{DynamicResource MinWidth}" MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" VerticalAlignment="Center" HorizontalAlignment="Left" Background="{Binding Background, ElementName=border}" Text="{TemplateBinding Content}" />
+                        </Border>
+                        <Canvas Width="10" Height="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" Background="Transparent">
+                            <Path Stroke="{DynamicResource leftMessageColor}" StrokeThickness="0.5" Fill="{Binding Background, ElementName=border}">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 10,0          L 10,0,0,5          L 0,5,10,10          "/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--右侧的对话文字框 老版-->
+    <Style TargetType="{x:Type Label}" x:Key="RightMessageLable">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" CornerRadius="{DynamicResource MessageCornerRadius}" BorderBrush="{DynamicResource rightMessageColor}" BorderThickness="1" VerticalAlignment="Top" Margin="{DynamicResource RightMessageMargin}" Background="#E7E8E9" HorizontalAlignment="Right" Padding="5" Width="{Binding Width, ElementName=textBox}"  Height="{Binding Height, ElementName=textBox}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <TextBox  Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" IsReadOnly="True" x:Name="textBox" BorderThickness="0" AcceptsReturn="True" TextWrapping="Wrap" MinWidth="{DynamicResource MinWidth}" MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" VerticalAlignment="Center" HorizontalAlignment="Left" Background="{Binding Background, ElementName=border}" Text="{TemplateBinding Content}" />
+                        </Border>
+                        <Canvas Width="10" Height="10" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Background="Transparent" RenderTransformOrigin="11,0.6">
+                            <Path Stroke="{DynamicResource rightMessageColor}" StrokeThickness="0.5" Fill="{Binding Background, ElementName=border}" RenderTransformOrigin="11.867,1.369">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 0,0          L 0,0,10,5          L 10,5,0,10          "/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--公众号名片消息-->
+    <Style TargetType="{x:Type Label}" x:Key="PublicCardMessage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid Cursor="Hand">
+                        <Border x:Name="border"   CornerRadius="{TemplateBinding Tag,Converter={StaticResource CornerRadiusConvertor}}" BorderBrush="#DBDCDE" BorderThickness="1"
+                                VerticalAlignment="Top"   Background="White" HorizontalAlignment="Left" 
+                                Padding="0" Width="230"  Height="70" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <Grid ShowGridLines="False">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="75*"/>
+                                </Grid.RowDefinitions>
+                                <Ellipse  x:Name="EllipseWithImageBrush"  StrokeThickness="{DynamicResource Ellipse_}"  Stroke="#cccccc"  Margin="10,5,0,5" HorizontalAlignment="Center" 
+                 Height="{DynamicResource chartsessionIcoHeight}" Width="{DynamicResource chartSessionIcoWidth}"
+                 VerticalAlignment="Top" Grid.Row="1"  Grid.Column="0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush  x:Name="Ico" ImageSource="{Binding Path=logoPath, Mode=OneWay}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <TextBox  x:Name="textBox" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" 
+                                         TextWrapping="Wrap" Grid.Row="1" Grid.Column="1"   Margin="0,0,0,2" 
+                                          Background="{Binding Background, ElementName=border}" Cursor="Hand"
+                                        VerticalAlignment="Center" HorizontalAlignment="Left"  Width="170"  Height="40"
+                                      VerticalContentAlignment="Center" BorderThickness="0"   Focusable="False"   
+                                        Text="{Binding name}" FontFamily="Microsoft YaHei"  >
+                                    <TextBox.ContextMenu>
+                                        <ContextMenu >
+
+                                        </ContextMenu>
+                                    </TextBox.ContextMenu>
+                                </TextBox>
+                                <Separator Height="1" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2"  Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" />
+                                <TextBlock Grid.Column="0" Grid.Row="0" Text="名片"  Margin="12,0,0,0" VerticalAlignment="Center"
+                                       Foreground="{DynamicResource foreground99}" FontSize="11" HorizontalAlignment="Left" FontFamily="Microsoft YaHei"></TextBlock>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <!--位置消息-->
+    <Style TargetType="{x:Type Label}" x:Key="LocationMessage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid Cursor="Hand">
+                        <Border x:Name="border"   CornerRadius="{TemplateBinding Tag,Converter={StaticResource CornerRadiusConvertor}}" BorderBrush="#DBDCDE" BorderThickness="1"
+                                VerticalAlignment="Top"   Background="White" HorizontalAlignment="Left" 
+                                Padding="0" Width="230"  Height="100" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <Grid ShowGridLines="False">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="75*"/>
+                                </Grid.RowDefinitions>
+                                <Border x:Name="borderImage"   CornerRadius="0,0,6,6"  Grid.Row="1">
+                                    <Border.Background>
+                                        <ImageBrush ImageSource="{Binding Path=BitmapPicture, Mode=OneWay}" Stretch="UniformToFill"/>
+                                    </Border.Background >
+                                    <!--<Image Name="image" Source="{Binding Path=BitmapPicture, Mode=OneWay}" Stretch="UniformToFill"    >
+                                    <Image.OpacityMask>
+                                            <VisualBrush Visual="{Binding ElementName=borderImage}" />
+                                    </Image.OpacityMask>
+                                    </Image>-->
+                                </Border>
+                                <Separator Height="1" Grid.Row="0"  Grid.Column="0"   Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" />
+
+                                <TextBlock  Name="location" Grid.Row="0" Text="{Binding Path=address, Mode=OneWay}"  Margin="12,0,0,0" VerticalAlignment="Center"
+                                       Foreground="{DynamicResource foreground99}" FontSize="11" HorizontalAlignment="Left" FontFamily="Microsoft YaHei">
+                                    <TextBlock.ContextMenu>
+                                        <ContextMenu >
+
+                                        </ContextMenu>
+                                    </TextBlock.ContextMenu>
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--名片消息-->
+    <Style TargetType="{x:Type Label}" x:Key="VcardMessage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid Cursor="Hand">
+                        <Border x:Name="border"   CornerRadius="{TemplateBinding Tag,Converter={StaticResource CornerRadiusConvertor}}" BorderBrush="#DBDCDE" BorderThickness="1"
+                                VerticalAlignment="Top"   Background="White" HorizontalAlignment="Left" 
+                                Padding="0" Width="230"  Height="70" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <Grid ShowGridLines="False">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="75*"/>
+                                </Grid.RowDefinitions>
+                                <Ellipse  x:Name="EllipseWithImageBrush"  StrokeThickness="{DynamicResource Ellipse_}"  Stroke="#cccccc"  Margin="10,5,0,5" HorizontalAlignment="Center" 
+                 Height="{DynamicResource chartsessionIcoHeight}" Width="{DynamicResource chartSessionIcoWidth}"
+                 VerticalAlignment="Top" Grid.Row="1"  Grid.Column="0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush  x:Name="Ico" ImageSource="{Binding Path=AvatarPath, Mode=OneWay}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <TextBox  x:Name="textBox" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" 
+                                         TextWrapping="Wrap" Grid.Row="1" Grid.Column="1"   Margin="0,0,0,2" 
+                                          Background="{Binding Background, ElementName=border}" Cursor="Hand"
+                                        VerticalAlignment="Center" HorizontalAlignment="Left"  Width="170"  Height="40"
+                                      VerticalContentAlignment="Center" BorderThickness="0"   Focusable="False"   
+                                        Text="{Binding nickname}" FontFamily="Microsoft YaHei"  >
+                                    <TextBox.ContextMenu>
+                                        <ContextMenu >
+
+                                        </ContextMenu>
+                                    </TextBox.ContextMenu>
+                                </TextBox>
+                                <Separator Height="1" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2"  Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" />
+                                <TextBlock Grid.Column="0" Grid.Row="0" Text="名片"  Margin="12,0,0,0" VerticalAlignment="Center"
+                                       Foreground="{DynamicResource foreground99}" FontSize="11" HorizontalAlignment="Left" FontFamily="Microsoft YaHei"></TextBlock>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--文件消息-->
+    <Style TargetType="{x:Type Label}" x:Key="FileMessage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid Cursor="Hand">
+                        <Border x:Name="border"   CornerRadius="{TemplateBinding Tag,Converter={StaticResource CornerRadiusConvertor}}" BorderBrush="#DBDCDE" BorderThickness="1"
+                                VerticalAlignment="Top"   Background="White" HorizontalAlignment="Left" 
+                                Padding="0" Width="250"  Height="80" ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <Grid ShowGridLines="False">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="55*"/>
+                                    <RowDefinition Height="45*"/>
+                                </Grid.RowDefinitions>
+                                <Image Name="image"  Source="{Binding fileName,Converter={StaticResource FileImageConvertor}}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0"   Height="50" 
+                                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBox  x:Name="textBox" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" 
+                                         TextWrapping="Wrap" Grid.Row="0" Grid.Column="1"   Margin="5,0,0,2" 
+                                          Background="{Binding Background, ElementName=border}" Cursor="Hand"
+                                        VerticalAlignment="Bottom" HorizontalAlignment="Left"  Width="170"  Height="40"
+                                      VerticalContentAlignment="Bottom" BorderThickness="0"   Focusable="False"   
+                                        Text="{Binding fileName}" FontFamily="Microsoft YaHei"  >
+                                    <TextBox.ContextMenu>
+                                        <ContextMenu >
+                                             
+                                        </ContextMenu>
+                                    </TextBox.ContextMenu>
+                                </TextBox>
+                                <Label Grid.Column="1" Grid.Row="1" Content="{Binding fileSize,Converter={StaticResource FileSizeConvertor}}" VerticalAlignment="Top" Margin="5,0,0,0"
+                                       Foreground="{DynamicResource foreground99}" FontSize="12" HorizontalAlignment="Left" FontFamily="Microsoft YaHei"></Label>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type Label}" x:Key="LeftAmMessage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border"  BorderBrush="{DynamicResource leftMessageColor}"       CornerRadius="{DynamicResource LeftMessageCorner}"  VerticalAlignment="Top" Margin="8.5,5,0,0" Background="{DynamicResource leftMessageColor}" HorizontalAlignment="Left" Padding="5" Width="{Binding Width, ElementName=textBox}" MinHeight="35" Height="{Binding Height, ElementName=textBox}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <TextBlock x:Name="textBox" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" 
+                                       MinWidth="{DynamicResource MinWidth}" TextWrapping="Wrap"
+                                       MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                       Background="{Binding Background, ElementName=border}" 
+                                       Text="{TemplateBinding Content}" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--右侧的对话文字框-->
+    <Style TargetType="{x:Type Label}" x:Key="RightAmMessage">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" CornerRadius="{DynamicResource RightMessageCorner}" BorderBrush="{DynamicResource rightMessageColor}" BorderThickness="1" VerticalAlignment="Top" Margin="0,5,9,0" Background="{DynamicResource rightMessageColor}" HorizontalAlignment="Right" Padding="5" Width="{Binding Width, ElementName=textBox}"  Height="{Binding Height, ElementName=textBox}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <TextBlock  x:Name="textBox" Foreground="{DynamicResource foreground33}" FontSize="{DynamicResource fontsize14}" 
+                                        MinWidth="{DynamicResource MinWidth}" TextWrapping="Wrap"
+                                        MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" 
+                                        VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                        Background="{Binding Background, ElementName=border}" 
+                                        Text="{TemplateBinding Content}" />
+                        </Border>
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--左侧的对话文字框-->
+    <Style TargetType="{x:Type Label}" x:Key="LeftMessageLableNew">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <TextBlock  x:Name="textBlock" Foreground="{DynamicResource foreground33}" 
+                                    FontSize="{DynamicResource fontsize14}"
+                                    Padding="8,5,8,5"
+                                        MinWidth="{DynamicResource MinWidth}" TextWrapping="Wrap"
+                                        MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" 
+                                        VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                        Background="{Binding Background, ElementName=border}" 
+                                        Visibility="Hidden"/>
+                        <Border x:Name="border"  BorderBrush="{DynamicResource leftMessageBorderColor}"   BorderThickness="0.1"    CornerRadius="{DynamicResource LeftMessageCorner}"  VerticalAlignment="Top" 
+                                Margin="{DynamicResource LeftMessageMargin}" Background="{DynamicResource leftMessageColor}" HorizontalAlignment="Left" 
+                                Padding="8,5,8,5" Width="{Binding Width, ElementName=textBox}" MinHeight="35" 
+                                Height="{Binding Height, ElementName=textBox}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <RichTextBox x:Name="textBox" Foreground="{DynamicResource foreground33}"
+                                         IsReadOnly="True" BorderThickness="0"
+                                         FontSize="{DynamicResource fontsize14}" 
+                                       MinWidth="{DynamicResource MinWidth}"
+                                       MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" 
+                                       HorizontalContentAlignment="Stretch"
+                                       Background="{Binding Background, ElementName=border}" 
+                                        >
+                                <RichTextBox.Document>
+                                    <FlowDocument PagePadding="0" PageWidth="{Binding ElementName=textBlock ,Path=ActualWidth}"></FlowDocument>
+                                </RichTextBox.Document>
+                                <!--<RichTextBox.ContextMenu>
+                                    <ContextMenu/>
+                                </RichTextBox.ContextMenu>-->
+                            </RichTextBox>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--右侧的对话文字框-->
+    <Style TargetType="{x:Type Label}" x:Key="RightMessageLableNew">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <TextBlock  x:Name="textBlock" Foreground="{DynamicResource foreground33}"
+                                    FontSize="{DynamicResource fontsize14}" 
+                                        MinWidth="{DynamicResource MinWidth}" TextWrapping="Wrap"
+                                        MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" 
+                                        VerticalAlignment="Center" HorizontalAlignment="Left" 
+                                        Background="{Binding Background, ElementName=border}"
+                                    Padding="8,5,8,5"
+                                        Visibility="Hidden" />
+                        <Border x:Name="border" CornerRadius="{DynamicResource RightMessageCorner}" 
+                                BorderBrush="{DynamicResource rightMessageColor}" BorderThickness="1" 
+                                VerticalAlignment="Top" Margin="{DynamicResource RightMessageMargin}" Background="{DynamicResource rightMessageColor}" 
+                                HorizontalAlignment="Stretch" Padding="8,5,8,5" Width="Auto"  
+                                Height="Auto" 
+                                ScrollViewer.HorizontalScrollBarVisibility="Hidden" 
+                                ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <RichTextBox  x:Name="textBox" Foreground="{DynamicResource foreground33}" 
+                                          IsReadOnly="True" BorderThickness="0"
+                                          FontSize="{DynamicResource fontsize14}"
+                                          Padding="0"
+                                        MinWidth="{DynamicResource MinWidth}"
+                                        MaxWidth="{DynamicResource MaxWidth}" MinHeight="{DynamicResource MinHeight}" 
+                                        HorizontalContentAlignment="Stretch"
+                                        Background="{Binding Background, ElementName=border}" 
+                                         >
+
+                                <RichTextBox.Document>
+                                    <FlowDocument PagePadding="0" PageWidth="{Binding ElementName=textBlock ,Path=ActualWidth}"></FlowDocument>
+                                </RichTextBox.Document>
+                                <!--<RichTextBox.ContextMenu>
+                                    <ContextMenu >
+
+                                    </ContextMenu>
+                                </RichTextBox.ContextMenu>-->
+                            
+                            </RichTextBox>
+                        </Border>
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--左侧的对话图片框 老版-->
+    <Style TargetType="{x:Type Label}" x:Key="LeftImageMessageLable">
+        <!--<Setter Property="Width" Value="{TemplateBinding Width}"></Setter>
+        <Setter Property="Height" Value="{TemplateBinding Height}"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+
+                        <Border x:Name="border" CornerRadius="{DynamicResource MessageCornerRadius}" BorderBrush="{DynamicResource leftMessageColor}" BorderThickness="1" VerticalAlignment="Top" Margin="{DynamicResource LeftMessageMargin}" Background="#D4EDFF" HorizontalAlignment="Left" Padding="2" Width="{Binding Width, ElementName=image}" Height="{Binding Height, ElementName=image}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <Image x:Name="image" Width="auto" Height="auto" Stretch="None"  HorizontalAlignment="Center" VerticalAlignment="Center"  Source="{TemplateBinding Tag}"   UseLayoutRounding="True" MinWidth="50" MinHeight="50"/>
+                            <!--MaxWidth="230" MaxHeight="230" MinWidth="50" MinHeight="50"-->
+                        </Border>
+                        <Canvas Width="10" Height="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" Background="Transparent">
+                            <Path Stroke="{DynamicResource leftMessageColor}" StrokeThickness="0.5" Fill="{Binding Background, ElementName=border}">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 10,0          L 10,0,0,5          L 0,5,10,10          "/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--右侧的对话图片框 老版-->
+    <Style TargetType="{x:Type Label}" x:Key="RightImageMessageLable">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border x:Name="border" CornerRadius="{DynamicResource MessageCornerRadius}" BorderBrush="{DynamicResource rightMessageColor}" BorderThickness="1" VerticalAlignment="Top" Margin="{DynamicResource RightMessageMargin}" Background="#E7E8E9" HorizontalAlignment="Right" Padding="2" Width="{Binding Width, ElementName=image}" MinHeight="35" Height="{Binding Height, ElementName=image}" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <Image x:Name="image" Width="auto" Height="auto" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{TemplateBinding Tag}"    MinWidth="50" MinHeight="50" UseLayoutRounding="True"/>
+                        </Border>
+                        <Canvas Width="10" Height="10" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,0,0" Background="Transparent" RenderTransformOrigin="11,0.6">
+                            <Path Stroke="{DynamicResource rightMessageColor}" StrokeThickness="0.5" Fill="{Binding Background, ElementName=border}" RenderTransformOrigin="11.867,1.369">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 0,0          L 0,0,10,5          L 10,5,0,10          "/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--视频框-->
+    <Style TargetType="{x:Type Label}" x:Key="VideoMessageLable">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border Name="imgBorder1"  BorderBrush="#DBDCDE"   BorderThickness="1"   
+                               CornerRadius="{TemplateBinding Tag,Converter={StaticResource CornerRadiusConvertor}}">
+                            <Grid >
+                               
+                                <Border Name="imgBorder"    
+                                            Background="White"    CornerRadius="{TemplateBinding Tag,Converter={StaticResource CornerRadiusConvertor}}" />
+                                <Image Name="image" Source="{Binding  firstFrameImage}" Stretch="Fill"   MinWidth="150" MinHeight="150"  >
+                                    <Image.OpacityMask>
+                                        <VisualBrush Visual="{Binding ElementName=imgBorder, Mode=OneTime}" />
+                                    </Image.OpacityMask>
+                                </Image>
+                                <Label  VerticalAlignment="Bottom" Content="{Binding fileSize,Converter={StaticResource FileSizeConvertor}}"
+                                       Foreground="White" FontSize="12" HorizontalAlignment="Left" FontFamily="Microsoft YaHei"></Label>
+                                <!--<Label  Content="{Binding videoLength}" VerticalAlignment="Bottom"
+                                       Foreground="White" FontSize="12" HorizontalAlignment="Right" FontFamily="Microsoft YaHei"></Label>-->
+                            </Grid>
+                        </Border>
+                        <!--<Image HorizontalAlignment="Center"  VerticalAlignment="Center"  x:Name="Ico"  Panel.ZIndex="99"
+                                       Source="pack://application:,,,/ResourceDictionary;Component/Images/Play.png"/>-->
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--左侧的对话图片框-->
+    <Style TargetType="{x:Type Label}" x:Key="LeftImageMessageLableNew">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border Name="bdGoodDetail"  BorderBrush="#DBDCDE"   BorderThickness="1"   CornerRadius="{DynamicResource LeftMessageCorner}">
+                            <Grid>
+                                <Border Name="imgBorder"  Background="White"    CornerRadius="{DynamicResource LeftMessageCorner}" />
+                                <Image Name="image" Source="{TemplateBinding Tag}" Stretch="Fill"   MinWidth="30" MinHeight="30"  >
+                                    <Image.OpacityMask>
+                                        <VisualBrush Visual="{Binding ElementName=imgBorder, Mode=OneTime}" />
+                                    </Image.OpacityMask>
+                                </Image>
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--右侧的对话图片框-->
+    <Style TargetType="{x:Type Label}" x:Key="RightImageMessageLableNew">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+                        <Border Name="bdGoodDetail"  BorderBrush="#DBDCDE"   BorderThickness="1"   CornerRadius="{DynamicResource RightMessageCorner}">
+                            <Grid>
+                                <Border Name="imgBorder"  Background="White"    CornerRadius="{DynamicResource RightMessageCorner}" />
+                                <Image  Name="image" Source="{TemplateBinding Tag}" Stretch="Fill"  MinWidth="30" MinHeight="30"  >
+                                    <Image.OpacityMask>
+                                        <VisualBrush Visual="{Binding ElementName=imgBorder, Mode=OneTime}" />
+                                    </Image.OpacityMask>
+                                </Image>
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--自定义ContextMenu的外观样式-->
+    <Style x:Key="ContextMenu" TargetType="{x:Type ContextMenu}">
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Grid.IsSharedSizeScope" Value="True"/>
+        <Setter Property ="Focusable" Value="False"/>
+        <Setter Property="HasDropShadow" Value="True"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Width" Value="74"/>
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="StaysOpen" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ContextMenu}">
+                    <Border  CornerRadius="{DynamicResource MessageCornerRadius}"
+                      x:Name="Border"
+                      Background="White"
+                      BorderBrush="#CCCC"
+                      BorderThickness="1" >
+                        <StackPanel IsItemsHost="True"
+                        KeyboardNavigation.DirectionalNavigation="Cycle"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" Value="true">
+                            <Setter TargetName="Border" Property="Padding" Value="0,3,0,3"/>
+                            <Setter TargetName="Border" Property="CornerRadius" Value="{DynamicResource MessageCornerRadius}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type MenuItem}">
+        <!--<Setter Property="FontFamily" Value="Microsoft YaHei" />-->
+
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="#333333" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type MenuItem}">
+                    <Border Margin="3,3,3,3"  >
+                        <Border.Background>
+                            <SolidColorBrush x:Name="MyAnimatedBrushBackground" Color="Transparent" />
+                        </Border.Background>
+                        <StackPanel Orientation="Vertical">
+
+                            <ContentPresenter ContentSource="Header"  HorizontalAlignment="Center" VerticalAlignment="Center" Tag="Hidden"/>
+                            <!-- <Separator Height="1" 
+              Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" Visibility="{Binding Tag, ElementName=Header}" />-->
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MyAnimatedBrushBackground" Storyboard.TargetProperty="Color">
+                                            <LinearColorKeyFrame Value="Transparent" KeyTime="00:00:00.0020000" />
+                                            <LinearColorKeyFrame Value="#497fe9" KeyTime="00:00:00.0320000" />
+                                        </ColorAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </MultiTrigger.EnterActions>
+                            <MultiTrigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="MyAnimatedBrushBackground" Storyboard.TargetProperty="Color">
+                                            <LinearColorKeyFrame Value="#497fe9" KeyTime="00:00:00.0020000" />
+                                            <LinearColorKeyFrame Value="Transparent" KeyTime="00:00:00.0320000" />
+                                        </ColorAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </MultiTrigger.ExitActions>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--通知消息文字框-->
+    <Style TargetType="{x:Type Label}" x:Key="NoticeMessageLable">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Label}">
+                    <Grid>
+
+                        <Border  x:Name="border" CornerRadius="{DynamicResource MessageCornerRadius}" BorderBrush="#d9d9d9"  VerticalAlignment="Center"  Background="#d9d9d9" HorizontalAlignment="Center" Padding="5" Width="{Binding Width, ElementName=textBox}"  Height="{Binding Height, ElementName=textBox}" >
+                            <TextBox  FontSize="12" Foreground="#ffffff"  x:Name="textBox" BorderThickness="0" 
+                                      AcceptsReturn="True" TextWrapping="Wrap" MinHeight="20" MinWidth="116" 
+                                      MaxWidth="230" VerticalContentAlignment="Center"  VerticalAlignment="Center" 
+                                      HorizontalAlignment="Center"  IsReadOnly="True"  
+                                      Background="{Binding Background, ElementName=border}" Text="{TemplateBinding Content}" />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Thickness x:Key="SeparatorMargin">-2,0,-2,0</Thickness>
+
+
+
+
+
+
+</ResourceDictionary>

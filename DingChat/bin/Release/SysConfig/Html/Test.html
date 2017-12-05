@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>技术测试用画面</title>
+</head>
+<body>
+    <input type="button" value="重新加载" onclick="reload()" /><br />
+    <input type="button" value="关闭画面" onclick="closePopWebPageWindow()" /><br />
+    <input type="button" value="发送网盘文件测试(批量)" onclick="sendDiskFileMessage()" /><br />
+    <input type="button" value="显示画面参数" onclick="asdf()" /><br />
+    <textarea id="logMsg" style="width:100%;height:200px;"></textarea>
+</body>
+</html>
+<script type="text/javascript">
+    
+    var asdf = function () {
+        document.getElementById("logMsg").innerHTML = "宽度：" + document.documentElement.clientWidth + "，高度：" + document.documentElement.clientHeight;
+    };
+    window.onresize = asdf;
+
+    
+    function reload() {
+        window.location.reload();
+    }
+
+  
+   
+    function closePopWebPageWindow() {
+        window.external.closePopWebPageWindow();
+    }
+    
+    function sendDiskFileMessage() {
+        var jsonArray = "[";
+        jsonArray += "{\"fileStorageId\": 1, \"filename\": \"文件1.txt\", \"filesize\": 11}";
+        jsonArray += ",{\"fileStorageId\": 2, \"filename\": \"文件2.txt\", \"filesize\": 22}";
+        jsonArray += ",{\"fileStorageId\": 3, \"filename\": \"文件3.txt\", \"filesize\": 33}";
+        jsonArray += "]";
+        window.external.sendDiskFileMessage(jsonArray);
+
+    }
+</script>

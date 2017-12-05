@@ -1,0 +1,9 @@
+﻿<Window x:Class="cn.lds.chatcore.pcw.Views.Windows.EditDesc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="设置签名" Tag="输入签名"   Height="220"
+        Style="{DynamicResource CustomWindowChrome}"  WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+
+    </Grid>
+</Window>

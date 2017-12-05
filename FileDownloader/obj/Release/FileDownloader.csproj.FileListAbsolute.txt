@@ -1,0 +1,4 @@
+F:\鼎sass\FileDownloader\bin\Release\FileDownloader.dll
+F:\鼎sass\FileDownloader\bin\Release\FileDownloader.pdb
+F:\鼎sass\FileDownloader\obj\Release\FileDownloader.dll
+F:\鼎sass\FileDownloader\obj\Release\FileDownloader.pdb

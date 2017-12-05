@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="cn.lds.chatcore.pcw.Views.Control.PersonGroupControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              FontFamily="Microsoft YaHei" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  Background="Transparent"
+             d:DesignHeight="300" d:DesignWidth="300" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key='ListViewSource' 
+                          Source="{Binding MyListViewItems,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}">
+        </CollectionViewSource>
+
+    </UserControl.Resources>
+    <Grid >
+        <ScrollViewer x:Name="ScrollViewer1"   HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch"
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Template="{StaticResource MyScrollViewerControlTemplate}" >
+            <ListBox Name="ListBoxMembers" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" 
+                        ItemsSource="{Binding Source={StaticResource ListViewSource}}" 
+                      Height="auto" Margin="30,0,30,0"  MouseLeftButtonUp="ListBoxMembers_MouseLeftButtonUp" >
+                <ListBox.Template>
+                    <ControlTemplate TargetType="{x:Type ListBox}">
+                        <!--<ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled">-->
+                        <WrapPanel Orientation="Horizontal" Margin="4,0,4,0" IsItemsHost="True" />
+                        <!--</ScrollViewer>-->
+                    </ControlTemplate>
+                </ListBox.Template>
+                <ListBox.ItemContainerStyle>
+                    <Style  TargetType="ListBoxItem">
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="Width" Value="auto"/>
+                        <Setter Property="Height" Value="auto"/>
+                        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+                        <Setter Property="Margin" Value="24,10,0,10"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                    <Grid Cursor="Hand"  Margin="0,0,0,0" >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="45"/>
+                                            <RowDefinition Height="20"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Border Grid.Row="0" Name="EllipseWithImageBrush"  BorderBrush="{DynamicResource AvatarBorderBrush}"   BorderThickness="{DynamicResource AvatarThickness}"  Margin="0"  HorizontalAlignment="Center"
+                              Height="45" Width="45"  VerticalAlignment="Center"  Grid.Column="0"  CornerRadius="{DynamicResource AvatarCornerRadius}"   UseLayoutRounding="True">
+                                            <Grid>
+                                                <Border Name="imgBorder"  Background="White"    CornerRadius="{DynamicResource AvatarCornerRadius}" />
+                                                <Image Name="Ico" Source="{Binding Path=AvatarPath, Mode=OneWay}" Stretch="Fill"  >
+                                                    <Image.OpacityMask>
+                                                        <VisualBrush Visual="{Binding ElementName=imgBorder, Mode=OneTime}" />
+                                                    </Image.OpacityMask>
+                                                </Image>
+                                            </Grid>
+                                        </Border>
+                                        <TextBlock FontSize="12" Width="48" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                                   Foreground="{DynamicResource foreground33}" Text="{Binding Path=Name, Mode=OneWay}" Margin="0,0,0,0" Grid.Row="1"/>
+
+                                    </Grid>
+
+                                </ControlTemplate>
+
+                            </Setter.Value>
+                        </Setter>
+                        <!-- 设置触发器 -->
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" Value="Transparent"/>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="true">
+                                <Setter Property="Background" Value="Transparent"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

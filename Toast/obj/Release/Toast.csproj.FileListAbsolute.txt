@@ -1,0 +1,11 @@
+F:\鼎sass\Toast\bin\Release\Toast.dll
+F:\鼎sass\Toast\bin\Release\Toast.pdb
+F:\鼎sass\Toast\obj\Release\Toast.g.cs
+F:\鼎sass\Toast\obj\Release\Toast_MarkupCompile.cache
+F:\鼎sass\Toast\obj\Release\Toast_MarkupCompile.lref
+F:\鼎sass\Toast\obj\Release\Toast.baml
+F:\鼎sass\Toast\obj\Release\Toast.g.resources
+F:\鼎sass\Toast\obj\Release\Toast.Properties.Resources.resources
+F:\鼎sass\Toast\obj\Release\Toast.csproj.GenerateResource.Cache
+F:\鼎sass\Toast\obj\Release\Toast.dll
+F:\鼎sass\Toast\obj\Release\Toast.pdb

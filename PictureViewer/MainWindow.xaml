@@ -1,0 +1,103 @@
+﻿<Window x:Class="PictureViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="400" Height="400"
+        AllowDrop="True"     WindowStyle="None" ResizeMode="NoResize" BorderThickness="1" BorderBrush="#cccccc"
+        Title="图片查看器" Loaded="Window_Loaded" 
+        Icon="{DynamicResource system_common_pageIco}"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        SizeChanged="Window_SizeChanged" DragEnter="Window_DragEnter" Drop="Window_Drop" WindowStartupLocation="CenterScreen"
+        >
+ 
+
+    <Grid x:Name="mainGrid" Margin="0,0,0,0" >
+        <Grid.Resources>
+            <TransformGroup x:Key="TfGroup">
+                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                <TranslateTransform X="0" Y="0"/>
+                <RotateTransform CenterX="0" CenterY="0"></RotateTransform>
+            </TransformGroup>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38"></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition Height="37"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border  Grid.Row="2" BorderBrush="#cccccc" BorderThickness="0 1 0 0" />
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="x"  HorizontalAlignment="Right"  Style="{StaticResource xButtonStyle}" VerticalAlignment="Top" HorizontalContentAlignment="Right"  Click="x_Click" Grid.Column="3" />
+            <Button x:Name="tomax"  HorizontalAlignment="Right"  Style="{DynamicResource tomaxButtonStyle}" VerticalAlignment="Top"   Click="tomax_Click"  Grid.Column="2" />
+            <Button x:Name="frommax"  HorizontalAlignment="Right" Style="{DynamicResource restoreButtonStyle}" VerticalAlignment="Top"  Click="frommax_Click"  Grid.Column="2" Visibility="Collapsed"  />
+            <Button x:Name="__"  HorizontalAlignment="Right"  Style="{DynamicResource -ButtonStyle}" VerticalAlignment="Top"  Click="___Click"  Grid.Column="1"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Name="gridMain"  Background="Transparent" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"   />
+                <ColumnDefinition />
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer x:Name="mainScrollv" HorizontalScrollBarVisibility="Disabled" 
+                  PreviewMouseWheel="ContentControl_MouseWheel"     VerticalScrollBarVisibility="Disabled" Cursor="SizeAll" Margin="10,0,10,0" Focusable="False" Grid.Column="0" Grid.ColumnSpan="3">
+                <ContentControl 
+                            x:Name="ContentControl"
+                            MouseWheel="ContentControl_MouseWheel"
+                            MouseMove="ContentControl_MouseMove"
+                            MouseLeftButtonDown="ContentControl_MouseLeftButtonDown"
+                            MouseLeftButtonUp="ContentControl_MouseLeftButtonUp"
+                            HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image x:Name="IMG" Width="auto" Height="auto"  RenderTransform="{StaticResource TfGroup}" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+
+                </ContentControl>
+            </ScrollViewer>
+
+            <Grid  Grid.Column="0"   PreviewMouseWheel="ContentControl_MouseWheel" Background="Transparent" MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave"  VerticalAlignment="Stretch" >
+                <Button  x:Name="BtnPre"   Grid.Column="0" Visibility="Hidden"  Click="BtnPre_Click" Style="{DynamicResource ImageButton}"     HorizontalAlignment="Left"    VerticalAlignment="Center"  Height="30" Width="30">
+                    <Image   Margin="0"  Source="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Left.png" Stretch="Fill" Width="30" Height="30"/>
+                </Button>
+            </Grid>
+
+            <Grid  Grid.Column="2"    PreviewMouseWheel="ContentControl_MouseWheel" Background="Transparent" MouseEnter="BorderR_MouseEnter" MouseLeave="BorderR_MouseLeave"   VerticalAlignment="Stretch"  >
+                <Button  x:Name="BtnNext"  Visibility="Hidden"  Click="BtnNext_Click" Style="{DynamicResource ImageButton}"      HorizontalAlignment="Right"    VerticalAlignment="Center" Height="30" Width="30">
+                    <Image   Margin="0" Source="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Right.png" Stretch="Fill" Width="30" Height="30"/>
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Separator Height="1" Grid.Row="0"  Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="-5,0,-5,0" />
+
+        <Grid Grid.Row="2"  MaxWidth="400" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button  x:Name="BtnZoomIn" Visibility="Visible"  Click="BtnZoomIn_Click" Style="{DynamicResource BigButtonStyle}"  Grid.Column="2"    HorizontalAlignment="Center"     VerticalAlignment="Center" >
+            
+            </Button>
+            <Button  x:Name="BtnZoomOut"    Visibility="Visible"  Click="BtnZoomOut_Click" Style="{DynamicResource SmallButtonStyle}"   Grid.Column="3"    HorizontalAlignment="Center"     VerticalAlignment="Center">
+            
+            </Button>
+            <Button  x:Name="BtnRotate"    Visibility="Visible"  Click="BtnRotate_Click" Style="{DynamicResource RotateButtonStyle}"   Grid.Column="4"    HorizontalAlignment="Center"    VerticalAlignment="Center" >
+             
+            </Button>
+            <Button  x:Name="BtnSaveImg"  Visibility="Visible" Style="{DynamicResource DownloadButtonStyle}"   Grid.Column="5"    HorizontalAlignment="Center"  Click="BtnSaveImg_Click"  VerticalAlignment="Center" >
+              
+            </Button>
+        </Grid>
+
+
+    </Grid>
+</Window>

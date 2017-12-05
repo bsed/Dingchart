@@ -1,0 +1,79 @@
+.TH "EventBus.IEventBus" 3 "Thu May 5 2016" "Version 1.1.2" "EventBus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EventBus.IEventBus \- The event bus interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBEventBus\&.OrderedEventBus\fP, and \fBEventBus\&.SimpleEventBus\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBPost\fP (object eventObject, TimeSpan dispatchDelay)"
+.br
+.RI "\fIPost an event to the event bus, dispatched after the specific time\&. \fP"
+.ti -1c
+.RI "void \fBRegister\fP (object handler)"
+.br
+.RI "\fIRegister event handlers in the handler instance\&. \fP"
+.ti -1c
+.RI "void \fBDeregister\fP (object handler)"
+.br
+.RI "\fIDeregister event handlers belong to the handler instance\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+The event bus interface\&. 
+
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void EventBus\&.IEventBus\&.Deregister (object handler)"
+
+.PP
+Deregister event handlers belong to the handler instance\&. One handler instance may have many event handler methods\&. These methods have \fBEventSubscriberAttribute\fP contract and exactly one parameter\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhandler\fP The instance of event handler class
+.RE
+.PP
+
+.PP
+Implemented in \fBEventBus\&.SimpleEventBus\fP, and \fBEventBus\&.OrderedEventBus\fP\&.
+.SS "void EventBus\&.IEventBus\&.Post (object eventObject, TimeSpan dispatchDelay)"
+
+.PP
+Post an event to the event bus, dispatched after the specific time\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIeventObject\fP The event object
+.br
+\fIdispatchDelay\fP The delay time before dispatch this event
+.RE
+.PP
+
+.PP
+Implemented in \fBEventBus\&.SimpleEventBus\fP, and \fBEventBus\&.OrderedEventBus\fP\&.
+.SS "void EventBus\&.IEventBus\&.Register (object handler)"
+
+.PP
+Register event handlers in the handler instance\&. One handler instance may have many event handler methods\&. These methods have \fBEventSubscriberAttribute\fP contract and exactly one parameter\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhandler\fP The instance of event handler class
+.RE
+.PP
+
+.PP
+Implemented in \fBEventBus\&.SimpleEventBus\fP, and \fBEventBus\&.OrderedEventBus\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EventBus from the source code\&.

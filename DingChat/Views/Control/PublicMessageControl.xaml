@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="cn.lds.chatcore.pcw.Views.Control.PublicMessageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+             mc:Ignorable="d" Height="30"
+             d:DesignHeight="25" d:DesignWidth="600" Loaded="UserControl_Loaded">
+    
+    <Grid  >
+        <StackPanel Orientation="Horizontal" Name="panel">
+            <Button x:Name="BtnCollapsed"  Visibility="Visible" Click="BtnCollapsed_Click" Style="{DynamicResource ImageButton}"   Grid.Row="0"    HorizontalAlignment="Left" Grid.Column="0" >
+                <Image   Margin="0" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/unfold.png" Stretch="None"/>
+            </Button>
+         
+        </StackPanel>
+      
+       
+    </Grid>
+</UserControl>

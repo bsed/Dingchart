@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Application>
+   
+    <!-- 大连开发 -->
+    <!--<Host>http://172.17.20.98</Host>
+    <Port>8787</Port>-->
+    
+    <!-- 大连测试 -->
+    <!--<Host>https://172.17.20.99</Host>
+    <Port>8443</Port>-->
+
+    <!-- 大连Saas开发 -->
+    <!--<Host>http://172.17.20.104</Host>
+    <Port>8000</Port>-->
+
+
+    <!-- 大连Saas测试 -->
+    <!--<Host>http://172.17.20.2</Host>
+    <Port>8000</Port>-->
+    
+       <!-- 大连Saas测试外网 -->
+    <Host>http://124.93.0.168</Host>
+    <Port>22031</Port>
+    
+    <!-- 北京测试  -->
+    <!--<Host>http://119.61.66.2</Host>
+    <Port>12462</Port>-->
+
+    <!-- 阿里演示 -->
+    <!--<Host>http://123.57.44.202</Host>
+    <Port>8000</Port>-->
+
+    <!-- 绿信正式 -->
+    <!--<Host>http://123.207.164.144</Host>
+    <Port>8000</Port>-->
+    
+    <!-- 北京开发 -->
+    <!--<Host>http://119.61.66.2</Host>
+    <Port>12364</Port>-->
+
+    <!-- 3.0 -->
+    <!--<Host>http://172.17.20.146</Host>
+    <Port>8000</Port>-->
+
+    <!-- 教育部2.0 -->
+    <!--<Host>http://118.89.243.140</Host>
+    <Port>8000</Port>-->
+    
+    <StartURL>/oa/client/index.html#/officeMessage/waitingDeltThing/waitingDeltThing.html</StartURL>
+    <!--是否是3.0后台   0 false 1 true-->
+    <Version30>1</Version30>
+      <!--绿信     a15141befe1b400ba4c3ccd59607401c    鼎信    6d1f99b1a1ee45a58135c098de39a44d  教育部   a75eb67731c94180bcb729bae85f1798-->
+  <VideoKey>6d1f99b1a1ee45a58135c098de39a44d</VideoKey>
+     <!--日志等级，0.不输出日志；1.只输出错误信息; 2.输出错误和正常信息; 3.输出错误信息、正常信息和调试信息-->
+    <LoggerLevel>1</LoggerLevel>
+    <LogoImage>homepage.png</LogoImage>
+    <LogoName>首页</LogoName>
+  </Application>
+  
+
+  
+  <!--左侧菜单-->
+  <ProcessSettings>
+   
+    <!--<ProcessButton Text="">
+      <ButtonImage>./images/homepage.png</ButtonImage>
+      <Url>/oa/client/index.html#/officeMessage/waitingDeltThing/waitingDeltThing.html</Url>
+      <ISDefault>T</ISDefault>
+      <Name>公文待办</Name>
+      <Zoom>100</Zoom>
+      <ISVisible>T</ISVisible>
+    </ProcessButton>-->
+    
+    <ProcessButton Text="消息">
+      <ButtonImage>/images/Message_logo.png</ButtonImage>
+      <Url></Url>
+      <ISDefault>T</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>消息</Name>
+    </ProcessButton>
+
+    
+    <ProcessButton Text="通讯录">
+      <ButtonImage>/images/Addssbook_logo.png</ButtonImage>
+      <Url></Url>
+      <ISDefault>F</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>通讯录</Name>
+    </ProcessButton>
+    
+    <!--<ProcessButton Text="协同">
+      <ButtonImage>./images/协同.png</ButtonImage>
+      <Url>/oa/client/index.html#/officeMessage/waitingDeltThing/waitingDeltThing.html</Url>
+      <ISDefault>F</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>协同</Name>
+    </ProcessButton>-->
+    
+    <!--<ProcessButton Text="公文">
+      <ButtonImage>./images/公文.png</ButtonImage>
+      <Url>/index.html#/officeMessage/waitingDeltThing/waitingDeltThing.html</Url>
+      <ISDefault>F</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>公文</Name>
+    </ProcessButton>-->
+    
+    <!--<ProcessButton Text="日程">
+      <ButtonImage>./images/日程.png</ButtonImage>
+      <Url>/index.html#/pc/scheduleManage/list.html</Url>
+      <ISDefault>F</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>日程</Name>
+    </ProcessButton>-->
+    
+    <!--<ProcessButton Text="网盘">
+      <ButtonImage>./images/Disk_logo.png</ButtonImage>
+      <Url>/index.html#/netBox/personalNetBox/personalNetBox.html</Url>
+      <ISDefault>F</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>网盘</Name>
+    </ProcessButton>-->
+    
+    <ProcessButton Text="应用">
+      <ButtonImage>/images/App.png</ButtonImage>
+      <Url></Url>
+      <ISDefault>F</ISDefault>
+      <ISVisible>T</ISVisible>
+      <Name>应用</Name>
+    </ProcessButton>
+  </ProcessSettings>
+  <ProcessSettings>
+    
+   
+  </ProcessSettings>
+
+
+
+</Root>

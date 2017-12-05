@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FileDownloader</name>
+    </assembly>
+    <members>
+        <member name="T:FileDownloader.CompletedState">
+            <summary>
+            Downloaded completed states
+            </summary>
+        </member>
+        <member name="F:FileDownloader.CompletedState.Succeeded">
+            <summary>
+            Download successful
+            </summary>
+        </member>
+        <member name="F:FileDownloader.CompletedState.Canceled">
+            <summary>
+            Download canceled
+            </summary>
+        </member>
+        <member name="F:FileDownloader.CompletedState.Failed">
+            <summary>
+            Download failed
+            </summary>
+        </member>
+        <member name="T:FileDownloader.DownloadFileCompletedArgs">
+            <summary>
+            DownloadFileCompleted event args
+            </summary>
+        </member>
+        <member name="M:FileDownloader.DownloadFileCompletedArgs.#ctor(FileDownloader.CompletedState,System.String,System.Uri,System.TimeSpan,System.Int64,System.Int64,System.Exception,System.Net.WebHeaderCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FileDownloader.DownloadFileCompletedArgs"/> class
+            </summary>
+            <param name="state">State of download</param>
+            <param name="fileName">Local path to downloaded file</param>
+            <param name="fileSource">Downloaded file source</param>
+            <param name="downloadTime">Downloaded time</param>
+            <param name="bytesTotal">File size</param>
+            <param name="bytesReceived">Received bytes</param>
+            <param name="error">Exception object</param>
+            <param name="responseHeaders">Exception object</param>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.State">
+            <summary>
+            Gets the download state
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.FileName">
+            <summary>
+            Gets the name of downloaded file
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.FileSource">
+            <summary>
+            Gets the download source
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.Error">
+            <summary>
+            Gets the error, or null if there is no error
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.DownloadTime">
+            <summary>
+            Gets the total download time
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.BytesReceived">
+            <summary>
+            Gets the number of received bytes
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.BytesTotal">
+            <summary>
+            Gets the number of total bytes which should be received
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.DownloadProgress">
+            <summary>
+            Gets the download progress in percent, from 0 to 100
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileCompletedArgs.DownloadSpeedInKiloBytesPerSecond">
+            <summary>
+            Gets the download speed in kilobytes per second
+            </summary>
+        </member>
+        <member name="T:FileDownloader.DownloadFileProgressChangedArgs">
+            <summary>
+            DownloadFileProgressChanged event args
+            </summary>
+        </member>
+        <member name="M:FileDownloader.DownloadFileProgressChangedArgs.#ctor(System.Int32,System.Int64,System.Int64,System.Net.WebHeaderCollection)">
+             <summary>
+             Initializes a new instance of the <see cref="T:FileDownloader.DownloadFileProgressChangedArgs" /> class.
+             </summary>
+             <param name="progressPercentage">Progress percentage</param>
+             <param name="bytesReceived">Bytes received so far</param>
+             <param name="totalBytesToReceive">Total bytes to receive</param>
+              <param name="responseHeaders">Total bytes to receive</param>
+            
+        </member>
+        <member name="P:FileDownloader.DownloadFileProgressChangedArgs.BytesReceived">
+            <summary>
+            Gets the bytes received so far
+            </summary>
+        </member>
+        <member name="P:FileDownloader.DownloadFileProgressChangedArgs.TotalBytesToReceive">
+            <summary>
+            Gets the total bytes to receive
+            </summary>
+        </member>
+        <member name="T:FileDownloader.FileDownloader">
+            <summary>
+            Class used for downloading files. The .NET WebClient is used for downloading.
+            </summary>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FileDownloader.FileDownloader"/> class. No download cache would be used, resume is not supported
+            </summary>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.#ctor(FileDownloader.IDownloadCache)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FileDownloader.FileDownloader"/> class.
+            </summary>
+            <param name="downloadCache">IDownloadCache instance</param>
+        </member>
+        <member name="E:FileDownloader.FileDownloader.DownloadFileCompleted">
+            <summary>
+            Fired when download is finished, even if it's failed.
+            </summary>
+        </member>
+        <member name="E:FileDownloader.FileDownloader.DownloadProgressChanged">
+            <summary>
+            Fired when download progress is changed.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.DnsFallbackResolver">
+            <summary>
+            Gets or sets the DNS fallback resolver. Default is null.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.DelayBetweenAttempts">
+            <summary>
+            Gets or sets the delay between download attempts. Default is 3 seconds.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.SafeWaitTimeout">
+            <summary>
+            Gets or sets the maximum waiting timeout for pending request to be finished. Default is 15 seconds.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.SourceStreamReadTimeout">
+            <summary>
+            Gets or sets the timeout for source stream. Default is 5 seconds.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.MaxAttempts">
+            <summary>
+            Gets or sets the maximum number of download attempts. Default is 60.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.BytesReceived">
+            <summary>
+            Gets the total bytes received so far
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.TotalBytesToReceive">
+            <summary>
+            Gets the total bytes to receive
+            </summary>
+        </member>
+        <member name="P:FileDownloader.FileDownloader.DownloadStartTime">
+            <summary>
+            Gets or sets the time when download was started
+            </summary>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.DownloadFileAsync(System.Uri,System.String)">
+            <summary>
+            Start async download of source to destinationPath
+            </summary>
+            <param name="source">Source URI</param>
+            <param name="destinationPath">Full path with file name.</param>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.DownloadFileAsyncPreserveServerFileName(System.Uri,System.String)">
+            <summary>
+            Start download of source file to downloadDirectory. File would be saved with filename taken from server
+            </summary>
+            <param name="source">Source URI</param>
+            <param name="destinationDirectory">Destination directory</param>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.CancelDownloadAsync">
+            <summary>
+            Cancel current download
+            </summary>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.OnDownloadCompleted(System.Object,System.ComponentModel.AsyncCompletedEventArgs)">
+            <summary>
+            OnDownloadCompleted event handler
+            </summary>
+            <param name="sender">Sender object</param>
+            <param name="args">AsyncCompletedEventArgs instance</param>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.ApplyNewFileName(System.String,System.String)">
+            <summary>
+            Rename oldFilePath to newFileName , placing file in same folder or in temporary folder if renaming failed.
+            </summary>
+            <param name="oldFilePath">Full path and name of the file to be renamed</param>
+            <param name="newFileName">New file name</param>
+            <returns>Full path to renamed file</returns>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:FileDownloader.FileDownloader.Dispose(System.Boolean)">
+            <summary>
+            Do the actual dispose
+            </summary>
+            <param name="disposing">True if called from Dispose</param>
+        </member>
+        <member name="T:FileDownloader.IDnsFallbackResolver">
+            <summary>
+            DNS Fallback Resolver interface
+            </summary>
+        </member>
+        <member name="M:FileDownloader.IDnsFallbackResolver.Resolve(System.Uri)">
+            <summary>
+            Resolves the host name inside of URI into IP address
+            For example https://example.com/en/ could be resolved to https://8.8.8.8/en/
+            </summary>
+            <param name="uri">URI to resolve</param>
+            <returns>Resolved URI</returns>
+        </member>
+        <member name="T:FileDownloader.IDownloadCache">
+            <summary>
+            IDownloadCache interface
+            </summary>
+        </member>
+        <member name="M:FileDownloader.IDownloadCache.Invalidate(System.Uri)">
+            <summary>
+            Invalidate cache for specific url
+            </summary>
+            <param name="uri">URI to invalidate</param>
+        </member>
+        <member name="M:FileDownloader.IDownloadCache.Add(System.Uri,System.String,System.Net.WebHeaderCollection)">
+            <summary>
+            Add new cache record
+            </summary>
+            <param name="uri">Source URI</param>
+            <param name="path">Downloaded file path</param>
+            <param name="headers">HTTP headers of the response</param>
+        </member>
+        <member name="M:FileDownloader.IDownloadCache.Get(System.Uri,System.Net.WebHeaderCollection)">
+            <summary>
+            Get the file from cache. Return file name if file is found in cache, null otherwise 
+            </summary>
+            <param name="uri">Source uri</param>
+            <param name="headers">HTTP headers of the response</param>
+            <returns>Path to file with cached resource</returns>
+        </member>
+        <member name="T:FileDownloader.IFileDownloader">
+            <summary>
+            FileDownloader interface
+            </summary>
+        </member>
+        <member name="E:FileDownloader.IFileDownloader.DownloadFileCompleted">
+            <summary>
+            Fired when download is finished, even if it's failed.
+            </summary>
+        </member>
+        <member name="E:FileDownloader.IFileDownloader.DownloadProgressChanged">
+            <summary>
+            Fired when download progress is changed.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.IFileDownloader.DnsFallbackResolver">
+            <summary>
+            Gets or sets DNS Fallback Resolver instance.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.IFileDownloader.DelayBetweenAttempts">
+            <summary>
+            Gets or sets the delay between download attempts.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.IFileDownloader.SafeWaitTimeout">
+            <summary>
+            Gets or sets the maximum waiting timeout for pending request to be finished. Default is 15 seconds.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.IFileDownloader.MaxAttempts">
+            <summary>
+            Gets or sets the maximum number of download attempt.
+            </summary>
+        </member>
+        <member name="P:FileDownloader.IFileDownloader.BytesReceived">
+            <summary>
+            Gets the total bytes received so far
+            </summary>
+        </member>
+        <member name="P:FileDownloader.IFileDownloader.TotalBytesToReceive">
+            <summary>
+            Gets the total bytes to receive
+            </summary>
+        </member>
+        <member name="M:FileDownloader.IFileDownloader.DownloadFileAsync(System.Uri,System.String)">
+            <summary>
+            Start async download of source to destinationPath. destinationPath should be full path with file name.
+            </summary>
+            <param name="source">Source URI</param>
+            <param name="destinationPath">Destination path</param>
+        </member>
+        <member name="M:FileDownloader.IFileDownloader.DownloadFileAsyncPreserveServerFileName(System.Uri,System.String)">
+            <summary>
+            Start download of source file to downloadDirectory. File would be saved with filename taken from server
+            </summary>
+            <param name="source">Source URI</param>
+            <param name="destinationDirectory">Destination directory</param>
+        </member>
+        <member name="M:FileDownloader.IFileDownloader.CancelDownloadAsync">
+            <summary>
+            Cancel current download
+            </summary>
+        </member>
+        <member name="P:FileDownloader.Logging.ILogger.Name">
+            <summary>
+            Gets the name of the logger.
+            </summary>
+            <value>The name of the logger. </value>
+        </member>
+        <member name="M:FileDownloader.Logging.ILogger.Debug(System.String,System.Object[])">
+            <summary>
+            Log format message at DEBUG level.
+            </summary>
+            <param name="message">The message with or without  format placeholders.</param>
+            <param name="args">The optional parameter list for the format message.</param>
+        </member>
+        <member name="M:FileDownloader.Logging.ILogger.Info(System.String,System.Object[])">
+            <summary>
+            Log format message at INFO level.
+            </summary>
+            <param name="message">The message with or without format placeholders.</param>
+            <param name="args">The optional parameter list for the format message.</param>
+        </member>
+        <member name="M:FileDownloader.Logging.ILogger.Warn(System.String,System.Object[])">
+            <summary>
+            Log format message at TRACE level.
+            </summary>
+            <param name="message">The message with or without format placeholders.</param>
+            <param name="args">The optional parameter list for the format message.</param>
+        </member>
+        <member name="M:FileDownloader.Logging.ILogger.Error(System.String,System.Object[])">
+            <summary>
+            Log format message at ERROR level.
+            </summary>
+            <param name="message">The message with format placeholders.</param>
+            <param name="args">The optional parameter list for the format message.</param>
+        </member>
+        <member name="M:FileDownloader.Logging.ILogger.Fatal(System.String,System.Object[])">
+            <summary>
+            Log format message at FATAL level.
+            </summary>
+            <param name="message">The message with or without format placeholders.</param>
+            <param name="args">The optional parameter list for the format message.</param>
+        </member>
+        <member name="M:FileDownloader.Logging.LoggerFacade.GetLogger(System.String)">
+            <summary>
+            Get a logger with a specified name.
+            </summary>
+            <param name="loggerName">The name of the logger.</param>
+            <returns>Instance of logger.</returns>
+        </member>
+        <member name="M:FileDownloader.Logging.LoggerFacade.GetCurrentClassLogger">
+            <summary>
+            Get a logger with the name of the calling class.
+            </summary>
+            <returns>Instance of logger.</returns>
+        </member>
+    </members>
+</doc>

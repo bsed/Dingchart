@@ -1,0 +1,12 @@
+F:\鼎sass\Emoji\bin\Release\Emoji.dll
+F:\鼎sass\Emoji\bin\Release\Emoji.pdb
+F:\鼎sass\Emoji\obj\Release\EmojiControl.g.cs
+F:\鼎sass\Emoji\obj\Release\EmojiTabControl.g.cs
+F:\鼎sass\Emoji\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\鼎sass\Emoji\obj\Release\Emoji_MarkupCompile.cache
+F:\鼎sass\Emoji\obj\Release\Emoji_MarkupCompile.lref
+F:\鼎sass\Emoji\obj\Release\EmojiControl.baml
+F:\鼎sass\Emoji\obj\Release\EmojiTabControl.baml
+F:\鼎sass\Emoji\obj\Release\Emoji.g.resources
+F:\鼎sass\Emoji\obj\Release\Emoji.dll
+F:\鼎sass\Emoji\obj\Release\Emoji.pdb

@@ -1,0 +1,1284 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ResourceDictionary.Resources"
+                       xmlns:System="clr-namespace:System;assembly=mscorlib" >
+
+    <!-- 应该在此定义资源字典条目。-->
+    <System:Double x:Key="height">37</System:Double>
+    <System:Double x:Key="width">30</System:Double>
+
+    <System:Double x:Key="bqheight">21</System:Double>
+    <System:Double x:Key="bqwidth">21</System:Double>
+    <Style x:Key="xButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" 
+                               Source="pack://application:,,,/ResourceDictionary;Component/Images/Close_gray.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Close_red.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Close_red.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Close_red.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--最小化-->
+    <Style x:Key="-ButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Min_tranparent.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Min_tranparent_click.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Min_tranparent_click.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Min_tranparent_click.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--最大化-->
+    <Style x:Key="tomaxButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Max_tranparent.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Max_tranparent_click.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Max_tranparent_click.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Max_tranparent_click.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--还原-->
+    <Style x:Key="restoreButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Reset_gray.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Reset_red.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Reset_red.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Reset_red.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="IconTextButton" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="48"/>
+                            <RowDefinition Height="10*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Border x:Name="border" BorderBrush="#343457" BorderThickness="0" CornerRadius="0" Grid.Row="0" >
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                                    <GradientStop Color="#343457" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Rectangle x:Name="rectangle" VerticalAlignment="Center" HorizontalAlignment="Center" Height="24" Width="24" Margin="0,0,0,0" Stroke="{x:Null}" RenderTransformOrigin="0.5,0.5">
+                                <Rectangle.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Rectangle.RenderTransform>
+                                <Rectangle.Fill>
+                                    <ImageBrush Stretch="Fill" ImageSource="pack://application:,,,/ResourceDictionary;Component/Images/User.png" />
+                                    <!--<ImageBrush Stretch="Fill"  ImageSource="{Binding ButtonImage,Converter={StaticResource ButtonImageConvertor}}" />-->
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                        <Border x:Name="borderText" BorderBrush="#343457" BorderThickness="0" CornerRadius="0" Grid.Row="1" >
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#343457" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="{TemplateBinding Width}" Height="18">
+                                <Grid.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Grid.RenderTransform>
+                                <TextBlock Margin="0,-6,0,0" TextWrapping="Wrap" 
+                                           Text="{TemplateBinding Content}" FontSize="14"
+                                           TextAlignment="Center" Foreground="White" FontFamily="Microsoft YaHei" Width="{TemplateBinding Width}"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="False"/>
+                        <Trigger Property="IsDefaulted" Value="False"/>
+                        <Trigger Property="IsMouseOver" Value="False">
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderTransform" TargetName="rectangle">
+                                <Setter.Value>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.00" ScaleY="1.00"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="True"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="IconBackButton" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="grid" RenderTransformOrigin="0.5,0.5" Background="Transparent">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Border x:Name="border"  Background="Transparent" BorderThickness="0" CornerRadius="0">
+                            <Rectangle x:Name="rectangle" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                       Height="24" Width="24" Margin="0,0,0,0" Stroke="{x:Null}"
+                                       RenderTransformOrigin="0.5,0.5">
+                                <Rectangle.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Rectangle.RenderTransform>
+                                <Rectangle.Fill>
+                                    <ImageBrush Stretch="Fill" ImageSource="pack://application:,,,/ResourceDictionary;Component/Images/Return.png" />
+                                    <!--<ImageBrush Stretch="Fill"  ImageSource="{Binding ButtonImage,Converter={StaticResource ButtonImageConvertor}}" />-->
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="False"/>
+                        <Trigger Property="IsDefaulted" Value="False"/>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <!--<Setter Property="Background" TargetName="border"  Value="#7b7b99" />
+                            <Setter Property="Background" TargetName="borderText"  Value="#7b7b99" />-->
+                            <!--<Setter Property="Background" TargetName="border">
+								<Setter.Value>
+									<LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                                        <GradientStop Color="Gray" Offset="1"/>
+									</LinearGradientBrush>
+								</Setter.Value>
+							</Setter>
+                            <Setter Property="Background" TargetName="borderText">
+                                <Setter.Value>
+                                    <LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                                        <GradientStop Color="Gray" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>-->
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderTransform" TargetName="rectangle">
+                                <Setter.Value>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1.00" ScaleY="1.00"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="True"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--<Style x:Key="ImageButton" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg" Source="" Stretch="Fill" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                        
+                            <Setter TargetName="bg" Property="Height" Value="26" />
+                            <Setter TargetName="bg" Property="Width" Value="26" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            
+                            <Setter TargetName="bg" Property="Height" Value="26" />
+                            <Setter TargetName="bg" Property="Width" Value="26" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                
+                            <Setter TargetName="bg" Property="Height" Value="26" />
+                            <Setter TargetName="bg" Property="Width" Value="26" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>-->
+    <Style  x:Key="ImageButton" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Cursor="Hand" >
+                        <!--<VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition From="MouseOver" GeneratedDuration="0" To="Pressed"/>
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="contentPresenter">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="contentPresenter">
+                                            <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                        </DoubleAnimationUsingKeyFrames>
+
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed"/>
+                                <VisualState x:Name="Disabled"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>-->
+
+                        <ContentPresenter x:Name="contentPresenter" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0,0,0.096,0" HorizontalAlignment="Stretch" Width="Auto"  RenderTransformOrigin="0.5,0.5">
+                            <ContentPresenter.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ContentPresenter.RenderTransform>
+                        </ContentPresenter>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                        <Trigger Property="IsPressed" Value="True"/>
+                        <Trigger Property="IsEnabled" Value="False"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--图片和文字上下组合 图片在上-->
+    <Style  x:Key="ImageTextButtonTop" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Cursor="Hand" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.6*"/>
+                            <RowDefinition Height="0.4*"/>
+                        </Grid.RowDefinitions>
+                        <ContentPresenter x:Name="contentPresenter" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  HorizontalAlignment="Center"  Grid.Row="0" RenderTransformOrigin="0.5,0.5">
+                            <ContentPresenter.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ContentPresenter.RenderTransform>
+                        </ContentPresenter>
+                        <TextBlock x:Name="textBlock"  TextWrapping="Wrap"  Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Center"  Height="Auto" Text="{TemplateBinding Tag}"   VerticalAlignment="Bottom" FontSize="14" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Margin="0,5,0,0" >
+                            <TextBlock.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                        <Trigger Property="IsPressed" Value="True"/>
+                        <Trigger Property="IsEnabled" Value="False"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--图片和文字左右组合 图片在左边-->
+    <Style  x:Key="ImageTextButtonLeft" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Cursor="Hand" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!--<VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver"/>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="contentPresenter">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="2"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="contentPresenter">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="2"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="2"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="2"/>
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>-->
+
+                        <ContentPresenter x:Name="contentPresenter" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0,0,0.096,0" HorizontalAlignment="Stretch" Width="Auto" RenderTransformOrigin="0.5,0.5">
+                            <ContentPresenter.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ContentPresenter.RenderTransform>
+                        </ContentPresenter>
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Stretch" Height="Auto" Text="{TemplateBinding Tag}" VerticalAlignment="Center" FontSize="16" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="10,0,0,0" >
+                            <TextBlock.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                        <Trigger Property="IsPressed" Value="True"/>
+                        <Trigger Property="IsEnabled" Value="False"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--图片和文字左右组合 图片在右边-->
+    <Style  x:Key="ImageTextButtonRight" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Cursor="Hand" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  />
+                            <ColumnDefinition  Width="auto" />
+                            <ColumnDefinition Width="24"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="textBlock1" Width="{TemplateBinding Width}" HorizontalAlignment="Stretch"   Grid.Column="0"  />
+                        <ContentPresenter x:Name="contentPresenter" RecognizesAccessKey="True" Grid.Column="2"  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"  HorizontalAlignment="Right" Width="24" RenderTransformOrigin="0.5,0.5">
+                            <ContentPresenter.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </ContentPresenter.RenderTransform>
+                        </ContentPresenter>
+                        <TextBlock x:Name="textBlock" Width="auto" HorizontalAlignment="Right"   Height="Auto" Text="{TemplateBinding Tag}" VerticalAlignment="Center" FontSize="15" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="0,0,0,0" >
+                            <TextBlock.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True"/>
+                        <Trigger Property="IsDefaulted" Value="True"/>
+                        <Trigger Property="IsMouseOver" Value="True"/>
+                        <Trigger Property="IsPressed" Value="True"/>
+                        <Trigger Property="IsEnabled" Value="False"/>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--文字按钮 带点击样式-->
+    <Style x:Key="TextButton" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="Chrome"  BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2" BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}"   SnapsToDevicePixels="true">
+                        <Border.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Border.RenderTransform>
+                      
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--文字按钮 专门为联系人标签设计-->
+    <Style x:Key="TextButtonForContacts" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="60"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="Chrome"     SnapsToDevicePixels="true" RenderTransformOrigin="0.5,0.5">
+                        <Border.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Border.RenderTransform>
+
+                        <ContentPresenter  HorizontalAlignment="Left" Margin="25,0,0,0" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--未读消息数量-->
+    <Style x:Key="Unread" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="15"/>
+        <Setter Property="Width" Value="23"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="11"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message_count.png" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" UseLayoutRounding="True" Stretch="Fill"/>
+                        <Grid>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"  />
+                        </Grid>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <DataTrigger  Binding="{Binding  Path=NewMsgCount}" Value="0">
+                <Setter Property="Visibility" Value="Collapsed" ></Setter>
+            </DataTrigger>
+            <DataTrigger  Binding="{Binding  Path=Quiet}" Value="true">
+                <Setter Property="Visibility" Value="Collapsed" ></Setter>
+            </DataTrigger>
+        </Style.Triggers>
+        
+    </Style>
+    <!--确定按钮-->
+    <Style x:Key="OkBtn" TargetType="{x:Type Button}">
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Width" Value="70"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--<Grid>-->
+                        <Border Name="bg" BorderThickness="1" BorderBrush="#1296DB" Background="#ffffff" CornerRadius="3" Margin="0">
+                        <Label Name="lb" FontFamily="Microsoft YaHei"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}" FontSize="14" Foreground="#1296DB"/>
+                        </Border>
+                        <!--<Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Ok_white.png" Stretch="Fill" />-->
+                        <!--<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>-->
+                    <!--</Grid>-->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Background" Value="#1296DB" />
+                            <Setter TargetName="lb" Property="Foreground" Value="#ffffff" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Background" Value="#1296DB" />
+                            <Setter TargetName="lb" Property="Foreground" Value="#ffffff" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Background" Value="#1296DB" />
+                            <Setter TargetName="lb" Property="Foreground" Value="#ffffff" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+  
+
+    <!-- 菜单按钮组模板 -->
+    <Style x:Key="CustomWindowMenuBtn" TargetType="{x:Type Button}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Opacity" Value="0.4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <TextBlock FontSize="23" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="1.0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--表情-->
+    <Style x:Key="BQStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Emoj.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Emoj_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Emoj_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Emoj_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--截图-->
+    <Style x:Key="JTStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Screenshot.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Screenshot_green.png" />
+
+                        </Trigger>
+                       
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter Property="Cursor" Value="None" />
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Screenshot_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Screenshot_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--视频-->
+    <Style x:Key="SPStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Video.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Video_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Video_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Video_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--视频-->
+    <Style x:Key="YYStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/Audio.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/AudioHover.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/AudioHover.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/AudioHover.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--收藏-->
+    <Style x:Key="SCStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Favorite.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Favorite_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Favorite_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Favorite_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--通讯录-->
+    <Style x:Key="TXLStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Addressbook.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Addressbook_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Addressbook_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Addressbook_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--图片-->
+    <Style x:Key="TPStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Picture.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Picture_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Picture_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Picture_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--网盘-->
+    <Style x:Key="WPStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Disk.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Disk_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Disk_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Disk_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--位置-->
+    <Style x:Key="WZStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Position.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Position_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Position_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Position_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--文件-->
+    <Style x:Key="WJStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="{StaticResource bqheight}" />
+        <Setter  Property="Width" Value="{StaticResource bqwidth}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/File.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/File_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/File_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/File_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--发送-->
+    <Style x:Key="SendStyle" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Height" Value="26" />
+        <Setter  Property="Width" Value="68" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Send.png" Stretch="Uniform" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Send_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Send_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+                            <Setter Property="UseLayoutRounding" Value="true"/>
+                            <Setter TargetName="bg" Property="Stretch" Value="Uniform" />
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Message/Send_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--放大-->
+    <Style x:Key="BigButtonStyle" TargetType="{x:Type Button}">
+        <!--<Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Big.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Big_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Big_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Big_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--缩小-->
+    <Style x:Key="SmallButtonStyle" TargetType="{x:Type Button}">
+        <!--<Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Small.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Small_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Small_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Small_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--下载-->
+    <Style x:Key="DownloadButtonStyle" TargetType="{x:Type Button}">
+        <!--<Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Download.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Download_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Download_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Download_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--旋转-->
+    <Style x:Key="RotateButtonStyle" TargetType="{x:Type Button}">
+        <!--<Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Rotate.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Rotate_green.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Rotate_green.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/PictureViewer/Rotate_green.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SendMessageButton" TargetType="{x:Type Button}">
+        <!--<Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Image x:Name="bg"  SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Source="pack://application:,,,/ResourceDictionary;Component/Images/StartMessageUnC.png" Stretch="None" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/StartMessageC.png" />
+
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/StartMessageC.png" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/StartMessageC.png"  />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

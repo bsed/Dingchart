@@ -1,0 +1,107 @@
+﻿<Window x:Class="cn.lds.chatcore.pcw.Views.Windows.AVMeeting.WinAudio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cn.lds.chatcore.pcw.Views.Windows.AVMeeting"
+        mc:Ignorable="d"   Closing="AudioWindow_Closing"
+        Icon="{DynamicResource system_common_pageIco}"
+           Title="{DynamicResource system_common_pageTitle}" 
+        x:Name="AudioWindow" Loaded="WinAudio_OnLoaded"
+        Height="440" Width="290">
+    <Grid>
+        <Border Margin="-10">
+            <Border.Effect>
+                <BlurEffect Radius="6" RenderingBias="Performance" />
+            </Border.Effect>
+            <Border.Background>
+                <VisualBrush Stretch="Uniform" Visual="{Binding ElementName=Container}">
+                </VisualBrush>
+            </Border.Background>
+            <Grid x:Name="Container">
+                <Grid.Background>
+                    <ImageBrush ImageSource="{Binding Path=GuestAvatar}" Stretch="UniformToFill" />
+                </Grid.Background>
+            </Grid>
+            <!--<local:AudioDecorator x:Name="AudioDecorator" Margin="0"/>-->
+        </Border>
+        <Grid  HorizontalAlignment="Right" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="65"/>
+            </Grid.RowDefinitions>
+            <StackPanel Name="TitlePanel" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right"
+                        Width="{Binding ElementName=AudioWindow, Path=ActualWidth}"
+                        Background="Black" Opacity="0.01" Height="30"
+                        MouseMove="TitlePanel_OnMouseMove" >
+
+            </StackPanel>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="35"/>
+                    <ColumnDefinition Width="35"/>
+                    <ColumnDefinition Width="35"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BtnMin" Width="35" Grid.Column="1" Click="BtnMin_OnClick"
+                        Style="{StaticResource BtnMinStyle}">
+                    <Image SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Width="10" Height="10"
+                           Source="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/Minimize.png" Stretch="Uniform" />
+                </Button>
+                <Button x:Name="BtnMax" Width="35" Grid.Column="2" Click="BtnMax_OnClick"
+                        Style="{StaticResource BtnMinStyle}">
+                    <Image x:Name="BtnMaxImg" SnapsToDevicePixels="True" UseLayoutRounding="True" Width="10" Height="10"
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" 
+                           Source="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/Maxmize.png" Stretch="Uniform" />
+                </Button>
+                <Button x:Name="BtnClose" Width="35" Grid.Column="3" Click="BtnClose_OnClick" 
+                       Style="{StaticResource BtnCloselStyle}">
+                    <Image SnapsToDevicePixels="True" UseLayoutRounding="True" Width="10" Height="10"
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" 
+                           Source="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/Close.png" Stretch="Uniform" />
+                </Button>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Orientation="Vertical" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Border Name="imgBorder"  
+                Background="DarkGray" Margin="0,50,0,0" 
+                CornerRadius="5,5,5,5" >
+                    <Image x:Name="ImgAvatar" Source="{Binding Path=GuestAvatar}" Stretch="Fill" Width="80" Height="80">
+                    </Image>
+                    </Border>
+                <TextBlock x:Name="TxtblUserName" Margin="0,8,0,0" FontSize="16" Foreground="White" Text="{Binding Path=GuestName}" HorizontalAlignment="Center" Loaded="TxtblUserName_OnLoaded"></TextBlock>
+                <TextBlock x:Name="TxtblTooltip" Visibility="Visible" Margin="0,6,0,0" FontSize="14" Foreground="White" Text="{Binding Path=DurationFormat}" HorizontalAlignment="Center"></TextBlock>
+                <Canvas x:Name="CanvasLoading" Margin="0,6,0,0" Visibility="Visible">
+                    <Ellipse Canvas.Left="15" Width="10" Height="10" Fill="White" Opacity="0.6" ></Ellipse>
+                    <Ellipse Canvas.Left="35" Width="10" Height="10" Fill="White" Opacity="1" ></Ellipse>
+                    <Ellipse Canvas.Left="55" Width="10" Height="10" Fill="White" Opacity="0.6" ></Ellipse>
+                </Canvas>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <CheckBox x:Name="BtnMute" Margin="0,0,10,0" Click="BtnMute_OnClick" IsChecked="False"
+                        Style="{StaticResource BtnMuteStyle}">
+                </CheckBox>
+                <Button x:Name="BtnVolume"  Margin="10,0,0,0" Click="BtnVolume_OnClick"
+                        MouseEnter="BtnVolume_OnMouseEnter" MouseLeave="BtnVolume_OnMouseLeave"
+                        Style="{StaticResource BtnVolumeStyle}">
+                </Button>
+            </StackPanel>
+
+            <Button x:Name="BtnCancel"  Grid.Row="3" Margin="0,0,0,0" Style="{StaticResource BtnCancelStyle}" 
+                    Click="BtnCancel_OnClick">
+
+            </Button>
+
+            <Popup x:Name="PopupVolume" Grid.Row="2" StaysOpen="False" HorizontalOffset="10"
+                       Placement="Top" PlacementTarget="{Binding ElementName=BtnVolume}">
+            <Slider x:Name="SliderVolume" Style="{StaticResource SliderStyle}" Orientation="Vertical" 
+                        Height="120" Value="50" Background="Transparent" 
+                        Maximum="255" Minimum="0" SmallChange="1" LargeChange="1" ValueChanged="SliderVolume_ValueChanged"></Slider>
+            </Popup>
+        </Grid>
+    </Grid>
+</Window>

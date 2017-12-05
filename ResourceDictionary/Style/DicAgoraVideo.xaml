@@ -1,0 +1,315 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+
+    <Style x:Key="BtnCancelStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Background="Transparent">
+                        <Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" Width="52" Height="52" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="Uniform" >
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/Cancel.png"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter  Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/CancelX2.png" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnVolumeStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <StackPanel Background="Transparent" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Width="42" Height="42" 
+                                  Stretch="Uniform" >
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipSpeaker.png"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter  Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipSpeakerHover.png" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <TextBlock HorizontalAlignment="Center" Foreground="White" Text="音量"></TextBlock>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </StackPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--<Style x:Key="BtnMuteStyle" TargetType="CheckBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <Grid x:Name="bggrid"  Background="Transparent" Tag="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipVoiceBan.png">
+                        <StackPanel  Background="Transparent" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Width="42" Height="42" 
+                                   Stretch="Uniform" >
+                                <Image.Style>
+                                    <Style TargetType="{x:Type Image}">
+                                        <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipVoiceBan.png"></Setter>
+                                        <Style.Triggers>
+                                            --><!--<Trigger Property="IsMouseOver" Value="True" >
+                                                <Setter  Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipVoiceBanHover.png" />
+                                            </Trigger>--><!--
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Style>
+                            </Image>
+                            <TextBlock HorizontalAlignment="Center" Foreground="White" Text="静音"></TextBlock>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                     
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter  Property="bggrid" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipVoiceBanHover.png" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>-->
+    <Style x:Key="BtnMuteStyle" TargetType="{x:Type CheckBox}">
+        <!--<Setter Property="FocusVisualStyle" Value="{StaticResource EmptyCheckBoxFocusVisual}"/>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <StackPanel  Background="Transparent" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Width="42" Height="42" 
+                                   Stretch="Uniform"  Source="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipVoiceMute.png">
+                        </Image>
+                        <TextBlock  x:Name="text" HorizontalAlignment="Center" Foreground="White" Text="静音"></TextBlock>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <!--<MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="true" />
+                                <Condition Property="IsChecked" Value="true" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipConvert.png"/>
+                        </MultiTrigger>-->
+
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="bg" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipVoiceBan.png"/>
+                            <Setter TargetName="text" Property="Text" Value="取消静音"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="BtnToVideoStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <StackPanel Background="Transparent" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Width="42" Height="42" 
+                                   Stretch="Uniform" >
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipConvert.png"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipConvertHover.png" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <TextBlock HorizontalAlignment="Center" Foreground="White" Text="切换到语音"></TextBlock>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnCameraStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <StackPanel Background="Transparent" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Image x:Name="bg" SnapsToDevicePixels="True" UseLayoutRounding="True" 
+                               RenderOptions.BitmapScalingMode="NearestNeighbor" Width="42" Height="42" 
+                                   Stretch="None" >
+                            <Image.Style>
+                                <Style TargetType="{x:Type Image}">
+                                    <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipCamera.png"></Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/AVMeeting/VoipCameraHover.png" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <TextBlock HorizontalAlignment="Center" Foreground="White" Text="关闭摄像头"></TextBlock>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnCloselStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="bggrid"  Background="Transparent">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter  TargetName="bggrid"  Property="Background" Value="#E81123" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bggrid" Property="Background" Value="#F1707A" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnMinStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="bggrid"  Background="Transparent">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter  TargetName="bggrid"  Property="Background" Value="#E5E5E5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bggrid" Property="Background" Value="#CACACA" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="SliderButtonIncStyle" TargetType="{x:Type RepeatButton}">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <Border Background="LightSlateGray" Width="2" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SliderButtonDecStyle" TargetType="{x:Type RepeatButton}">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <Border Background="DeepSkyBlue" Width="2"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SliderThumbStyle" TargetType="Thumb">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Height" Value="14" />
+        <Setter Property="Width" Value="14" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Thumb">
+                    <Ellipse Height="14" Width="14" Fill="White" StrokeThickness="2" Stroke="DeepSkyBlue"></Ellipse>
+                    <!--<Ellipse Height="10" Width="10">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="Screenshot_5.png"></ImageBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>-->
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="VerticalSlider" TargetType="{x:Type Slider}">
+        <Grid Background="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" MinWidth="{TemplateBinding MinWidth}" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <!--<Border x:Name="TrackBackground" Margin="0" Width="2" Grid.Column="1"
+                        Background="LightSlateGray">
+                </Border>-->
+            <Track Grid.Column="1" x:Name="PART_Track">
+                <Track.DecreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource SliderButtonDecStyle}" Command="Slider.DecreaseLarge" />
+                </Track.DecreaseRepeatButton>
+                <Track.Thumb>
+                    <Thumb Style="{StaticResource SliderThumbStyle}" />
+                </Track.Thumb>
+                <Track.IncreaseRepeatButton>
+                    <RepeatButton Style="{StaticResource SliderButtonIncStyle}" Command="Slider.IncreaseLarge" />
+                </Track.IncreaseRepeatButton>
+            </Track>
+        </Grid>
+
+    </ControlTemplate>
+
+    <Style x:Key="SliderStyle" TargetType="{x:Type Slider}">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="MinWidth" Value="21" />
+        <Setter Property="MinHeight" Value="104" />
+        <Setter Property="Template" Value="{StaticResource VerticalSlider}" />
+    </Style>
+    
+</ResourceDictionary>

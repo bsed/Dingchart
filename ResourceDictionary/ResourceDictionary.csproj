@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D8FC3F5-8CCA-438A-9AA0-34C264E952B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResourceDictionary</RootNamespace>
+    <AssemblyName>ResourceDictionary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.14\lib\net\WpfAnimatedGif.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converters\TextLengthConvertor.cs" />
+    <Compile Include="Converters\UnReadConvertor.cs" />
+    <Compile Include="Converters\ReplaceEmojiToIcoConvertor.cs" />
+    <Compile Include="Converters\BoolToVisibilityConvertor.cs" />
+    <Compile Include="Converters\GrayImageConvertor.cs" />
+    <Compile Include="Converters\ButtonImageConvertor.cs" />
+    <Compile Include="Converters\FileImageConvertor.cs" />
+    <Compile Include="Converters\FileSizeConvertor.cs" />
+    <Compile Include="Converters\IsBiggerThanConverter.cs" />
+    <Compile Include="Converters\CornerRadiusConvertor.cs" />
+    <Compile Include="Converters\OrgBarConvertor.cs" />
+    <Compile Include="Converters\PathToImageConvertor.cs" />
+    <Compile Include="Control\DingScrollview.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\PasswordBoxMonitor.cs" />
+    <Compile Include="Style\CustomWindowBlank.xaml.cs">
+      <DependentUpon>CustomWindowBlank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Style\OnlyClosePage.xaml.cs">
+      <DependentUpon>OnlyClosePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Style\CustomPage.xaml.cs">
+      <DependentUpon>CustomPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Style\CustomTextWindow.xaml.cs">
+      <DependentUpon>CustomTextWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Style\CustomWindow.xaml.cs">
+      <DependentUpon>CustomWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Style\WindowStyle.xaml.cs">
+      <DependentUpon>WindowStyle.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Default_avatar.jpg" />
+    <Resource Include="Images\del.png" />
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\Disk_logo.png" />
+    <Resource Include="Images\Folder_close.png" />
+    <Resource Include="Images\Folder_open.png" />
+    <Resource Include="Images\frommax.png" />
+    <Resource Include="Images\Groupchat.png" />
+    <Resource Include="Images\group_member.png" />
+    <Resource Include="Images\Label.png" />
+    <Resource Include="Images\loading.gif" />
+    <Resource Include="Images\Message_bg.png" />
+    <Resource Include="Images\Message_box.png" />
+    <Resource Include="Images\Message_count.png" />
+    <Resource Include="Images\Message_count1.png" />
+    <Resource Include="Images\Message_nodistrub.png" />
+    <Resource Include="Images\Message_setting.png" />
+    <Resource Include="Images\min.png" />
+    <Resource Include="Images\Nonetwork.png" />
+    <Resource Include="Images\Notice.png" />
+    <Resource Include="Images\Org.png" />
+    <Resource Include="Images\Qrcode.png" />
+    <Resource Include="Images\Return.png" />
+    <Resource Include="Images\Search_dark.png" />
+    <Resource Include="Images\Search_gray.png" />
+    <Resource Include="Images\Setting.png" />
+    <Resource Include="Images\Subscription.png" />
+    <Resource Include="Images\tomax.png" />
+    <Resource Include="Images\uncheck.png" />
+    <Resource Include="Images\User.png" />
+    <Resource Include="Images\Video_logo.png" />
+    <Resource Include="Images\zf.png" />
+    <Resource Include="Images\PictureViewer\Big.png" />
+    <Resource Include="Images\PictureViewer\Big_green.png" />
+    <Resource Include="Images\Close_gray.png" />
+    <Resource Include="Images\Close_red.png" />
+    <Resource Include="Images\PictureViewer\Download.png" />
+    <Resource Include="Images\PictureViewer\Download_green.png" />
+    <Resource Include="Images\PictureViewer\Left.png" />
+    <Resource Include="Images\Max_tranparent.png" />
+    <Resource Include="Images\Max_tranparent_click.png" />
+    <Resource Include="Images\Min_tranparent.png" />
+    <Resource Include="Images\Min_tranparent_click.png" />
+    <Resource Include="Images\Reset_gray.png" />
+    <Resource Include="Images\Reset_red.png" />
+    <Resource Include="Images\PictureViewer\Right.png" />
+    <Resource Include="Images\PictureViewer\Rotate.png" />
+    <Resource Include="Images\PictureViewer\Rotate_green.png" />
+    <Resource Include="Images\PictureViewer\Small.png" />
+    <Resource Include="Images\PictureViewer\Small_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="language\zh-cn\Strings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\CheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ContextMenuDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\IconsResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\list.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\MessageLable.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ScrollViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\StatusBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\StylesResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\CustomWindowBlank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\DicAgoraVideo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\OnlyClosePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\CustomPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\CustomTextWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\CustomWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\UpdateWindowStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\WindowStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\updateWin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\a.png" />
+    <Resource Include="Images\AccountSetting.png" />
+    <Resource Include="Images\Account\About.png" />
+    <Resource Include="Images\Account\AccountInfo.png" />
+    <Resource Include="Images\Account\Common.png" />
+    <Resource Include="Images\Account\Favorite.png" />
+    <Resource Include="Images\Account_bg.png" />
+    <Resource Include="Images\Addcontact.png" />
+    <Resource Include="Images\Addssbook_bg.png" />
+    <Resource Include="Images\Add_big.png" />
+    <Resource Include="Images\Add_small.png" />
+    <Resource Include="Images\ao.png" />
+    <Resource Include="Images\App_bg.png" />
+    <Resource Include="Images\Arrow_right.png" />
+    <Resource Include="Images\Arrow_up.png" />
+    <Resource Include="Images\Avatar_man.png" />
+    <Resource Include="Images\Avatar_woman.png" />
+    <Resource Include="Images\barcode_mini.png" />
+    <Resource Include="Images\check.png" />
+    <Resource Include="Images\close.png" />
+    <Resource Include="Images\Icons\biglogo48.ico" />
+    <Resource Include="Images\Icons\DingChat.ico" />
+    <Resource Include="Images\Icons\logo.ico" />
+    <Resource Include="Images\Icons\logo128X128.ico" />
+    <Resource Include="Images\Icons\logo16X16.ico" />
+    <Resource Include="Images\Icons\logo256X256.ico" />
+    <Resource Include="Images\Icons\logo32X32.ico" />
+    <Resource Include="Images\Icons\logo48X48.ico" />
+    <Resource Include="Images\Icons\logo64X64.ico" />
+    <Resource Include="Images\Icons\logo_16.ico" />
+    <Resource Include="Images\Icons\logo_32.ico" />
+    <Resource Include="Images\Message\Addressbook.png" />
+    <Resource Include="Images\Message\Addressbook_green.png" />
+    <Resource Include="Images\Message\disk.png" />
+    <Resource Include="Images\Message\Disk_green.png" />
+    <Resource Include="Images\Message\Emoj.png" />
+    <Resource Include="Images\Message\Emoj_green.png" />
+    <Resource Include="Images\Message\Favorite.png" />
+    <Resource Include="Images\Message\Favorite_green.png" />
+    <Resource Include="Images\Message\File.png" />
+    <Resource Include="Images\Message\File_green.png" />
+    <Resource Include="Images\Message\Message_mutil_cancel.png" />
+    <Resource Include="Images\Message\Message_mutil_delete.png" />
+    <Resource Include="Images\Message\Message_mutil_favorite.png" />
+    <Resource Include="Images\Message\Message_mutil_share.png" />
+    <Resource Include="Images\Message\Picture.png" />
+    <Resource Include="Images\Message\Picture_green.png" />
+    <Resource Include="Images\Message\Position.png" />
+    <Resource Include="Images\Message\Position_green.png" />
+    <Resource Include="Images\Message\Screenshot.png" />
+    <Resource Include="Images\Message\Screenshot_green.png" />
+    <Resource Include="Images\Message\Send.png" />
+    <Resource Include="Images\Message\Sending.gif" />
+    <Resource Include="Images\Message\Sending.png" />
+    <Resource Include="Images\Message\Send_error.png" />
+    <Resource Include="Images\Message\Send_green.png" />
+    <Resource Include="Images\Message\Video.png" />
+    <Resource Include="Images\Message\Video_green.png" />
+    <Resource Include="Images\Message\Voice.gif" />
+    <Resource Include="Images\Message\Voice.png" />
+    <Resource Include="Images\Message\VoiceRight.gif" />
+    <Resource Include="Images\Todo\AppMessage.png" />
+    <Resource Include="Images\Todo\AppMessage_nocontent.png" />
+    <Resource Include="Images\Todo\Done.png" />
+    <Resource Include="Images\Todo\Done_gray.png" />
+    <Resource Include="Images\Todo\Done_nocontent.png" />
+    <Resource Include="Images\Todo\Pass.png" />
+    <Resource Include="Images\Todo\Reject.png" />
+    <Resource Include="Images\Todo\Todo.png" />
+    <Resource Include="Images\Todo\Todo_gray.png" />
+    <Resource Include="Images\Todo\Todo_nocontent.png" />
+    <Resource Include="Images\Todo\Todo_task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PublicAccounts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Message\Collapsed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Message\unfold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BarcodeLoading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FileSend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emoji\Emoji.csproj">
+      <Project>{a64e2702-e4f6-4b8f-938e-6ff6222bf7ad}</Project>
+      <Name>Emoji</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\File\7z.png" />
+    <Resource Include="Images\File\ai.png" />
+    <Resource Include="Images\File\amr.png" />
+    <Resource Include="Images\File\apk.png" />
+    <Resource Include="Images\File\avi.png" />
+    <Resource Include="Images\File\bmp.png" />
+    <Resource Include="Images\File\conf.png" />
+    <Resource Include="Images\File\css.png" />
+    <Resource Include="Images\File\csv.png" />
+    <Resource Include="Images\File\dbf.png" />
+    <Resource Include="Images\File\dir.png" />
+    <Resource Include="Images\File\doc.png" />
+    <Resource Include="Images\File\docx.png" />
+    <Resource Include="Images\File\dwg.png" />
+    <Resource Include="Images\File\exe.png" />
+    <Resource Include="Images\File\file.png" />
+    <Resource Include="Images\File\fla.png" />
+    <Resource Include="Images\File\gif.png" />
+    <Resource Include="Images\File\html.png" />
+    <Resource Include="Images\File\iso.png" />
+    <Resource Include="Images\File\java.png" />
+    <Resource Include="Images\File\javascript.png" />
+    <Resource Include="Images\File\jpeg.png" />
+    <Resource Include="Images\File\jpg.png" />
+    <Resource Include="Images\File\json.png" />
+    <Resource Include="Images\File\mp3.png" />
+    <Resource Include="Images\File\mp4.png" />
+    <Resource Include="Images\File\mpeg.png" />
+    <Resource Include="Images\File\mpg.png" />
+    <Resource Include="Images\File\mpp.png" />
+    <Resource Include="Images\File\pdf.png" />
+    <Resource Include="Images\File\png.png" />
+    <Resource Include="Images\File\ppt.png" />
+    <Resource Include="Images\File\pptx.png" />
+    <Resource Include="Images\File\psd.png" />
+    <Resource Include="Images\File\rar.png" />
+    <Resource Include="Images\File\rm.png" />
+    <Resource Include="Images\File\rmvb.png" />
+    <Resource Include="Images\File\rtf.png" />
+    <Resource Include="Images\File\svg.png" />
+    <Resource Include="Images\File\tar.png" />
+    <Resource Include="Images\File\txt.png" />
+    <Resource Include="Images\File\unknow.png" />
+    <Resource Include="Images\File\vsd.png" />
+    <Resource Include="Images\File\wav.png" />
+    <Resource Include="Images\File\wma.png" />
+    <Resource Include="Images\File\wmv.png" />
+    <Resource Include="Images\File\xls.png" />
+    <Resource Include="Images\File\xlsx.png" />
+    <Resource Include="Images\File\xml.png" />
+    <Resource Include="Images\File\zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AVMeeting\Cancel.png" />
+    <Resource Include="Images\AVMeeting\CancelX2.png" />
+    <Resource Include="Images\AVMeeting\Close.png" />
+    <Resource Include="Images\AVMeeting\Desert.jpg" />
+    <Resource Include="Images\AVMeeting\Maxmize.png" />
+    <Resource Include="Images\AVMeeting\Minimize.png" />
+    <Resource Include="Images\AVMeeting\Normal.png" />
+    <Resource Include="Images\AVMeeting\Pin.png" />
+    <Resource Include="Images\AVMeeting\PinX2.png" />
+    <Resource Include="Images\AVMeeting\VoipCamera.png" />
+    <Resource Include="Images\AVMeeting\VoipCameraHover.png" />
+    <Resource Include="Images\AVMeeting\VoipConvert.png" />
+    <Resource Include="Images\AVMeeting\VoipConvertHover.png" />
+    <Resource Include="Images\AVMeeting\VoipSpeaker.png" />
+    <Resource Include="Images\AVMeeting\VoipSpeakerHover.png" />
+    <Resource Include="Images\AVMeeting\VoipVoiceBan.png" />
+    <Resource Include="Images\AVMeeting\VoipVoiceBanHover.png" />
+    <Resource Include="Images\AVMeeting\VoipVoiceMute.png" />
+    <Resource Include="Images\AVMeeting\VoipVoiceMuteHover.png" />
+    <Resource Include="Images\AVMeeting\Audio.png" />
+    <Resource Include="Images\AVMeeting\AudioHover.png" />
+    <Resource Include="Images\AVMeeting\AudioReceiving.png" />
+    <Resource Include="Images\AVMeeting\Mute.png" />
+    <Resource Include="Images\AVMeeting\MuteHover.png" />
+    <Resource Include="Images\AVMeeting\VideoReceiving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CheckStatus.png" />
+    <Resource Include="Images\UnCheckStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\StartMessageC.png" />
+    <Resource Include="Images\StartMessageUnC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\StartAppC.png" />
+    <Resource Include="Images\StartAppUnC.png" />
+    <Resource Include="Images\StartContactC.png" />
+    <Resource Include="Images\StartContactUnC.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,138 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:resources="clr-namespace:ResourceDictionary.Resources;assembly=ResourceDictionary"
+      mc:Ignorable="d"  
+       FontFamily="Microsoft YaHei" 
+      x:Class="cn.lds.chatcore.pcw.Views.Page.AddressBookPage"
+      Title="通讯录" Height="auto" Width="auto" Loaded="Window_Loaded" 
+      d:DesignWidth="1000" d:DesignHeight="600"  >
+
+    <Page.Resources>
+       
+        <CollectionViewSource x:Key='GzhSource' 
+                          Source="{Binding MyGzhItems,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Page}}">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="tenantName" />
+            </CollectionViewSource.GroupDescriptions>
+        </CollectionViewSource>
+
+        <CollectionViewSource x:Key='LxrSource' 
+                          Source="{Binding MyLxrItems,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Page}}">
+        </CollectionViewSource>
+
+        <CollectionViewSource x:Key='QlSource' 
+                          Source="{Binding MyQlItems,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Page}}">
+        </CollectionViewSource>
+    </Page.Resources>
+    <AdornerDecorator Margin="0">
+        <Grid  x:Name="GridMain" >
+        <Grid.RowDefinitions>
+                <RowDefinition Height="{DynamicResource TitleHeight}"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260" MaxWidth="260" MinWidth="260"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Background="{DynamicResource leftBackground}" Grid.Row="0" Grid.Column="0"></Border>
+        
+        <!--<Separator Height="1" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0" />-->
+
+
+            <DockPanel Name="DockPanelBook" Margin="0" Grid.Row="1" LastChildFill ="True"
+                        Grid.Column="0" Background="{DynamicResource leftBackground}" VerticalAlignment="Stretch">
+              
+
+                <!--组织机构-->
+                <CheckBox  x:Name="ChkZzjg"  Width="{Binding ActualWidth, ElementName=DockPanelBook}"   Margin="0"  Style="{DynamicResource AddressCheckBox}" DockPanel.Dock="Top" Click="ChkZzjg_Checked"/>
+
+                <control:TreeControl x:Name="TreeOrg"   DockPanel.Dock="Top" Visibility="Collapsed" 
+                                     Background="{DynamicResource leftBackground}"   
+                                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                                     ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+
+                <!--群聊-->
+                <CheckBox x:Name="ChkQl" Width="{Binding ActualWidth, ElementName=DockPanelBook}"  DockPanel.Dock="Top" Margin="0"  Style="{DynamicResource AddressCheckBox}" Click="ChkQl_Click" />
+
+                    <ListView x:Name="ListViewQl"  DockPanel.Dock="Top" Margin="0"  Background="{DynamicResource leftBackground}"  HorizontalAlignment="Stretch"  
+                         Height="auto" Style="{DynamicResource ListViewStyleScrollview}" ItemContainerStyle="{DynamicResource GzhListItemStyle}" 
+                             ItemsSource="{Binding Source={StaticResource QlSource}}"
+                          VerticalAlignment="Stretch" Width="auto" Visibility="Collapsed" SelectionChanged="ListViewQl_SelectionChanged"/>
+
+                <!--公众号-->
+                <CheckBox x:Name="ChkGzh"  DockPanel.Dock="Top" Margin="0" Width="{Binding ActualWidth, ElementName=DockPanelBook}" Style="{DynamicResource AddressCheckBox}" Click="ChkGzh_Click" Visibility="Visible">
+                   
+                </CheckBox>
+
+                <ListView  x:Name="ListViewGzh" DockPanel.Dock="Top" Margin="0" Background="{DynamicResource leftBackground}" HorizontalAlignment="Stretch"  
+                          Height="auto"  Style="{DynamicResource ListViewStyleScrollview}" ItemContainerStyle="{DynamicResource GzhListItemStyle}" 
+                             ItemsSource="{Binding Source={StaticResource GzhSource}}"
+                          VerticalAlignment="Stretch" Width="auto" Visibility="Collapsed" SelectionChanged="ListViewGzh_SelectionChanged">
+                    <ListView.GroupStyle>
+                        <GroupStyle HidesIfEmpty="True">
+                            <GroupStyle.HeaderTemplate>
+                                <DataTemplate>
+                                    <Border BorderThickness="0, 0, 0, 1" Margin="0" Padding="0" 
+                                            BorderBrush="#CCCCCC">
+                                        <StackPanel Width="Auto" Height="20" HorizontalAlignment="Stretch"
+                                                VerticalAlignment="Stretch" Orientation="Horizontal"
+                                                Margin="0" Background="{DynamicResource leftBackground}">
+                                            <TextBlock FontSize="12" Foreground="{DynamicResource foreground33}" 
+                                               Text="{Binding Name}" Margin="10, 2, 0, 0"></TextBlock>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </GroupStyle.HeaderTemplate>
+                        
+                        </GroupStyle>
+                    </ListView.GroupStyle>
+                </ListView>
+
+                <!--标签Width="289" Height="46"-->
+                <CheckBox   DockPanel.Dock="Top" x:Name="ChkBq" Margin="0" Style="{DynamicResource AddressCheckBox}"  Width="{Binding ActualWidth, ElementName=DockPanelBook}" Click="ChkBq_Click" Visibility="Collapsed"/>
+
+                <ListView  x:Name="ListViewBq" DockPanel.Dock="Top" Margin="0" Background="{DynamicResource leftBackground}" HorizontalAlignment="Stretch"  
+                           Height="auto"  Style="{DynamicResource ListViewStyleScrollview}" ItemContainerStyle="{DynamicResource ListItemStyle}" 
+                           VerticalAlignment="Stretch" Width="auto" Visibility="Collapsed" SelectionChanged="ListViewBq_SelectionChanged"/>
+     
+                <!--常用联系人-->
+                <CheckBox  x:Name="ChkLxr"  Width="{Binding ActualWidth, ElementName=DockPanelBook}" DockPanel.Dock="Top" Style="{DynamicResource AddressCheckBox}"  Click="ChkLxr_Click" />
+                <ListView  x:Name="ListViewLxr"  HorizontalAlignment="Stretch"   DockPanel.Dock="Top"
+                          Style="{DynamicResource ListViewStyleScrollview}" ItemContainerStyle="{DynamicResource GzhListItemStyle}" 
+                             ItemsSource="{Binding Source={StaticResource LxrSource}}" 
+                           VerticalAlignment="Stretch"   SelectionChanged="ListViewLxr_SelectionChanged" Visibility="Collapsed"/>
+             
+            </DockPanel>
+  
+
+
+
+        <!--标题头-->
+        <!--<Label  Grid.Row="0" Grid.Column="1"   x:Name="Titel" Foreground="{DynamicResource foreground33}" BorderBrush="#CCCCCC"  Content="" 
+            VerticalAlignment="Stretch"  VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Margin="0" HorizontalAlignment="Stretch" FontSize="18" />-->
+        <!--返回按钮-->
+        <!--<Button  x:Name="btnBack" Grid.Row="0" FontSize="18"  Foreground="{DynamicResource foreground33}" Grid.Column="1"  HorizontalAlignment="Left" Height="26" Width="225" Click="btnBack_Click" 
+            VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonLeft}"  Margin="12,0,0,13" Visibility="Visible"  >
+            <Image   Margin="0" Source="../../images/Return.png" Stretch="None"/>
+        </Button>-->
+
+        <!--加载page-->
+            <control:DingFrame  x:Name="FrameChat"  JournalOwnership="OwnsJournal" NavigationUIVisibility="Hidden"    BorderThickness="0" Grid.Column="1"  Grid.Row="0"  Grid.RowSpan="2"    Margin="0" />
+            <!--搜索-->
+        <TextBox x:Name="SearchText" Grid.Row="0"  Grid.Column="0"   
+                 HorizontalAlignment="Left" Height="34" Margin="14,9,0,9" 
+                 TextWrapping="Wrap" AcceptsReturn="False"
+                 TextChanged="SearchText_TextChanged"
+                 KeyUp="SearchText_OnKeyUp" VerticalAlignment="Center"
+                 PreviewKeyDown="SearchText_OnPreviewKeyDown"
+                  Style="{DynamicResource SearchTextBoxStyle}"  Width="227" Background="#FF3399FF"/>
+        <!--左侧列表和右侧的分割线-->
+        <GridSplitter Width="1" Grid.Row="0"  Grid.Column="0" Grid.RowSpan="2" Background="#CCCC" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0" />
+        <!--<Separator Width="1" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2" Background="#CCCCCC" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0" />-->
+
+    </Grid>
+  </AdornerDecorator>
+</Page>

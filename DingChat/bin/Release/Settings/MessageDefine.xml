@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ErrorMessages>
+  <ErrorMessage>
+    <Code>S0000001</Code>
+    <Message>处理成功.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>S0000002</Code>
+    <Message>数据创建成功.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>S0000003</Code>
+    <Message>数据更新成功.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>S0000004</Code>
+    <Message>数据删除成功.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>S0000005</Code>
+    <Message>数据发送成功.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>W0000001</Code>
+    <Message>未找到指定数据.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>W0000002</Code>
+    <Message>输入检索条件@1@长度检查失败.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>W0000003</Code>
+    <Message>输入检索条件@1@数值类型检查失败.</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>W0000004</Code>
+    <Message>输入检索条件@1@日期类型检查失败.@2@</Message>
+  </ErrorMessage>
+  <ErrorMessage>
+    <Code>F0000001</Code>
+    <Message>系统初始化错误.(@1@)</Message>
+  </ErrorMessage>
+</ErrorMessages>

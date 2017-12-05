@@ -1,0 +1,9 @@
+﻿<Window x:Class="VLCPlayer.VLCPlayerWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vlc="clr-namespace:VLC.Interface;assembly=VLC.Interface"  Closed="Window_Closed"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <vlc:VLCPlayer Name="player" Grid.Column="1" Grid.Row="1" Panel.ZIndex="99" MouseDown="player_MouseDown" />
+    </Grid>
+</Window>

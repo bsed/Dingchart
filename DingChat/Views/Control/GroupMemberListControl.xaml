@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="cn.lds.chatcore.pcw.Views.Control.GroupMemberListControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ResourceDictionary.Control;assembly=ResourceDictionary"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+             mc:Ignorable="d" Background="Blue"
+             Margin="0" Name="GroupMemberListUserControl"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <CollectionViewSource x:Key='ListViewSource' 
+                          Source="{Binding GroupMemberItems,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=UserControl}}">
+        </CollectionViewSource>
+
+        <Style  x:Key="XListItemStyle" TargetType="{x:Type ListViewItem}">
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+            <Setter Property="Padding" Value="0,0,0,0"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListViewItem}">
+                        <Border x:Name="Bd" BorderThickness="0" Margin="0" Padding="0" 
+                                SnapsToDevicePixels="true">
+                            <Grid  Name="Grid" Margin="2" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Ellipse  x:Name="EllipseWithImageBrush" StrokeThickness="{DynamicResource Ellipse_}"
+                                              Stroke="#cccccc"  Margin="0" HorizontalAlignment="Left" 
+                                              Height="24" 
+                                              Width="24"
+                                              d:LayoutOverrides="Height" VerticalAlignment="Top" 
+                                              Grid.Column="0" Grid.Row="0" >
+                                    <Ellipse.Fill>
+                                        <ImageBrush  x:Name="Ico" ImageSource="{Binding Path=Avatar}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <TextBlock Name="LbTitle" Text="{Binding Path=Title}"
+                                           Grid.Row="0" Grid.Column="1"
+                                           VerticalAlignment="Center"
+                                           ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="12"
+                                           Margin="5,0,5,0" Foreground="{DynamicResource foreground33}">
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="true">
+                                <Setter Property="Background" TargetName="Bd" Value="#D4EDFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+            <Style.Resources>
+                <!--SelectedItem with focus-->
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#D4EDFF" />
+                <!--SelectedItem without focus-->
+                <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="White"/>
+            </Style.Resources>
+        </Style>
+        
+    </UserControl.Resources>
+
+    <Grid x:Name="Grid">
+            <local:DingScrollview x:Name="ScrollViewer"
+                                    Background="White"
+                      Margin="0">
+                <ListView  x:Name="GroupMemberListView" Margin="0" 
+                           ItemsSource="{Binding Source={StaticResource ListViewSource}}"
+                           Background="White"
+                           Style="{DynamicResource ListViewStyle}" 
+                           ItemContainerStyle="{StaticResource XListItemStyle}"  
+                         
+                           >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseLeftButtonUp">
+                        <i:InvokeCommandAction Command="{Binding Path=ItemClickCommand}"></i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ListView>
+            </local:DingScrollview>
+    </Grid>
+</UserControl>
+

@@ -1,0 +1,2 @@
+F:\鼎sass\VLC.Interface\VLC.Interface\obj\Debug\VLC.Interface.csprojResolveAssemblyReference.cache
+F:\鼎sass\VLC.Interface\VLC.Interface\obj\Debug\VLC.Interface_MarkupCompile.cache

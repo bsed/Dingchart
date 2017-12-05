@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="cn.lds.chatcore.pcw.Views.Control.AccountSettingControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              FontFamily="Microsoft YaHei" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  
+             Height="60" Width="260"  Loaded="UserControl_Loaded" Margin="0,-2,0,-2"  
+             Background="{DynamicResource leftBackground}">
+    <Grid  Name="GridContact" Margin="8,0,0,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image  x:Name="Ico"  Source="pack://application:,,,/ResourceDictionary;Component/Images/Default_avatar.jpg" Margin="5" Stretch="None"/>
+
+        <Label Name="LbTitle" IsEnabled="False"  BorderThickness="0" VerticalContentAlignment="Center"    Grid.Column="1"  Content="公众号" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="14" Foreground="{DynamicResource foreground33}" Margin="0,0,0,0" />
+    </Grid>
+</UserControl>

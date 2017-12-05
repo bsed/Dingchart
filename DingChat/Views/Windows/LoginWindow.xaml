@@ -1,0 +1,40 @@
+﻿<Window x:Class="cn.lds.chatcore.pcw.Views.Windows.LoginWindow"      
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+         FontFamily="Microsoft YaHei" 
+        WindowStyle="None" AllowsTransparency="True" Background="{x:Null}"
+        Title="{DynamicResource system_common_pageTitle}" 
+      Icon="{DynamicResource system_common_pageIco}"
+        Height="420" Width="300" 
+        WindowStartupLocation="CenterScreen" ShowInTaskbar="True" Closing="LoginWindow_OnClosing"
+        FocusManager.FocusedElement="{Binding ElementName=TxtUser}" 
+        MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="LoginWindow_OnLoaded">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+       
+        <Border Grid.RowSpan="4" BorderBrush="#cccccc" BorderThickness="1" CornerRadius="2" Margin="10"  Opacity="1"  Background="White"></Border>
+        <!--<Button Style="{StaticResource BtnCloseStyle}" Name="btnClose"  Grid.Row="0"  Click="Button_Click" ></Button>-->
+        <Button  Name="BtnClose" Style="{DynamicResource xButtonStyle}" VerticalAlignment="Top"  HorizontalAlignment="Right"  Margin="0,10,10,0"     Click="BtnClose_Click" Grid.Row="0" />
+        <Label Name="LblTitle" Content="{DynamicResource system_common_pageTitle}" Grid.Column="0" Margin="30,30,193,123" Height="40"  FontFamily="Microsoft YaHei" Foreground="{DynamicResource foreground33}"></Label>
+        <Image Name="ImageLogo" Grid.Row="0" Height="80" Width="80"    Source="../../logo256X256.ico" Stretch="Fill" Margin="0,50,0,0" />
+        <Image Name="ImageBarcode" Grid.Row="0"  Grid.RowSpan="3" MouseLeftButtonDown="ImageBarcode_OnMouseLeftButtonDown" Visibility="Hidden"   Height="170" Width="170"   Source="pack://application:,,,/ResourceDictionary;Component/Images/BarcodeLoading.png" Stretch="Fill" Margin="0,80,0,0" />
+        <Image Name="ImageAvatar"  Grid.Row="0"  Grid.RowSpan="3"  Visibility="Hidden"  Height="95" Width="95"   Source="pack://application:,,,/ResourceDictionary;Component/Images/Default_avatar.jpg" Stretch="Fill" Margin="0,55,0,0" />
+
+        <TextBox x:Name="TxtUser" Tag="请输入用户名"  Text="" Style="{DynamicResource WarkTextBoxStyle}"  Grid.Row="1" VerticalAlignment="Center"  Height="40" Margin="50,5" Padding="3,0,0,0" FontSize="14"/>
+        <PasswordBox x:Name="TxtPwd"  Password="" Style="{DynamicResource PasswordBoxStyle}" Grid.Row="2"  Width="200" VerticalAlignment="Center"   Height="40" KeyDown="TxtPwd_KeyDown" Padding="3,0,0,0" FontSize="14"></PasswordBox>
+        <Label Name="LblLoginUserName" Content="用户名"  HorizontalAlignment="Center"  VerticalAlignment="Top" Visibility="Hidden" Grid.Row="2" FontFamily="Microsoft YaHei" Foreground="{DynamicResource foreground33}"></Label>
+        <Label Name="LblScanNotice" Content="{DynamicResource windows_LoginWindow_LblScanNotice}"  HorizontalAlignment="Center"  VerticalAlignment="Top" Visibility="Hidden" Grid.Row="3" FontFamily="Microsoft YaHei" Foreground="{DynamicResource foreground33}"></Label>
+        <Label Name="LblWaitingMobileConfirm" Content="在手机上确认登录"  HorizontalAlignment="Center"  VerticalAlignment="Top" Visibility="Hidden" Grid.Row="3" FontFamily="Microsoft YaHei" Foreground="{DynamicResource foreground33}"></Label>
+        <Button Name="BtnLogin" Content="登  录" Foreground="White"  Height="40"  Background="#38C738"  BorderThickness="0" Grid.Row="3" Style="{StaticResource TextButton}" Margin="50,-80,50,0" FontSize="15" Click="BtnLogin_Click" ></Button>
+        <TextBlock Name="TxtMessage" Text=""  Grid.Row="3"  Margin="2,60,2,15" MaxWidth="260" HorizontalAlignment="Center" TextWrapping="Wrap" FontFamily="Microsoft YaHei" Foreground="{DynamicResource foreground33}" />
+        <Button Name="BtnChangeLoginType" Content="切换到扫码登录" Click="BtnChangeLoginType_OnClick" HorizontalAlignment="Center" Margin="2,90,2,20" BorderThickness="0"  Background="Transparent"   Grid.Row="3"  Style="{DynamicResource TextButton}" Foreground="#1296db" />
+
+        <!--<Button Name="BtnTest" Content="test" Click="BtnTest_OnClick" HorizontalAlignment="Center" Margin="2,90,2,20" BorderThickness="0"  Background="Transparent"   Grid.Row="3"  Style="{DynamicResource TextButton}" Foreground="#1296db" />-->
+    </Grid>
+</Window>

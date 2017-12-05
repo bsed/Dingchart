@@ -1,0 +1,56 @@
+﻿<Page x:Class="cn.lds.chatcore.pcw.Views.Page.TodoSetingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:system="clr-namespace:System;assembly=mscorlib"
+       FontFamily="Microsoft YaHei" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="500"
+	Title="TodoSetingPage" Loaded="Page_Loaded">
+
+   
+        <Page.Resources>
+            <system:Double x:Key="FontSize">15</system:Double>
+            <Thickness x:Key="Margin">35,20,35,6</Thickness>
+          
+        </Page.Resources>
+    
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{DynamicResource TitleHeight}"/>
+                    <RowDefinition />
+
+                </Grid.RowDefinitions>
+                <!--力鼎下面的线-->
+                <Separator Height="1" Grid.Row="0"   Background="{DynamicResource BackGroundCC}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" />
+                <!--标题头-->
+                <Label  Content="设置"     x:Name="Titel"  Grid.Row="0" Foreground="{DynamicResource foreground33}" BorderBrush="#CCCCCC"   VerticalAlignment="Stretch"  VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Margin="0" HorizontalAlignment="Stretch" FontSize="18" />
+                <!--返回按钮-->
+                <Button  x:Name="BtnBack" Grid.Row="0" FontSize="18"  Foreground="{DynamicResource foreground33}"   HorizontalAlignment="Left" Height="26" Width="225" Click="BtnBack_Click" VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonLeft}"  Margin="{DynamicResource btnBackMargin}" Visibility="Visible"  >
+            <Image   Margin="0" Source="pack://application:,,,/ResourceDictionary;Component/Images/Return.png" Stretch="None"/>
+                </Button>
+
+
+                <!--会话置顶-->
+                <Border Height="80" VerticalAlignment="Top" BorderBrush="#CCCC" BorderThickness="1" CornerRadius="{DynamicResource BoxCornerRadius}" Grid.Row="1"  Margin="{DynamicResource Margin}">
+                    <Grid Margin="1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                            <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="会话置顶" Grid.Row="0"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}" Height="40" VerticalAlignment="Bottom"/>
+                        <!--之间的线-->
+                        <Separator Height="1" Grid.Row="0" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0" />
+                <CheckBox  Name="ChkChatTop" Click="ChkChatTop_Checked"    Grid.Row="0"  HorizontalAlignment="Right" Style="{DynamicResource SliderCheckBox}"   VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <Label Content="消息免打扰" Grid.Row="1"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+
+                <CheckBox Name="ChkNoTrouble" Click="ChkNoTrouble_Checked"    Grid.Row="1"  HorizontalAlignment="Right" Style="{DynamicResource SliderCheckBox}"   VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    
+                    </Grid>
+                </Border>
+            </Grid>
+ 
+
+
+</Page>

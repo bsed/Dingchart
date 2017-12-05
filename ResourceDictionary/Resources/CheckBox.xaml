@@ -1,0 +1,382 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:local="clr-namespace:ResourceDictionary.Resources"
+                        xmlns:converters="clr-namespace:ResourceDictionary.Converters"
+                        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity">
+
+    <converters:GrayImageConvertor x:Key="GrayImageConvertor"/>
+    <converters:ButtonImageConvertor x:Key="ButtonImageConvertor"/>
+    <converters:PathToImageConvertor x:Key="PathToImageConvertor"/>
+    <Style x:Key="CheckRadioFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="14,0,0,0" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Unspecified使用默认位图缩放模式，即 Linear。
+
+LowQuality使用双线性位图缩放，虽然速度比 HighQuality 快，但输出质量较低。 LowQuality 模式与 Linear 模式相同。
+
+HighQuality使用高质量位图缩放，虽然速度比 LowQuality 模式慢，但输出质量更高。 HighQuality 模式与 Fant 模式相同。
+
+Linear使用线性位图缩放，虽然速度比 HighQuality 模式快，但输出质量较低。
+
+Fant使用超高质量 Fant 位图缩放，虽然速度比所有其他位图缩放模式都慢，但输出质量更高。
+
+NearestNeighbor使用最近邻域位图缩放，当使用软件光栅器时，该缩放提供优于 LowQuality 模式的性能。 该模式常用于放大位图。-->
+    <Style x:Key="SliderCheckBox" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="Fant"/>
+        <Setter Property="UseLayoutRounding" Value="true"/>
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="StoryboardIsChecked">
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CheckFlag">
+                                <!--<EasingDoubleKeyFrame KeyTime="0" Value="0"/>-->
+                                <EasingDoubleKeyFrame KeyTime="0" Value="22"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="StoryboardIsCheckedOff">
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CheckFlag">
+                                <!--<EasingDoubleKeyFrame KeyTime="0" Value="22"/>-->
+                                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <BulletDecorator Background="Transparent" SnapsToDevicePixels="true">
+                        <BulletDecorator.Bullet>
+                            <!--外面的框-->
+                            <Border x:Name="ForegroundPanel" BorderBrush="#CCCC" BorderThickness="1" Width="43" Height="20" CornerRadius="3">
+                                <Canvas>
+                                    <!--里面的按钮-->
+                                    <Border BorderBrush="#CCCC" Background="White" x:Name="CheckFlag" CornerRadius="3" VerticalAlignment="Center" BorderThickness="1" Width="19" Height="18" RenderTransformOrigin="0.5,0.5">
+                                        <Border.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Border.RenderTransform>
+                                        <!--阴影-->
+                                        <!--<Border.Effect>
+                                          
+                                            <DropShadowEffect ShadowDepth="1" Direction="180" />
+                                        </Border.Effect>-->
+                                    </Border>
+                                </Canvas>
+                            </Border>
+                        </BulletDecorator.Bullet>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center"/>
+                    </BulletDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasContent" Value="true">
+                            <Setter Property="FocusVisualStyle" Value="{StaticResource CheckRadioFocusVisual}"/>
+                            <Setter Property="Padding" Value="4,0,0,0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="ForegroundPanel" Property="Background" Value="#4DD765" />
+                            <Trigger.EnterActions>
+                                <BeginStoryboard x:Name="BeginStoryboardCheckedTrue" Storyboard="{StaticResource StoryboardIsChecked}" />
+                                <RemoveStoryboard BeginStoryboardName="BeginStoryboardCheckedFalse" />
+                            </Trigger.EnterActions>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter TargetName="ForegroundPanel" Property="Background" Value="Transparent" />
+                            <Trigger.EnterActions>
+                                <BeginStoryboard x:Name="BeginStoryboardCheckedFalse" Storyboard="{StaticResource StoryboardIsCheckedOff}" />
+                                <RemoveStoryboard BeginStoryboardName="BeginStoryboardCheckedTrue" />
+                            </Trigger.EnterActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Foreground" Value="#898989"/>
+        <Setter Property="FontSize" Value="14px"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Background" Value="#F4F4F4"/>
+        <Setter Property="BorderBrush" Value="#8E8F8F"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <!--<Setter Property="FocusVisualStyle" Value="{StaticResource EmptyCheckBoxFocusVisual}"/>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <BulletDecorator Background="Transparent" SnapsToDevicePixels="true" HorizontalAlignment="Left">
+                        <BulletDecorator.Bullet>
+                            <Border Height="20" Width="20">
+                                <!--<Themes:BulletChrome BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" IsChecked="{TemplateBinding IsChecked}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}"/>-->
+                                <Image x:Name="PART_Image" Height="20" Width="20"  Source="pack://application:,,,/ResourceDictionary;Component/Images/uncheck.png" />
+                            </Border>
+                        </BulletDecorator.Bullet>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </BulletDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasContent" Value="true">
+                            <Setter Property="FocusVisualStyle" Value="{StaticResource CheckRadioFocusVisual}"/>
+                            <Setter Property="Padding" Value="4,0,0,0"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="PART_Image" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/check.png"/>
+
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <!--通讯录checkbox-->
+    <Style x:Key="AddressCheckBox" TargetType="{x:Type CheckBox}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Width" Value="260"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="FontSize" Value="14px"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+
+                            <Border x:Name="Bd" BorderThickness="0"  Margin="0" Padding="0" Background="{DynamicResource leftBackground}">
+                                <Grid  Name="GridContact" Margin="8,0,0,0" ShowGridLines="False" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Name="Ico"  SnapsToDevicePixels="True"  RenderOptions.BitmapScalingMode="NearestNeighbor" Grid.Column="0"     Height="40" Width="40" Source="{Binding Path=LogoPath, Mode=OneWay}" Margin="2" UseLayoutRounding="True"/>
+                                    <Label Name="LbTitle"  IsEnabled="False"  BorderThickness="0" VerticalContentAlignment="Center"    Grid.Column="1"  Content="{Binding Path=Name, Mode=OneWay}" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="14" Foreground="{DynamicResource foreground33}" Margin="15,0,0,0" />
+                                </Grid>
+                            </Border>
+                           
+                    <ControlTemplate.Triggers>
+                        <!--<Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource listSelect}"/>
+                        </Trigger>-->
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--待办-->
+    <Style x:Key="RadioButtonDb" TargetType="{x:Type RadioButton}">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Padding" Value="0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RadioButton}">
+                    <Grid x:Name="grid" Margin="{TemplateBinding Padding}" VerticalAlignment="Center">
+                        <Border >
+                            <!--<Themes:BulletChrome BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" IsChecked="{TemplateBinding IsChecked}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}"/>-->
+                            <Image x:Name="PART_Image" SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="None"  Source="pack://application:,,,/ResourceDictionary;Component/Images/Todo/Todo.png" />
+                        </Border>
+                    </Grid>
+                    <!--触发器：设置选中状态符号-->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="PART_Image" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Todo/Todo_gray.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--已办-->
+    <Style x:Key="RadioButtonYb" TargetType="{x:Type RadioButton}">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Padding" Value="0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RadioButton}">
+                    <Grid x:Name="grid" Margin="{TemplateBinding Padding}" VerticalAlignment="Center">
+                        <Border >
+                            <!--<Themes:BulletChrome BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" IsChecked="{TemplateBinding IsChecked}" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}"/>-->
+                            <Image x:Name="PART_Image" SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="None"  Source="pack://application:,,,/ResourceDictionary;Component/Images/Todo/Done.png" />
+                        </Border>
+                    </Grid>
+                    <!--触发器：设置选中状态符号-->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="PART_Image" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/Todo/Done_gray.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ImageTextCheckBox" TargetType="{x:Type CheckBox}">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="False" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Height" Value="46"/>
+        <Setter Property="IsChecked" Value="False"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Grid Name="grid" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image   Source="{TemplateBinding Tag,Converter={StaticResource PathToImageConvertor}}" Margin="10,0,0,0" Height="20" Width="20"></Image>
+                        <TextBlock Grid.Column="1" Text="{TemplateBinding Content}"  VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="#F2F2F2" TargetName="grid" ></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="PersonCheckBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="Background" Value="Khaki" />
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="False" />
+        <Setter Property="FontSize" Value="14" />
+        <!--<Setter Property="FocusVisualStyle" Value="{DynamicResource CheckBoxFocusVisual}" />-->
+        <Setter Property="IsChecked" Value="False"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Grid Name="grid"  Background="White" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse  x:Name="EllipseWithImageBrush" StrokeThickness="{DynamicResource Ellipse_}"  Stroke="#cccccc"  Margin="5" HorizontalAlignment="Left" 
+                 Height="33" Width="33"  VerticalAlignment="Center" Grid.Column="0" Tag="{TemplateBinding Tag,Converter={StaticResource PathToImageConvertor}}">
+                            <Ellipse.Fill>
+                                <ImageBrush  x:Name="Ico" ImageSource="{Binding Tag, ElementName=EllipseWithImageBrush}"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse  x:Name="EllipseBlackBrush" StrokeThickness="0"   Margin="5" HorizontalAlignment="Left" 
+                 Height="33" Width="33"  Visibility="Collapsed" VerticalAlignment="Center" Grid.Column="0" >
+                            <Ellipse.Fill>
+                                <SolidColorBrush  Color="Black" Opacity="0.4"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Grid Grid.Column="0" x:Name="CheckedMark" Width="20" Height="20" Visibility="Collapsed">
+                            <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M1,9 L10,17"  Stroke="White" Opacity="1"/>
+                            <Path SnapsToDevicePixels="False" StrokeThickness="3" Data="M8,17 L20,4"  Stroke="White" Opacity="1"/>
+                        </Grid>
+                        <TextBlock Grid.Column="1" Text="{TemplateBinding Content}" FontSize="14" Foreground="{DynamicResource foreground33}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="#F2F2F2" TargetName="grid" ></Setter>
+                            <Setter TargetName="CheckedMark" Property="Visibility" Value="Visible"></Setter>
+                            <Setter TargetName="EllipseBlackBrush" Property="Visibility" Value="Visible"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="PersonDelBoxStyle" TargetType="{x:Type CheckBox}">
+      
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="False" />
+        <!--<Setter Property="FocusVisualStyle" Value="{DynamicResource CheckBoxFocusVisual}" />-->
+        <Setter Property="IsChecked" Value="False"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Grid Name="grid" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse  x:Name="EllipseWithImageBrush" StrokeThickness="{DynamicResource Ellipse_}"  Stroke="#cccccc"  Margin="5" HorizontalAlignment="Left" 
+                 Height="33" Width="33"  VerticalAlignment="Center" Grid.Column="0" Tag="{TemplateBinding Tag,Converter={StaticResource PathToImageConvertor}}">
+                            <Ellipse.Fill>
+                                <ImageBrush  x:Name="Ico" ImageSource="{Binding Tag, ElementName=EllipseWithImageBrush}"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse  x:Name="EllipseBlackBrush" StrokeThickness="0"   Margin="5" HorizontalAlignment="Left" 
+                 Height="33" Width="33"  Visibility="Collapsed" VerticalAlignment="Center" Grid.Column="0" >
+                            <Ellipse.Fill>
+                                <SolidColorBrush  Color="Black" Opacity="0.4"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Grid Grid.Column="0" x:Name="CheckedMark" Width="20" Height="20" Visibility="Collapsed">
+                            <Path Data="M2,1.25 L17.5,17" Margin="1,0.25,0.5,1" Stretch="Fill" Stroke="White" StrokeThickness="3" Opacity="1"/>
+                            <Path Data="M2,16.25 L17.5,1.25" Margin="1,0.25,0.5,1.75" Stretch="Fill" Stroke="White" StrokeThickness="3" Opacity="1"/>
+                        </Grid>
+                        <TextBlock Grid.Column="1" Text="{TemplateBinding Content}" FontSize="14" Foreground="{DynamicResource foreground33}" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="EllipseBlackBrush" Property="Visibility" Value="Visible"></Setter>
+                            <Setter TargetName="CheckedMark" Property="Visibility" Value="Visible"></Setter>
+                            <Setter TargetName="EllipseWithImageBrush" Property="Opacity" Value="0.8"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="RadioButton" TargetType="{x:Type RadioButton}">
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Padding" Value="0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RadioButton}">
+                    <Grid x:Name="grid" Margin="{TemplateBinding Padding}" VerticalAlignment="Center">
+                        <Border >
+                            <StackPanel Orientation="Horizontal" >
+                                <Image x:Name="PART_Image" SnapsToDevicePixels="True" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="None"  Source="pack://application:,,,/ResourceDictionary;Component/Images/UnCheckStatus.png" />
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                    <!--触发器：设置选中状态符号-->
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="PART_Image" Property="Source" Value="pack://application:,,,/ResourceDictionary;Component/Images/CheckStatus.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+   
+</ResourceDictionary>

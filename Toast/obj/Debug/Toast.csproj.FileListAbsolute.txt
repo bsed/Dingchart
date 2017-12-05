@@ -1,0 +1,12 @@
+F:\鼎sass\Toast\bin\Debug\Toast.dll
+F:\鼎sass\Toast\bin\Debug\Toast.pdb
+F:\鼎sass\Toast\obj\Debug\Toast.g.cs
+F:\鼎sass\Toast\obj\Debug\Toast_MarkupCompile.cache
+F:\鼎sass\Toast\obj\Debug\Toast_MarkupCompile.lref
+F:\鼎sass\Toast\obj\Debug\Toast.baml
+F:\鼎sass\Toast\obj\Debug\Toast.g.resources
+F:\鼎sass\Toast\obj\Debug\Toast.Properties.Resources.resources
+F:\鼎sass\Toast\obj\Debug\Toast.csproj.GenerateResource.Cache
+F:\鼎sass\Toast\obj\Debug\Toast.dll
+F:\鼎sass\Toast\obj\Debug\Toast.pdb
+F:\鼎sass\Toast\obj\Debug\Toast.csprojResolveAssemblyReference.cache

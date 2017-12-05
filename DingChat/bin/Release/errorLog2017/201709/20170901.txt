@@ -1,0 +1,24 @@
+
+ 
+记录时间：2017-09-01 10:31:06,451 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-09-01 10:31:12,221 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-09-01 10:31:12,274 
+线程ID:[31] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 

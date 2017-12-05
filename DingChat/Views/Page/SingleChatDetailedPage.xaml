@@ -1,0 +1,72 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control" 
+       FontFamily="Microsoft YaHei" 
+      xmlns:System="clr-namespace:System;assembly=mscorlib"
+      xmlns:control1="clr-namespace:ResourceDictionary.Control;assembly=ResourceDictionary"
+      x:Class="cn.lds.chatcore.pcw.Views.Page.SingleChatDetailedPage" 
+      d:DesignHeight="755.223" d:DesignWidth="765.673" 
+      Title="GroupChatDetailed" mc:Ignorable="d" Loaded="Page_Loaded" >
+    <Page.Resources>
+        <System:Double x:Key="FontSize">15</System:Double>
+        <Thickness x:Key="Margin">35,20,35,6</Thickness>
+        <BitmapImage x:Key="GoToImage" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/ResourceDictionary;Component/Images/Arrow_right.png"/>
+    </Page.Resources>
+    <control1:DingScrollview Name="ScrollViewer"   HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch"  >
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{DynamicResource TitleHeight}"/>
+                <RowDefinition Height="auto"  MinHeight="80" />
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="66"/>
+            </Grid.RowDefinitions>
+            <!--力鼎下面的线-->
+            <Separator Height="1" Grid.Row="0"   Background="{DynamicResource BackGroundCC}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+            <!--标题头-->
+            <Label  Content="聊天详情"     x:Name="Titel"  Grid.Row="0" Foreground="{DynamicResource foreground33}" BorderBrush="#CCCCCC"   VerticalAlignment="Bottom"  VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Margin="{DynamicResource pageTitleMargin}" HorizontalAlignment="Stretch" FontSize="18" />
+            <!--返回按钮-->
+            <Button  x:Name="BtnBack" Grid.Row="0" FontSize="18"  Foreground="{DynamicResource foreground33}"   HorizontalAlignment="Left" Height="26" Width="225" Click="BtnBack_Click" VerticalAlignment="Bottom" Style="{DynamicResource ImageTextButtonLeft}"  Margin="{DynamicResource btnBackMargin}" Visibility="Visible"  >
+                <Image   Margin="0" Source="pack://application:,,,/ResourceDictionary;Component/Images/Return.png" Stretch="None"/>
+        </Button>
+            <!--群成员-->
+            <Border Height="auto" BorderBrush="#CCCC" BorderThickness="1" CornerRadius="{DynamicResource BoxCornerRadius}" Grid.Row="1"  Margin="{DynamicResource Margin}" >
+                <control:PersonGroupControl  x:Name="personGroup"  />               
+            </Border>
+            <!--聊天图片与文件-->
+            <Border  Height="40"  BorderBrush="#CCCC" BorderThickness="1" CornerRadius="{DynamicResource BoxCornerRadius}" Grid.Row="2"    Margin="{DynamicResource Margin}">
+                <Grid Margin="5" >
+                    <Label Content="聊天图片与文件"   Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                    <Button  x:Name="ChatImage"    HorizontalAlignment="Stretch" Height="26"  VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonRight}" Margin="0,1" >
+                        <Image   Margin="0" Source="{DynamicResource GoToImage}" Stretch="None"/>
+                    </Button>
+                </Grid>
+            </Border>
+
+            <!--会话置顶-->
+            <Border  BorderBrush="#CCCC" BorderThickness="1" CornerRadius="{DynamicResource BoxCornerRadius}" Grid.Row="3"  Margin="{DynamicResource Margin}">
+                <Grid Margin="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                        <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                        <RowDefinition Height="{DynamicResource GridInnerHeight}"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="会话置顶" Grid.Row="0"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}" Height="40" VerticalAlignment="Bottom"/>
+                    <!--之间的线-->
+                    <Separator Height="1" Grid.Row="0" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                    <CheckBox  Name="ChkChatTop" Click="ChkChatTop_Click"    Grid.Row="0"  HorizontalAlignment="Right" Style="{DynamicResource SliderCheckBox}"   VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <Label Content="消息免打扰" Grid.Row="1"  Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                    <!--之间的线-->
+                    <Separator Height="1" Grid.Row="1" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="{DynamicResource SeparatorMargin}" />
+                    <CheckBox Name="ChkNoTrouble" Click="ChkNoTrouble_Click"    Grid.Row="1"  HorizontalAlignment="Right" Style="{DynamicResource SliderCheckBox}"   VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <Label Content="清空聊天记录" Grid.Row="2" Margin="20,0,0,0"  VerticalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="{DynamicResource FontSize}" Foreground="{DynamicResource foreground33}"/>
+                    <Button x:Name="BtnCleanUp" Click="BtnCleanUp_Click" Tag=" "  Grid.Row="2"  HorizontalAlignment="Stretch" Height="26"  VerticalAlignment="Center" Style="{DynamicResource ImageTextButtonRight}" Margin="0,7" >
+                        <Image   Margin="0" Source="{DynamicResource GoToImage}" Stretch="None"/>
+                    </Button>
+                </Grid>
+            </Border>
+        </Grid>
+    </control1:DingScrollview>
+</Page>

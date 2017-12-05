@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="cn.lds.chatcore.pcw.Views.Control.SendMessageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              FontFamily="Microsoft YaHei" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+             xmlns:emoji="clr-namespace:cn.lds.chatcore.pcw.Emoji;assembly=Emoji"
+             mc:Ignorable="d" Margin="0" Height="auto" MinHeight="140" MaxHeight="300" Background="#ffffff"
+             d:DesignWidth="378" d:DesignHeight="210" Loaded="UserControl_Loaded">
+    <Grid >
+       
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition  MaxHeight="224"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Name="main">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+                <!--<ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>-->
+                <!--<ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="7"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="*"/>-->
+            </Grid.ColumnDefinitions>
+
+            <Popup x:Name="EmojiPopup" IsOpen="False" StaysOpen="False" Placement="Top"
+                   AllowsTransparency="True"
+                   PlacementTarget="{Binding ElementName=BtnBq}" >
+                <Border BorderThickness="2" BorderBrush="#CCCCCC">
+                    <emoji:EmojiTabControl x:Name="EmojiTabControl" HorizontalAlignment="Left"
+                                           Margin="0,0,0,0" VerticalAlignment="Top"   Height="290" Width="470"/>
+                </Border>
+            </Popup>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:Name="BtnCollapsed"  Visibility="Visible" Margin="0,0,0,0" Click="BtnCollapsed_Click" Style="{DynamicResource ImageButton}" HorizontalAlignment="Left">
+                <Image Margin="15,0,0,0" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message/Collapsed.png" Stretch="None"/>
+            </Button>
+                <Button ToolTip="表情" Name="BtnBq" Style="{DynamicResource BQStyle}" Margin="7,0,0,0" Click="BtnBq_Click" ></Button>
+
+            <!--<Button ToolTip="截图" Name="BtnJt"  Grid.Column="3" Grid.Row="0"   Style="{DynamicResource JTStyle}"    Margin="0" Click="BtnJt_Click" ></Button>
+        <Button ToolTip="图片" Name="BtnTT"  Grid.Column="5" Grid.Row="0"   Style="{DynamicResource TPStyle}"     Margin="0" Click="BtnTT_Click" ></Button>
+        <Button ToolTip="发送文件" Name="BtnWj"  Grid.Column="7" Grid.Row="0"   Style="{DynamicResource WJStyle}"    Margin="0" ></Button>
+        <Button ToolTip="收藏" Name="BtnSc"  Grid.Column="9" Grid.Row="0"   Style="{DynamicResource SCStyle}"     Margin="0" ></Button>
+        <Button ToolTip="定位" Name="BtnDw"  Grid.Column="11" Grid.Row="0"   Style="{DynamicResource WZStyle}"    Margin="0" ></Button>
+        <Button ToolTip="视频" Name="BtnSp"  Grid.Column="13" Grid.Row="0"   Style="{DynamicResource SPStyle}"     Margin="0" ></Button>
+        <Button ToolTip="云盘" Name="BtnYp"  Grid.Column="15" Grid.Row="0"   Style="{DynamicResource WPStyle}"   Margin="0" ></Button>
+      
+        -->
+                <Button ToolTip="截图（Alt+D）" Name="BtnJt" Style="{DynamicResource JTStyle}" Margin="7,0,0,0" Click="BtnJt_Click" ></Button>
+                <Button ToolTip="发送图片" Name="BtnTT" Style="{DynamicResource TPStyle}" Margin="7,0,0,0" Click="BtnTT_Click" ></Button>
+                <Button ToolTip="发送文件" Name="BtnWj" Style="{DynamicResource WJStyle}" Margin="7,0,0,0"  Click="BtnWj_Click"></Button>
+                <Button ToolTip="发送名片" Name="BtnMp" Style="{DynamicResource TXLStyle}" Margin="7,0,0,0" Click="BtnMp_Click" ></Button>
+                <Button ToolTip="定位" Name="BtnDw" Visibility="Collapsed" Style="{DynamicResource WZStyle}" Margin="7,0,0,0" Click="BtnDw_Click" ></Button>
+                <Button ToolTip="云盘" Name="BtnYp" Visibility="Collapsed" Style="{DynamicResource WPStyle}" Margin="7,0,0,0" Click="BtnYp_Click" ></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Name="YyPanel">
+                <Button ToolTip="语音" Name="BtnYy" Style="{DynamicResource YYStyle}" Margin="0,0,7,0" Click="BtnYy_OnClick" ></Button>
+                <Button ToolTip="视频" Name="BtnSp" Style="{DynamicResource SPStyle}" Margin="0,0,15,0" Click="BtnSp_OnClick" ></Button>
+            </StackPanel>
+        </Grid>
+        
+
+        <control:RichTextBoxControl x:Name="TxtMessage" Padding="0" Margin="0,5,0,0" Background="White" BorderThickness="0"  Grid.Row="1" ></control:RichTextBoxControl>
+        <StackPanel  Grid.Row="2"  >
+            <Button Click="BtnSend_Click"  Style="{DynamicResource SendStyle}" BorderThickness="0"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5,2,5,2" />
+        </StackPanel>
+    </Grid>
+</UserControl>

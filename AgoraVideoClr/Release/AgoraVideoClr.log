@@ -1,0 +1,24 @@
+﻿  Stdafx.cpp
+  AgoraEngineEventHandler.cpp
+  AgoraPacketObserver.cpp
+  AgoraVideoClr.cpp
+  AssemblyInfo.cpp
+  正在生成代码...
+f:\鼎sass\agoravideoclr\sdk\include\iagorartcengine.h(2017): warning C4793: “agora::rtc::RtcEngineParameters::setParameters”: 编译为本机的函数:
+  	/clr 下不支持 varargs
+f:\鼎sass\agoravideoclr\sdk\include\iagorartcengine.h(2020): warning C4793: “agora::rtc::RtcEngineParameters::setParameters”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+f:\鼎sass\agoravideoclr\sdk\include\iagorartcengine.h(2022): warning C4793: “agora::rtc::RtcEngineParameters::setParameters”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+f:\鼎sass\agoravideoclr\sdk\include\iagorartcengine.h(2025): warning C4793: “agora::rtc::RtcEngineParameters::setObject”: 编译为本机的函数:
+  	/clr 下不支持 varargs
+f:\鼎sass\agoravideoclr\sdk\include\iagorartcengine.h(2028): warning C4793: “agora::rtc::RtcEngineParameters::setObject”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+f:\鼎sass\agoravideoclr\sdk\include\iagorartcengine.h(2030): warning C4793: “agora::rtc::RtcEngineParameters::setObject”: 编译为本机的函数:
+  	托管代码中发现一个不受支持的内部函数
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  AgoraVideoClr.vcxproj -> F:\鼎sass\AgoraVideoClr\bin\Release\AgoraVideoClr.dll
+  AgoraVideoClr.vcxproj -> F:\鼎sass\AgoraVideoClr\bin\Release\AgoraVideoClr.pdb (Full PDB)
+  .\sdk\dll\agorartc.dll
+  .\sdk\dll\AgoraRTCEngine.dll
+  已复制         2 个文件。

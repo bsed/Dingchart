@@ -1,0 +1,40 @@
+﻿<message:MessageBase x:Class="cn.lds.chatcore.pcw.Views.Control.Message.VoiceMessageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:message="clr-namespace:cn.lds.chatcore.pcw.Views.Control.Message"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             mc:Ignorable="d"   Background="{DynamicResource BackGroundF5 }"
+             FontFamily="Microsoft YaHei"  Unloaded="VoiceMessageControl_OnUnloaded"
+            Height="auto" Width="auto" Loaded="UserControl_Loaded_1" d:DesignWidth="404.415" d:DesignHeight="83.637">
+    <Grid x:Name="LayoutRoot" Margin="0,5,0,0" ShowGridLines="False"  Background="{DynamicResource BackGroundF5 }" PreviewMouseWheel="LayoutRoot_PreviewMouseWheel_1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <!--checkbox-->
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition  />
+            <ColumnDefinition  />
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="auto"/>
+            <!--checkbox-->
+        </Grid.ColumnDefinitions>
+        <!--<Ellipse  x:Name="EllipseWithImageBrush" Stroke="#cccccc"    HorizontalAlignment="Right"  VerticalAlignment="Top"
+                        Height="{DynamicResource chartsessionIcoHeight}" Width="{DynamicResource chartSessionIcoWidth}"  UseLayoutRounding="True" Grid.Row="1"  Grid.Column="1" >
+            <Ellipse.Fill>
+                <ImageBrush  x:Name="Ico" ImageSource="pack://application:,,,/ResourceDictionary;Component/Images/Default_avatar.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label Name="LableD" Content="2017/3/29 18:00:00" Grid.Row="0" FontSize="12" Foreground="{DynamicResource foreground99}" Grid.ColumnSpan="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"  ></Label>
+        <Label Name="NameLb"  Height="25"   FontSize="10"   Content="张三" Grid.Row="0"  Foreground="{DynamicResource foreground99}" Grid.RowSpan="2" Grid.Column="2" VerticalContentAlignment="Bottom"  VerticalAlignment="Top" Margin="0, 10, 0, 0" ></Label>
+        <Label  Name="LableVoice" MinWidth="60" MaxWidth="250"  Width="30" Grid.Column="2" Style="{DynamicResource VoiceMessageLeft}"   Grid.Row="1" MouseLeftButtonDown="LableVoice_MouseLeftButtonDown"/>
+        <Image Name="UnreadImage" Source="pack://application:,,,/ResourceDictionary;Component/Images/Message_count1.png" Grid.Row="1" Grid.Column="3" Height="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,5,0,0"></Image>
+        <Label Name="LengthLb"   FontSize="10"   Content="10" Grid.Row="1"  Foreground="{DynamicResource foreground99}"  Grid.Column="3" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" VerticalAlignment="Top" Margin="2, 8, 0, 0"  Width="auto"></Label>-->
+        <CheckBox   Style="{DynamicResource CheckBoxStyle}" Visibility="Collapsed"  Name="RadioLeft" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,15,0,0"/>
+        <CheckBox Style="{DynamicResource CheckBoxStyle}" Visibility="Collapsed" Name="RadioRight" Grid.Column="5" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,15,0,0"/>
+    </Grid>
+</message:MessageBase>

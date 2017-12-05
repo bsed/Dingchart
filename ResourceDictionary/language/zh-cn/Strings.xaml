@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- 通用 -->
+    <sys:String x:Key="system_common_pageTitle">鼎信</sys:String>
+
+    <ImageSource x:Key="system_common_pageIco">pack://application:,,,/DingChatExt;Component/logo256X256.ico</ImageSource>
+    
+    <!-- 登录页 -->
+    <sys:String x:Key="windows_LoginWindow_LblScanNotice">请使用鼎信扫一扫以登录</sys:String>
+
+</ResourceDictionary>

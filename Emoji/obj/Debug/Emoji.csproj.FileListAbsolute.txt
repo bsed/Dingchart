@@ -1,0 +1,13 @@
+F:\鼎sass\Emoji\bin\Debug\Emoji.dll
+F:\鼎sass\Emoji\bin\Debug\Emoji.pdb
+F:\鼎sass\Emoji\obj\Debug\EmojiControl.g.cs
+F:\鼎sass\Emoji\obj\Debug\EmojiTabControl.g.cs
+F:\鼎sass\Emoji\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\鼎sass\Emoji\obj\Debug\Emoji_MarkupCompile.cache
+F:\鼎sass\Emoji\obj\Debug\Emoji_MarkupCompile.lref
+F:\鼎sass\Emoji\obj\Debug\EmojiControl.baml
+F:\鼎sass\Emoji\obj\Debug\EmojiTabControl.baml
+F:\鼎sass\Emoji\obj\Debug\Emoji.g.resources
+F:\鼎sass\Emoji\obj\Debug\Emoji.dll
+F:\鼎sass\Emoji\obj\Debug\Emoji.pdb
+F:\鼎sass\Emoji\obj\Debug\Emoji.csprojResolveAssemblyReference.cache

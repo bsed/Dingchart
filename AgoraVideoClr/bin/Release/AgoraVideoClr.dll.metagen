@@ -1,0 +1,611 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly AgoraVideoClr, Version=1.0.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnJoinChannelSuccess: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(SByte*, UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(SByte*, UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnRejoinChannelSuccess: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(SByte*, UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(SByte*, UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnWarning: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, SByte*): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, SByte*, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnError: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, SByte*): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, SByte*, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnAudioQuality: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, UInt16, UInt16): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, UInt16, UInt16, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnAudioVolumeIndication: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(AudioVolumeInfo*, UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AudioVolumeInfo*, UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnLeaveChannel: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(RtcStats* IsImplicitlyDereferenced): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(RtcStats* IsImplicitlyDereferenced, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnRtcStats: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(RtcStats* IsImplicitlyDereferenced): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(RtcStats* IsImplicitlyDereferenced, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnMediaEngineEvent: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnAudioDeviceStateChanged: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(SByte*, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(SByte*, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnVideoDeviceStateChanged: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(SByte*, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(SByte*, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnLastmileQuality: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnFirstLocalVideoFrame: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnFirstRemoteVideoDecoded: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnFirstRemoteVideoFrame: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnUserJoined: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnUserOffline: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, USER_OFFLINE_REASON_TYPE): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, USER_OFFLINE_REASON_TYPE, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnUserMuteAudio: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnUserMuteVideo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnApiCallExecuted: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(SByte*, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(SByte*, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnStreamMessage: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, SByte*, UInt32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, SByte*, UInt32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnLocalVideoStats: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(LocalVideoStats* IsImplicitlyDereferenced): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(LocalVideoStats* IsImplicitlyDereferenced, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnRemoteVideoStats: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(RemoteVideoStats* IsImplicitlyDereferenced): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(RemoteVideoStats* IsImplicitlyDereferenced, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnCameraReady: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnVideoStopped: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnConnectionLost: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnConnectionInterrupted: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnUserEnableVideo: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnStartRecordingService: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnStopRecordingService: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.DelOnRefreshRecordingServiceStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.AgoraEngineEventHandler: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.AgoraPacketObserver: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+Class cn.lds.chatcore.pcw.AgoraVideoClr.AudioVolumeInfoClr: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 uid : Public
+    UInt32 volume : Public
+Class cn.lds.chatcore.pcw.AgoraVideoClr.RtcStatsClr: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(agora.rtc.RtcStats): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 duration : Public
+    UInt32 txBytes : Public
+    UInt32 rxBytes : Public
+    UInt16 txKBitRate : Public
+    UInt16 rxKBitRate : Public
+    UInt16 rxAudioKBitRate : Public
+    UInt16 txAudioKBitRate : Public
+    UInt16 rxVideoKBitRate : Public
+    UInt16 txVideoKBitRate : Public
+    UInt32 users : Public
+    Double cpuAppUsage : Public
+    Double cpuTotalUsage : Public
+Class cn.lds.chatcore.pcw.AgoraVideoClr.JoinChannelSuccessHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.RejoinChannelSuccessHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.WarningHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.ErrorHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.AudioQualityHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, UInt16, UInt16): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, UInt16, UInt16, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.AudioVolumeIndicationHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(List`1, UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(List`1, UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.LeaveChannelHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(RtcStatsClr): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(RtcStatsClr, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.RtcStatsHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(RtcStatsClr): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(RtcStatsClr, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.MediaEngineEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.AudioDeviceStateChangedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.VideoDeviceStateChangedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.LastmileQualityHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.FirstLocalVideoFrameHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.FirstRemoteVideoDecodedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.FirstRemoteVideoFrameHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, Int32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, Int32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.UserJoinedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.UserOfflineHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, UserOfflineReasonTypeClr): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, UserOfflineReasonTypeClr, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.UserMuteAudioHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.UserMuteVideoHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.ApiCallExecutedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String, Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.StreamMessageHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Int32, String, UInt32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Int32, String, UInt32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.LocalVideoStatsHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(LocalVideoStats* IsImplicitlyDereferenced): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(LocalVideoStats* IsImplicitlyDereferenced, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.RemoteVideoStatsHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(RemoteVideoStats* IsImplicitlyDereferenced): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(RemoteVideoStats* IsImplicitlyDereferenced, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.CameraReadyHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.VideoStoppedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.ConnectionLostHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.ConnectionInterruptedHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.UserEnableVideoHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(UInt32, Boolean(HasFieldMarshal)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(UInt32, Boolean(HasFieldMarshal), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.StartRecordingServiceHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.StopRecordingServiceHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.RefreshRecordingServiceStatusHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Int32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class cn.lds.chatcore.pcw.AgoraVideoClr.Agora: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    cn.lds.chatcore.pcw.AgoraVideoClr.JoinChannelSuccessHandler OnJoinChannelSuccess : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.RejoinChannelSuccessHandler OnRejoinChannelSuccess : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.WarningHandler OnWarning : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.ErrorHandler OnError : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.AudioQualityHandler OnAudioQuality : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.AudioVolumeIndicationHandler OnAudioVolumeIndication : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.LeaveChannelHandler OnLeaveChannel : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.RtcStatsHandler OnRtcStats : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.MediaEngineEventHandler OnMediaEngineEvent : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.AudioDeviceStateChangedHandler OnAudioDeviceStateChanged : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoDeviceStateChangedHandler OnVideoDeviceStateChanged : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.LastmileQualityHandler OnLastmileQuality : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.FirstLocalVideoFrameHandler OnFirstLocalVideoFrame : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.FirstRemoteVideoDecodedHandler OnFirstRemoteVideoDecoded : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.FirstRemoteVideoFrameHandler OnFirstRemoteVideoFrame : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserJoinedHandler OnUserJoined : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserOfflineHandler OnUserOffline : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserMuteAudioHandler OnUserMuteAudio : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserMuteVideoHandler OnUserMuteVideo : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.ApiCallExecutedHandler OnApiCallExecuted : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.StreamMessageHandler OnStreamMessage : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.LocalVideoStatsHandler OnLocalVideoStats : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.RemoteVideoStatsHandler OnRemoteVideoStats : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.CameraReadyHandler OnCameraReady : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoStoppedHandler OnVideoStopped : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.ConnectionLostHandler OnConnectionLost : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.ConnectionInterruptedHandler OnConnectionInterrupted : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserEnableVideoHandler OnUserEnableVideo : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.StartRecordingServiceHandler OnStartRecordingService : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.StopRecordingServiceHandler OnStopRecordingService : Public
+    cn.lds.chatcore.pcw.AgoraVideoClr.RefreshRecordingServiceStatusHandler OnRefreshRecordingServiceStatus : Public
+  Methods:
+    Initialize(String): PrivateScope, Public, HideBySig
+    Release(): PrivateScope, Public, HideBySig
+    SetChannelProfile(ChannelProfileClr): PrivateScope, Public, HideBySig
+    SetEncryptionSecret(String, Int32): PrivateScope, Public, HideBySig
+    DisableAudio(): PrivateScope, Public, HideBySig
+    EnableAudio(): PrivateScope, Public, HideBySig
+    DisableVideo(): PrivateScope, Public, HideBySig
+    EnableVideo(): PrivateScope, Public, HideBySig
+    SetLocalVideoProfile(VideoProfileTypeClr, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    SetupLocalVideo(RenderModeClr, ValueType IntPtr IsBoxed): PrivateScope, Public, HideBySig
+    StartLocalPreview(): PrivateScope, Public, HideBySig
+    StopLocalPreview(): PrivateScope, Public, HideBySig
+    SetupRemoteVideo(UInt32, RenderModeClr, ValueType IntPtr IsBoxed): PrivateScope, Public, HideBySig
+    JoinChannel(String, String, String, UInt32): PrivateScope, Public, HideBySig
+    LeaveChannel(): PrivateScope, Public, HideBySig
+    DisableLocalAudio(): PrivateScope, Public, HideBySig
+    EnableLocalAudio(): PrivateScope, Public, HideBySig
+    DisableRemoteAudio(UInt32): PrivateScope, Public, HideBySig
+    EnableRemoteAudio(UInt32): PrivateScope, Public, HideBySig
+    DisableAllRemoteAudio(): PrivateScope, Public, HideBySig
+    EnableAllRemoteAudio(): PrivateScope, Public, HideBySig
+    DisableLocalVideo(): PrivateScope, Public, HideBySig
+    EnableLocalVideo(): PrivateScope, Public, HideBySig
+    DisableRemoteVideo(UInt32): PrivateScope, Public, HideBySig
+    EnableRemoteVideo(UInt32): PrivateScope, Public, HideBySig
+    DisableAllRemoteVideo(): PrivateScope, Public, HideBySig
+    EnableAllRemoteVideo(): PrivateScope, Public, HideBySig
+    SetVolume(Int32): PrivateScope, Public, HideBySig
+    SetLogFilePath(String): PrivateScope, Public, HideBySig
+    EnableNetworkTest(): PrivateScope, Public, HideBySig
+    DisableNetworkTest(): PrivateScope, Public, HideBySig
+    StartScreenCapture(ValueType IntPtr IsBoxed): PrivateScope, Public, HideBySig
+    StopScreenCapture(): PrivateScope, Public, HideBySig
+    IsInitialized(): PrivateScope, Public, HideBySig
+    IsVideoEnabled(): PrivateScope, Public, HideBySig
+    IsSetUpLocalVideo(): PrivateScope, Public, HideBySig
+    IsStartLocalPreview(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.ChannelProfileClr: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    cn.lds.chatcore.pcw.AgoraVideoClr.ChannelProfileClr CHANNEL_PROFILE_COMMUNICATION = 0 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.ChannelProfileClr CHANNEL_PROFILE_LIVE_BROADCASTING = 1 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.ChannelProfileClr CHANNEL_PROFILE_GAME = 2 : Public, Static, Literal, HasDefault
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_120P = 0 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_120P_3 = 2 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_180P = 10 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_180P_3 = 12 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_180P_4 = 13 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_240P = 20 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_240P_3 = 22 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_240P_4 = 23 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P = 30 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_3 = 32 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_4 = 33 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_6 = 35 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_7 = 36 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_8 = 37 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_9 = 38 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_10 = 39 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_360P_11 = 100 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P = 40 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P_3 = 42 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P_4 = 43 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P_6 = 45 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P_8 = 47 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P_9 = 48 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_480P_10 = 49 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_720P = 50 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_720P_3 = 52 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_720P_5 = 54 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_720P_6 = 55 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_1080P = 60 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_1080P_3 = 62 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_1080P_5 = 64 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_1440P = 66 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_1440P_2 = 67 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_4K = 70 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_4K_3 = 72 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.VideoProfileTypeClr VIDEO_PROFILE_DEFAULT = 30 : Public, Static, Literal, HasDefault
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.ClientRoleTypeClr: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    cn.lds.chatcore.pcw.AgoraVideoClr.ClientRoleTypeClr CLIENT_ROLE_BROADCASTER = 1 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.ClientRoleTypeClr CLIENT_ROLE_AUDIENCE = 2 : Public, Static, Literal, HasDefault
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.RenderModeClr: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    cn.lds.chatcore.pcw.AgoraVideoClr.RenderModeClr RENDER_MODE_HIDDEN = 1 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.RenderModeClr RENDER_MODE_FIT = 2 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.RenderModeClr RENDER_MODE_ADAPTIVE = 3 : Public, Static, Literal, HasDefault
+Struct cn.lds.chatcore.pcw.AgoraVideoClr.UserOfflineReasonTypeClr: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserOfflineReasonTypeClr USER_OFFLINE_QUIT = 0 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserOfflineReasonTypeClr USER_OFFLINE_DROPPED = 1 : Public, Static, Literal, HasDefault
+    cn.lds.chatcore.pcw.AgoraVideoClr.UserOfflineReasonTypeClr USER_OFFLINE_BECOME_AUDIENCE = 2 : Public, Static, Literal, HasDefault

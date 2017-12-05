@@ -1,0 +1,137 @@
+.TH "EventBus.SimpleEventBus" 3 "Thu May 5 2016" "Version 1.1.2" "EventBus" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EventBus.SimpleEventBus \- The \fBSimpleEventBus\fP class is a simple and fast \fBIEventBus\fP implemention\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBEventBus\&.IEventBus\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSimpleEventBus\fP (long maxPendingEventNumber)"
+.br
+.RI "\fIThe constructor of \fBSimpleEventBus\fP\&. \fP"
+.ti -1c
+.RI "void \fBPost\fP (object eventObject, TimeSpan dispatchDelay)"
+.br
+.RI "\fIPost an event to the event bus, dispatched after the specific time\&. \fP"
+.ti -1c
+.RI "void \fBRegister\fP (object handler)"
+.br
+.RI "\fIRegister event handlers in the handler instance\&. \fP"
+.ti -1c
+.RI "void \fBDeregister\fP (object handler)"
+.br
+.RI "\fIDeregister event handlers belong to the handler instance\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBSimpleEventBus\fP \fBGetDefaultEventBus\fP ()"
+.br
+.RI "\fIGet the global \fBSimpleEventBus\fP instance\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "long \fBPendingEventNumber\fP => Math\&.Max(Interlocked\&.Read(ref _pendingEventNumber), 0)"
+.br
+.RI "\fIThe pending event number which does not yet dispatched\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBSimpleEventBus\fP class is a simple and fast \fBIEventBus\fP implemention\&. 
+
+The event may be processed out of the delivery order under heavy load\&.
+.PP
+If you need the event processed in the delivery order, use \fBOrderedEventBus\fP instead\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "EventBus\&.SimpleEventBus\&.SimpleEventBus (long maxPendingEventNumber)\fC [inline]\fP"
+
+.PP
+The constructor of \fBSimpleEventBus\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImaxPendingEventNumber\fP The maximum pending event number which does not yet dispatched
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void EventBus\&.SimpleEventBus\&.Deregister (object handler)\fC [inline]\fP"
+
+.PP
+Deregister event handlers belong to the handler instance\&. One handler instance may have many event handler methods\&. These methods have \fBEventSubscriberAttribute\fP contract and exactly one parameter\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhandler\fP The instance of event handler class
+.RE
+.PP
+
+.PP
+Implements \fBEventBus\&.IEventBus\fP\&.
+.SS "static \fBSimpleEventBus\fP EventBus\&.SimpleEventBus\&.GetDefaultEventBus ()\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Get the global \fBSimpleEventBus\fP instance\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The global \fBSimpleEventBus\fP instance
+.RE
+.PP
+
+.SS "void EventBus\&.SimpleEventBus\&.Post (object eventObject, TimeSpan dispatchDelay)\fC [inline]\fP"
+
+.PP
+Post an event to the event bus, dispatched after the specific time\&. The event may be processed out of the delivery order under heavy load\&.
+.PP
+If you need the event processed in the delivery order, use \fBOrderedEventBus\fP instead\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIeventObject\fP The event object
+.br
+\fIdispatchDelay\fP The delay time before dispatch this event
+.RE
+.PP
+
+.PP
+Implements \fBEventBus\&.IEventBus\fP\&.
+.SS "void EventBus\&.SimpleEventBus\&.Register (object handler)\fC [inline]\fP"
+
+.PP
+Register event handlers in the handler instance\&. One handler instance may have many event handler methods\&. These methods have \fBEventSubscriberAttribute\fP contract and exactly one parameter\&. 
+.PP
+The handler may be invoked out of the event delivery order under heavy load\&.
+.PP
+If you need the event processed in the delivery order, use \fBOrderedEventBus\fP instead\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhandler\fP The instance of event handler class
+.RE
+.PP
+
+.PP
+Implements \fBEventBus\&.IEventBus\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "long EventBus\&.SimpleEventBus\&.PendingEventNumber => Math\&.Max(Interlocked\&.Read(ref _pendingEventNumber), 0)"
+
+.PP
+The pending event number which does not yet dispatched\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EventBus from the source code\&.

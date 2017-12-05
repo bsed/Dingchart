@@ -1,0 +1,25 @@
+﻿<my:WindowBase  xmlns:my="clr-namespace:cn.lds.chatcore.AutoUpdater" x:Class="cn.lds.chatcore.AutoUpdater.UI.DownFileProcess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="更新助手" Height="300" Width="600" x:Name="w">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition  Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="30,0,20,0">
+            <Image Grid.Row="0" Source="pack://application:,,,/ResourceDictionary;Component/Images/updateWin.png" Width="6" Height="9"/>
+            <TextBlock x:Name="newVersion" Margin="3,0,0,0" Text="发现新版本" FontFamily="Microsoft YaHei" FontSize="15" FontWeight="Bold" Grid.Row="0"  Foreground="#333333"  TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+        </StackPanel>
+        <ScrollViewer Width="523" Template="{StaticResource MyScrollViewerControlTemplate}"   Margin="30,0,20,0" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <TextBlock x:Name="txtDes" TextWrapping="Wrap" FontFamily="Microsoft YaHei" Foreground="#333333" Width="520" Padding="0,0,3,0"></TextBlock>
+        </ScrollViewer>
+        
+        <Border x:Name="bProcess" Margin="7,0,0,0" Visibility="Visible" Grid.Row="2"  Background="#bebebe"  Width="528" Height="6" BorderThickness="1" HorizontalAlignment="Center">
+            <Rectangle x:Name="rectProcess"  Fill="#52d302" Width="0" HorizontalAlignment="Left"></Rectangle>
+        </Border>
+        
+        <TextBlock x:Name="txtProcess" Visibility="Collapsed" Grid.Row="2" Foreground="#000000"  TextAlignment="Center" VerticalAlignment="Center"></TextBlock>
+    </Grid>
+</my:WindowBase >

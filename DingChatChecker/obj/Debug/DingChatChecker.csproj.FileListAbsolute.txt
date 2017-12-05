@@ -1,0 +1,16 @@
+F:\鼎sass\DingChat\bin\Debug\log4net.Designer.cs
+F:\鼎sass\DingChat\bin\Debug\log4net.config
+F:\鼎sass\DingChat\bin\Debug\DingChat.exe.config
+F:\鼎sass\DingChat\bin\Debug\DingChat.exe
+F:\鼎sass\DingChat\bin\Debug\DingChat.pdb
+F:\鼎sass\DingChatChecker\obj\Debug\MainWindow.g.cs
+F:\鼎sass\DingChatChecker\obj\Debug\App.g.cs
+F:\鼎sass\DingChatChecker\obj\Debug\DingChat_MarkupCompile.cache
+F:\鼎sass\DingChatChecker\obj\Debug\DingChat_MarkupCompile.lref
+F:\鼎sass\DingChatChecker\obj\Debug\MainWindow.baml
+F:\鼎sass\DingChatChecker\obj\Debug\DingChat.g.resources
+F:\鼎sass\DingChatChecker\obj\Debug\DingChatChecker.Properties.Resources.resources
+F:\鼎sass\DingChatChecker\obj\Debug\DingChatChecker.csproj.GenerateResource.Cache
+F:\鼎sass\DingChatChecker\obj\Debug\DingChat.exe
+F:\鼎sass\DingChatChecker\obj\Debug\DingChat.pdb
+F:\鼎sass\DingChatChecker\obj\Debug\DingChatChecker.csprojResolveAssemblyReference.cache

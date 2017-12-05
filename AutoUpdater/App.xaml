@@ -1,0 +1,13 @@
+﻿<Application x:Class="cn.lds.chatcore.AutoUpdater.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ResourceDictionary;component/Resources/Button.xaml"/>
+                <ResourceDictionary Source="/ResourceDictionary;component/Resources/ScrollViewer.xaml"/>
+                <ResourceDictionary Source="/ResourceDictionary;component/Style/UpdateWindowStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

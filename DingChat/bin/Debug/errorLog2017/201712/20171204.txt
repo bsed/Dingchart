@@ -1,0 +1,4081 @@
+
+ 
+记录时间：2017-12-04 10:02:39,276 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:02:40,466 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:02:40,792 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:02:40,970 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 10:02:41,110 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 10:02:47,560 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:02:47,779 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:02:47,890 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:02:47,904 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:02:48,756 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:02:49,251 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 10:02:49,595 
+线程ID:[37] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:03:46,817 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:03:46,820 
+线程ID:[7] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/core/pc/login/qrcode/CPC_F9882A6CEB786571F6FC763AFFA8F46
+ 
+System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 124.93.0.168:22031
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 RestSharp.Http.WriteRequestBody(HttpWebRequest webRequest)
+   在 RestSharp.Http.PostPutInternal(String method)
+   在 RestSharp.Http.AsPost(String httpMethod)
+   在 RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   在 RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+
+ 
+记录时间：2017-12-04 10:03:46,844 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/tms/api/pc/connection/qrRegisterDevice
+ 
+System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 124.93.0.168:22031
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 RestSharp.Http.WriteRequestBody(HttpWebRequest webRequest)
+   在 RestSharp.Http.PostPutInternal(String method)
+   在 RestSharp.Http.AsPost(String httpMethod)
+   在 RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   在 RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+
+ 
+记录时间：2017-12-04 10:03:49,774 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:03:49,776 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/tms/api/pc/connection/qrUnRegisterDevice
+ 
+System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 套接字操作尝试一个无法连接的主机。 124.93.0.168:22031
+   在 System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 RestSharp.Http.WriteRequestBody(HttpWebRequest webRequest)
+   在 RestSharp.Http.PostPutInternal(String method)
+   在 RestSharp.Http.AsPost(String httpMethod)
+   在 RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   在 RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+
+ 
+记录时间：2017-12-04 10:04:25,909 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:04:46,342 
+线程ID:[11] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/tms/api/pc/connection/qrRegisterDevice
+ 
+System.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 RestSharp.Http.WriteRequestBody(HttpWebRequest webRequest)
+   在 RestSharp.Http.PostPutInternal(String method)
+   在 RestSharp.Http.AsPost(String httpMethod)
+   在 RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   在 RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+
+ 
+记录时间：2017-12-04 10:04:46,342 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.Services.RestRequestHelper property: [(null)] - 
+错误描述：http://124.93.0.168:22031/core/pc/login/qrcode/CPC_F9882A6CEB786571F6FC763AFFA8F46
+ 
+System.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   在 System.Net.HttpWebRequest.GetRequestStream()
+   在 RestSharp.Http.WriteRequestBody(HttpWebRequest webRequest)
+   在 RestSharp.Http.PostPutInternal(String method)
+   在 RestSharp.Http.AsPost(String httpMethod)
+   在 RestSharp.RestClient.DoExecuteAsPost(IHttp http, String method)
+   在 RestSharp.RestClient.Execute(IRestRequest request, String httpMethod, Func`3 getResponse)
+
+ 
+记录时间：2017-12-04 10:04:46,803 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:04:47,040 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:04:47,132 
+线程ID:[30] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:17:14,390 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:17:15,187 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:17:15,301 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:17:15,359 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 10:17:15,394 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 10:17:16,049 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:17:16,053 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:17:16,081 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:17:16,154 
+线程ID:[15] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:17:16,206 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:17:16,620 
+线程ID:[31] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:41:28,074 
+线程ID:[3] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:41:29,155 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:41:29,350 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:41:29,514 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 10:41:29,651 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 10:41:34,231 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:41:34,331 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:41:34,499 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 10:41:34,500 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:41:34,847 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 10:41:35,291 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 10:41:35,627 
+线程ID:[29] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 10:41:35,826 
+线程ID:[36] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:00:06,888 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:00:11,280 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:00:11,394 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:00:11,416 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 11:00:11,494 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 11:00:16,808 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 11:00:17,241 
+线程ID:[32] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:00:17,252 
+线程ID:[33] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:00:17,253 
+线程ID:[34] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:00:17,374 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:00:17,457 
+线程ID:[32] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:00:17,595 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:00:17,624 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 11:00:17,950 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 11:00:18,823 
+线程ID:[48] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:08:50,513 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:08:51,648 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:08:51,652 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:08:51,652 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:08:51,666 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:08:51,666 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:08:52,346 
+线程ID:[33] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:17:52,334 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:17:53,300 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:17:53,412 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:17:53,556 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 11:17:53,616 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 11:17:57,370 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:17:57,596 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:17:57,743 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:17:57,751 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:17:57,825 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 11:17:57,885 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:17:57,912 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 11:17:58,364 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:17:58,429 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 11:17:58,603 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 11:17:58,954 
+线程ID:[43] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:18:54,022 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:18:54,502 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:26:14,713 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:26:15,636 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:26:15,784 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:26:15,845 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 11:26:15,869 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 11:26:17,566 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:26:17,567 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:26:17,591 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:26:17,627 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:26:17,692 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:26:18,252 
+线程ID:[34] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:27:10,168 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:27:11,473 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:27:11,563 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:27:11,568 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 11:27:11,573 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 11:27:14,423 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 11:27:27,990 
+线程ID:[20] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:27:27,991 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:27:27,995 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 11:27:28,029 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 11:27:28,396 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 11:27:28,411 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 11:27:28,434 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 11:27:28,489 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 11:27:28,724 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 11:27:46,065 
+线程ID:[71] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 15:49:11,519 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 15:49:15,911 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 15:49:15,990 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 15:49:16,046 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 15:49:16,207 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 15:49:16,424 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 15:49:16,464 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 15:49:16,522 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 15:49:16,556 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 15:49:18,175 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 15:49:20,813 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 15:49:23,357 
+线程ID:[30] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 15:49:23,659 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 15:49:26,234 
+线程ID:[49] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 15:49:30,311 
+线程ID:[45] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:09:25,855 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:09:26,724 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:09:26,882 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:09:26,909 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:09:26,940 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:09:30,624 
+线程ID:[8] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:09:34,943 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:09:34,952 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:09:34,965 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 16:09:34,969 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:09:35,068 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:09:35,219 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 16:09:35,292 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:09:35,709 
+线程ID:[11] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 16:09:36,206 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:09:39,151 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:09:39,671 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:09:41,372 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512374979688,\"checkCode\":null,\"status\":\"1\"}","messageId":"a1d686f4-9be2-4575-a6ef-9af4ed49d0b4","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512374915836,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 16:10:01,538 
+线程ID:[50] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:10:36,875 
+线程ID:[73] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:12:15,976 
+线程ID:[78] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:24:20,462 
+线程ID:[3] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:24:21,526 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:24:21,686 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:24:21,726 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:24:21,783 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:24:25,345 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:24:25,347 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:24:25,381 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:24:25,598 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 16:24:25,632 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:24:27,622 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:24:36,947 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:24:37,268 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 16:24:42,566 
+线程ID:[42] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:24:44,253 
+线程ID:[49] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:24:54,745 
+线程ID:[53] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:25:54,120 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:25:55,411 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:25:55,734 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:25:55,784 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:25:55,798 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:25:59,328 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:25:59,616 
+线程ID:[33] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:25:59,616 
+线程ID:[34] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:25:59,636 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 16:25:59,734 
+线程ID:[35] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:25:59,911 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:25:59,967 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 16:26:00,116 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:26:00,495 
+线程ID:[34] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:26:00,685 
+线程ID:[35] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:26:01,432 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:26:02,696 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.LoginWindow property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadStateException: 线程正在运行或被终止；它无法重新启动。
+   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 cn.lds.chatcore.pcw.Views.Windows.LoginWindow.DoLoadingOk(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\LoginWindow.xaml.cs:行号 395
+
+ 
+记录时间：2017-12-04 16:26:06,092 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:26:08,760 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512375966054,\"checkCode\":null,\"status\":\"1\"}","messageId":"d8cbd570-be8b-4a74-b90f-818d9650ce9b","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512375902080,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 16:26:10,439 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:39:57,468 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:40:01,126 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:40:01,256 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:40:01,361 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:40:01,421 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:40:05,687 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:40:05,719 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:40:05,864 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:40:06,082 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:40:06,100 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 16:40:06,171 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:40:06,322 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:40:07,147 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:40:08,196 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 16:40:11,234 
+线程ID:[44] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:40:11,767 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:40:19,368 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:42:28,638 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:42:31,062 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:42:31,234 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:42:31,375 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:42:31,617 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:42:38,462 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:42:54,110 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:42:54,110 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:42:54,131 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 16:42:54,132 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:42:54,300 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:42:54,348 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 16:42:54,479 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:42:54,695 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:42:54,787 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:42:55,125 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:43:00,053 
+线程ID:[47] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:43:04,973 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512376980097,\"checkCode\":null,\"status\":\"1\"}","messageId":"eab601f1-d6ec-46a4-88b7-1831ad35353c","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512376901500,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 16:48:04,974 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:48:05,911 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:48:06,075 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:48:06,342 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 16:48:06,476 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 16:48:11,380 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:48:12,139 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:48:12,161 
+线程ID:[33] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:48:12,189 
+线程ID:[32] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:48:12,235 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 16:48:12,408 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 16:48:12,685 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 16:48:12,709 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 16:48:13,327 
+线程ID:[17] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 16:48:13,570 
+线程ID:[33] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:48:15,484 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:48:15,566 
+线程ID:[32] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 16:48:19,614 
+线程ID:[47] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 16:48:20,061 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512377299648,\"checkCode\":null,\"status\":\"1\"}","messageId":"6f8aa0f2-1755-4f56-a4b2-b3d2ec599d74","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512377235703,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 17:11:26,276 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:11:28,853 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:11:29,491 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:11:30,380 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 17:11:31,811 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 17:11:42,685 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:11:47,748 
+线程ID:[30] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:11:47,786 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:13:39,742 
+线程ID:[6] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:13:43,361 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:13:43,369 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:13:43,417 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:13:43,636 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:13:43,663 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 17:13:43,682 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:13:44,836 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Business.ImageHelper property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   在 System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   在 System.Windows.Media.Imaging.BitmapDecoder.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy, Boolean insertInDecoderCache)
+   在 System.Windows.Media.Imaging.BitmapImage.FinalizeCreation()
+   在 System.Windows.Media.Imaging.BitmapImage.EndInit()
+   在 System.Windows.Media.Imaging.BitmapImage..ctor(Uri uriSource, RequestCachePolicy uriCachePolicy)
+   在 System.Windows.Media.Imaging.BitmapImage..ctor(Uri uriSource)
+   在 cn.lds.chatcore.pcw.Business.ImageHelper.loadAvatarPath(Object fileStorageId) 位置 F:\鼎sass\DingChat\Business\ImageHelper.cs:行号 188
+
+ 
+记录时间：2017-12-04 17:13:45,019 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:13:47,450 
+线程ID:[42] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:13:49,443 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:13:50,726 
+线程ID:[38] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:13:52,229 
+线程ID:[39] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:15:44,260 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:15:44,661 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:15:44,804 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:15:44,808 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 17:15:44,811 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 17:15:46,424 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:15:46,701 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:15:46,710 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:15:46,710 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:15:46,721 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 17:15:46,856 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:15:46,874 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 17:15:46,995 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：网络已经连接，准备连接IM
+ 
+
+ 
+记录时间：2017-12-04 17:15:47,002 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:15:47,014 
+线程ID:[20] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:15:47,085 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512378832260,\"checkCode\":null,\"status\":\"1\"}","messageId":"777d0a1e-7ee8-4f52-8b22-94a5d7fc84ee","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512378768240,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 17:15:47,251 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:15:47,407 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:15:50,524 
+线程ID:[42] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:15:54,082 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:15:56,602 
+线程ID:[nioEventLoopGroup-3-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512378950530,\"checkCode\":null,\"status\":\"1\"}","messageId":"963291c3-e0ae-4d09-94f1-43f1f2c92b89","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512378889870,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 17:17:10,013 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.App property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.App.SetLastLoginUser() 位置 F:\鼎sass\DingChat\App.xaml.cs:行号 394
+
+ 
+记录时间：2017-12-04 17:17:10,014 
+线程ID:[7] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 17:20:15,427 
+线程ID:[9] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:20:16,282 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:20:16,484 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:20:16,615 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 17:20:16,684 
+线程ID:[21] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 17:20:21,656 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:20:21,656 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:20:21,667 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:20:21,798 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 17:20:23,616 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:20:23,750 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:20:24,833 
+线程ID:[22] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 17:20:25,264 
+线程ID:[13] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:20:25,907 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:20:36,146 
+线程ID:[18] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:20:36,205 
+线程ID:[41] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:20:37,785 
+线程ID:[nioEventLoopGroup-4-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512379236247,\"checkCode\":null,\"status\":\"1\"}","messageId":"4dc81d1b-4a28-4ffa-bd73-d9db60aa933c","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512379157656,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 17:23:18,974 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:23:20,357 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:23:20,651 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:23:20,785 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 17:23:20,852 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 17:23:25,846 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:23:25,850 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:23:25,939 
+线程ID:[30] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:23:26,233 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:23:26,359 
+线程ID:[16] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 17:23:26,857 
+线程ID:[16] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:23:27,353 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:23:27,537 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 17:23:28,064 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:23:28,582 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:23:28,647 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:23:29,374 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 17:23:30,160 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:23:30,887 
+线程ID:[19] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.LoginWindow property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadStateException: 线程正在运行或被终止；它无法重新启动。
+   在 System.Threading.Thread.StartupSetApartmentStateInternal()
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 cn.lds.chatcore.pcw.Views.Windows.LoginWindow.DoLoadingOk(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\LoginWindow.xaml.cs:行号 395
+
+ 
+记录时间：2017-12-04 17:23:36,353 
+线程ID:[48] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.LoginWindow property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadStateException: 线程正在运行或被终止；它无法重新启动。
+   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 cn.lds.chatcore.pcw.Views.Windows.LoginWindow.DoLoadingOk(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\LoginWindow.xaml.cs:行号 395
+
+ 
+记录时间：2017-12-04 17:23:37,607 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:23:42,827 
+线程ID:[nioEventLoopGroup-4-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512379418581,\"checkCode\":null,\"status\":\"1\"}","messageId":"841fdd31-fec1-461b-9f2c-85c5b4450d3f","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512379354502,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 17:58:10,220 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:58:11,648 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:58:11,904 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:58:12,137 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 17:58:12,503 
+线程ID:[22] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 17:58:20,402 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:58:24,381 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:58:24,438 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:58:24,518 
+线程ID:[27] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 17:58:24,629 
+线程ID:[29] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 17:58:24,736 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 17:58:25,082 
+线程ID:[12] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:58:25,351 
+线程ID:[23] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接丢失
+ 
+
+ 
+记录时间：2017-12-04 17:58:26,303 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 17:58:26,676 
+线程ID:[19] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 17:58:26,968 
+线程ID:[nioEventLoopGroup-4-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512381346991,\"checkCode\":null,\"status\":\"0\"}","messageId":"f8a5e33d-8c62-42e0-a946-74f87901c177","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512381282855,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 17:58:27,678 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 17:58:27,678 
+线程ID:[18] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 17:58:37,224 
+线程ID:[28] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:58:40,604 
+线程ID:[11] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 17:58:43,736 
+线程ID:[nioEventLoopGroup-4-1] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.imtp.ImtpCallbackListener property: [(null)] - 
+错误描述：收到未知消息！json：{"unkonown":"{\"clientId\":\"C1NQS0KS654Z7\",\"sendTimestamp\":1512381521588,\"checkCode\":null,\"status\":\"1\"}","messageId":"071a887b-8377-4bba-b217-c7385d99ac8c","from":"CPC_F9882A6CEB786571F6FC763AFFA8F46","to":"C1NQS0KS654Z7","type":234,"timestamp":1512381442811,"parseError":false,"tenantNo":null}
+ 
+
+ 
+记录时间：2017-12-04 18:00:32,047 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 18:00:33,234 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:00:33,514 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:00:33,667 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 18:00:33,814 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 18:00:35,426 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:00:35,565 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:00:35,576 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:00:35,834 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 18:00:35,854 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 18:00:37,475 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24f6af7234278bfe6434.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 18:00:38,201 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.TenantsWindow property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 集合已修改；可能无法执行枚举操作。
+   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 cn.lds.chatcore.pcw.Views.Windows.TenantsWindow.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\TenantsWindow.xaml.cs:行号 74
+
+ 
+记录时间：2017-12-04 18:00:41,003 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 18:00:44,455 
+线程ID:[44] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 18:00:44,459 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 18:00:49,122 
+线程ID:[11] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 18:02:27,202 
+线程ID:[10] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 18:02:27,989 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:02:28,181 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:02:28,411 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.ChatSessionDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.count(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 634
+   在 cn.lds.chatcore.pcw.DataSqlite.BaseDao.isExist(String tableName, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\DataSqlite\BaseDao.cs:行号 23
+
+ 
+记录时间：2017-12-04 18:02:28,563 
+线程ID:[23] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Common.SQLiteHelper property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.Save(String table, Dictionary`2 entity) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 381
+
+ 
+记录时间：2017-12-04 18:02:31,079 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:02:31,087 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:02:31,187 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:02:31,290 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\default\SYSTEM\IMAGES\5a15403caf72341cdcbe29d2.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 18:02:31,502 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始断开IM连接，disConnectFromIm...
+ 
+
+ 
+记录时间：2017-12-04 18:02:31,644 
+线程ID:[25] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.DataSqlite.FilesDao property: [(null)] - 
+错误描述：Error
+ 
+cn.lds.chatcore.pcw.Common.LdException: SQLiteManager.Connection=null
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.EnsureConnection() 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 134
+   在 cn.lds.chatcore.pcw.Common.SQLiteHelper.QueryOne(String table, String conditionCol, Object conditionVal) 位置 F:\鼎sass\DingChat\Common\DbHelper\SQLiteHelper.cs:行号 571
+   在 cn.lds.chatcore.pcw.DataSqlite.FilesDao.findByFileStorageId(String fileStorageId) 位置 F:\鼎sass\DingChat\DataSqlite\FilesDao.cs:行号 67
+
+ 
+记录时间：2017-12-04 18:02:32,715 
+线程ID:[26] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.DownloadServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug\DataSqlite\private\C1NQS0KS654Z7\SYSTEM\IMAGES\59fd24a2af7234278bfe6433.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+   在 System.IO.File.WriteAllBytes(String path, Byte[] bytes)
+   在 cn.lds.chatcore.pcw.Services.DownloadServices.doDownload(String id, DownloadType downloadType, Dictionary`2 extras) 位置 F:\鼎sass\DingChat\Services\DownloadServices.cs:行号 223
+
+ 
+记录时间：2017-12-04 18:02:34,741 
+线程ID:[11] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：开始进行IM连接，connectToIm...
+ 
+
+ 
+记录时间：2017-12-04 18:02:38,432 
+线程ID:[49] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79
+
+ 
+记录时间：2017-12-04 18:02:39,836 
+线程ID:[39] 
+日志级别：  INFO  
+出错类：cn.lds.chatcore.pcw.imtp.ImClientService property: [(null)] - 
+错误描述：IM连接成功
+ 
+
+ 
+记录时间：2017-12-04 18:02:39,963 
+线程ID:[11] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Views.Windows.LoginWindow property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadStateException: 线程正在运行或被终止；它无法重新启动。
+   在 System.Threading.Thread.StartInternal(IPrincipal principal, StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start(StackCrawlMark& stackMark)
+   在 System.Threading.Thread.Start()
+   在 cn.lds.chatcore.pcw.Views.Windows.LoginWindow.DoLoadingOk(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Views\Windows\LoginWindow.xaml.cs:行号 395
+
+ 
+记录时间：2017-12-04 18:02:46,127 
+线程ID:[24] 
+日志级别：  ERROR 
+出错类：cn.lds.chatcore.pcw.Services.AccountsServices property: [(null)] - 
+错误描述：Error
+ 
+System.IO.IOException: 文件“F:\鼎sass\DingChat\bin\Debug/DataSqlite/private/default/SYSTEM/IMAGES/5a096a72af72342b4994c767.jpg”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 cn.lds.chatcore.pcw.Services.AccountsServices.DoFileDownloadedEvent(BusinessEvent`1 data) 位置 F:\鼎sass\DingChat\Services\AccountsServices.cs:行号 79

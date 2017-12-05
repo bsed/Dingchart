@@ -1,0 +1,13 @@
+﻿<Window x:Class="cn.lds.chatcore.pcw.Views.Windows.EditGender"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="设置性别" 
+        Style="{DynamicResource CustomWindowBlankChrome}"  WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Horizontal"  VerticalAlignment="Center" HorizontalAlignment="Center"  >
+            <RadioButton Name="RadioM" Margin="30,0,0,0"  GroupName="Sex" Style="{DynamicResource RadioButton}">男</RadioButton>
+            <RadioButton Name="RadioW" Margin="30,0,0,0" GroupName="Sex" Style="{DynamicResource RadioButton}">女</RadioButton>
+            <RadioButton Name="RadioN" Margin="30,0,0,0" GroupName="Sex" Style="{DynamicResource RadioButton}">未知</RadioButton>
+        </StackPanel>
+    </Grid>
+</Window>

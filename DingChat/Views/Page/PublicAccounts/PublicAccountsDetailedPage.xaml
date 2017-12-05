@@ -1,0 +1,56 @@
+﻿<Page x:Class="cn.lds.chatcore.pcw.Views.Page.PublicAccounts.PublicAccountsDetailedPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:converters="clr-namespace:ResourceDictionary.Converters;assembly=ResourceDictionary"
+      FontFamily="Microsoft YaHei" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="500"
+	Title="QlDetailedPage">
+    <Page.Resources>
+        <converters:TextLengthConvertor x:Key="TextLengthConvertor"/>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{DynamicResource TitleHeight}"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.45*"/>
+                <ColumnDefinition Width="0.55*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="22"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <!--<Ellipse  x:Name="EllipseWithImageBrush"  StrokeThickness="{DynamicResource Ellipse_}"  Grid.RowSpan="2" Stroke="#cccccc"   HorizontalAlignment="Right" 
+                 Height="110" Width="110" VerticalAlignment="Center"  UseLayoutRounding="True" Margin="0,0,20,0">
+                <Ellipse.Fill>
+                    <ImageBrush  x:Name="Ico" ImageSource="{Binding logoPath}"/>
+                </Ellipse.Fill>
+            </Ellipse>-->
+            <Border Name="EllipseWithImageBrush"  BorderBrush="{DynamicResource AvatarBorderBrush}"   BorderThickness="{DynamicResource AvatarThickness}"  Margin="0"  HorizontalAlignment="Center"
+                              Height="100" Width="100"  VerticalAlignment="Center"  Grid.Column="0" Grid.RowSpan="2"  CornerRadius="{DynamicResource AvatarCornerRadius}"   UseLayoutRounding="True">
+                <Grid>
+                    <Border Name="imgBorder"  Background="White"    CornerRadius="{DynamicResource AvatarCornerRadius}" />
+                    <Image Name="Ico" Source="{Binding Path=logoPath, Mode=OneWay}" Stretch="Fill"  >
+                        <Image.OpacityMask>
+                            <VisualBrush Visual="{Binding ElementName=imgBorder, Mode=OneTime}" />
+                        </Image.OpacityMask>
+                    </Image>
+                </Grid>
+            </Border>
+            <Label Name="GroupName" Content="{Binding Path=name}" Grid.Row="0" Grid.Column="1" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch"   VerticalAlignment="Top"  FontSize="16"  Foreground="{DynamicResource foreground33}"  Height="30" Margin="17,12,0,0"  />
+
+            <TextBox Name="LbCount" TextWrapping="Wrap"  BorderThickness="0" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch"  FontSize="14"   
+                     Foreground="{DynamicResource foreground99}" Grid.Column="1" Margin="20,0,50,0" Grid.Row="1" Background="Transparent"
+                    Text="{Binding Path=introduction, Mode=OneWay,Converter={StaticResource TextLengthConvertor},ConverterParameter=30}" />
+        </Grid>
+        <Button Name="BtnSend" Content="进入公众号" VerticalAlignment="Top" BorderThickness="0"   Background="#38C738"    Grid.Row="2"  Style="{DynamicResource TextButton}" Foreground="White"  FontSize="16" Height="38"  Width="250"  Click="BtnSend_Click" Margin="0,60,0,0"/>
+        <Button Name="BtnDel"  Visibility="Hidden" Content="不再关注"  VerticalAlignment="Top" BorderThickness="1"  Background="White"   Grid.Row="3"  Style="{DynamicResource TextButton}" Foreground="#FF3334"  BorderBrush="#FF3334"  FontSize="14" Height="26" Width="114" Click="BtnDel_Click" Margin="0,60,0,0"/>
+    </Grid>
+</Page>

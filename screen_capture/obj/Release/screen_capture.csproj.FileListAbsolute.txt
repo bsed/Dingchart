@@ -1,0 +1,8 @@
+F:\鼎sass\screen_capture\bin\Release\screen_capture.dll
+F:\鼎sass\screen_capture\bin\Release\screen_capture.pdb
+F:\鼎sass\screen_capture\obj\Release\cn.lds.chatcore.capture.ColorBox.resources
+F:\鼎sass\screen_capture\obj\Release\cn.lds.chatcore.capture.FrmCapture.resources
+F:\鼎sass\screen_capture\obj\Release\cn.lds.chatcore.capture.Properties.Resources.resources
+F:\鼎sass\screen_capture\obj\Release\screen_capture.csproj.GenerateResource.Cache
+F:\鼎sass\screen_capture\obj\Release\screen_capture.dll
+F:\鼎sass\screen_capture\obj\Release\screen_capture.pdb

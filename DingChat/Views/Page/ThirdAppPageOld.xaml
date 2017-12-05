@@ -1,0 +1,74 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:control="clr-namespace:cn.lds.chatcore.pcw.Views.Control"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+       FontFamily="Microsoft YaHei" 
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      mc:Ignorable="d"  
+      x:Class="cn.lds.chatcore.pcw.Views.Page.ThirdAppPageOld"
+      Title="应用" Height="auto" Width="auto" Loaded="Window_Loaded" 
+      d:DesignWidth="1000" d:DesignHeight="600"  >
+
+    <Page.Resources>
+        <!--GridSplitter样式-->
+        <Style x:Key="GridSplitterPreviewStyle">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Fill="#cccccc"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="GridSplitterStyle1" TargetType="{x:Type GridSplitter}">
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+            <Setter Property="PreviewStyle" Value="{StaticResource GridSplitterPreviewStyle}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type GridSplitter}">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <Grid>
+                                <Button Name="btnExpend"  Content=":" VerticalAlignment="Center" Height="50" Panel.ZIndex="0" Cursor="Hand"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid  x:Name="GridMain" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" MinWidth="66" MaxWidth="200"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+       
+        
+        <Separator Height="1" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="3" Background="#CCCCCC" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,0,0,0" />
+        
+        <ScrollViewer x:Name="ScrollViewerBook"   Grid.Column="0" HorizontalAlignment="Stretch" 
+                      Margin="0" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" 
+                      Template="{StaticResource MyScrollViewerControlTemplate}"  MouseEnter="ScrollViewerBook_MouseEnter" MouseLeave="ScrollViewerBook_MouseLeave">
+            <Grid  Name="GridLeft" Grid.Row="1" Grid.Column="0" Margin="0"  Background="{DynamicResource leftBackground}">
+                <ListView  x:Name="ListView" Margin="-4,0,-4,0" HorizontalAlignment="Stretch"   Background="{DynamicResource leftBackground}"
+                        Height="auto"  Style="{DynamicResource ListViewStyle}" ItemContainerStyle="{DynamicResource ListItemStyle}" 
+                           VerticalAlignment="Stretch" Width="auto" Visibility="Visible" SelectionChanged="ListView_SelectionChanged">
+
+               
+                </ListView>
+
+            </Grid>
+        </ScrollViewer>
+
+
+
+ 
+
+        <!--加载page-->
+        <Frame  x:Name="FrameApp" NavigationUIVisibility="Hidden"   BorderThickness="0" Grid.Column="2"  Grid.Row="0"      Margin="5,2,0,0" />
+      
+        <!--左侧列表和右侧的分割线-->
+        <!--<GridSplitter  x:Name="gsSplitterr" Width="1" Grid.Row="0"  Grid.Column="0" Grid.RowSpan="2" Background="#CCCC" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0" Style="{DynamicResource GridSplitterStyle1}"/>-->
+        <GridSplitter x:Name="gsSplitterr" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Background="#cccccc" Style="{DynamicResource GridSplitterStyle1}"/>
+    </Grid>
+</Page>
